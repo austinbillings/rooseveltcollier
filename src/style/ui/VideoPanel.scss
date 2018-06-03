@@ -1,0 +1,63 @@
+.VideoPanel {
+  margin-top: $panel-spacing;
+  display: block;
+  width: 100%;
+
+  .player {
+    margin-bottom: -4px;
+  }
+
+  .player-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $orange;
+    margin-right: -2px;
+  }
+
+  .player-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .player-meta {
+    @extend .dark-gray-bg;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    // box-shadow: inset 0px -30px 40px fade-out($blue, 0.9);
+
+    .meta-artist {
+      color: $gold;
+      font-weight: 100;
+      margin-right: 10px;
+    }
+    .meta-title {
+      color: $orange;
+    }
+  }
+  .VideoMenu {
+    width: 100%;
+  }
+
+  .MenuItem {
+    @include transition;
+    transform: scale(0.9);
+    margin: 5px 0;
+    width: 100%;
+
+    &.active {
+      border-right: 5px solid $orange;
+      transform: scale(1);
+    }
+    // &.close {
+    //   transform: scale(0.9) translateX(-6%);
+    // }
+    .ShadowBox {
+      @extend .white-plate;
+    }
+  }
+}
+
+video {
+  width: 100%;
+}

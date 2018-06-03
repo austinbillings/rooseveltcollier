@@ -1,0 +1,33 @@
+.ArtistListItem-Wrapper {
+  display: flex;
+  .ArtistListItem {
+    @include transition(1s);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+    &:hover {
+      background-color: fade-out(black, 0.9);
+
+      h3 {
+        @extend .white;
+        // text-shadow: 0px 0px 50px $gold;
+      }
+    }
+
+    h3 {
+      @include transition(1s);
+      @extend .gold;
+      width: auto;
+      text-transform: uppercase;
+      flex: none;
+      font-size: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@mixin spotlight ($left: white, $right: black) {
+	background: linear-gradient(270deg, $left, $right);
+	background-size: 230% 230%;
+
+	@-webkit-keyframes Spotlight {
+			0% { background-position: 0% 40% }
+			50% { background-position: 100% 70% }
+			100% { background-position: 0% 40% }
+	}
+	@-moz-keyframes Spotlight {
+			0% { background-position: 0% 40% }
+			50% { background-position: 100% 70% }
+			100% { background-position: 0% 40% }
+	}
+	@keyframes Spotlight {
+			0% { background-position: 0% 40% }
+			50% { background-position: 100% 70% }
+			100% { background-position: 0% 40% }
+	}
+
+	-webkit-animation: Spotlight 30s ease infinite;
+	-moz-animation: Spotlight 30s ease infinite;
+	animation: Spotlight 30s ease infinite;
+}
+
+@mixin scroll-bg () {
+	@-webkit-keyframes Scrollify {
+			0% { background-position: 0% 50% }
+			50% { background-position: 50% 50% }
+			100% { background-position: 0% 50% }
+	}
+	@-moz-keyframes Scrollify {
+			0% { background-position: 0% 50% }
+			50% { background-position: 50% 50% }
+			100% { background-position: 0% 50% }
+	}
+	@keyframes Scrollify {
+			0% { background-position: 0% 50% }
+			50% { background-position: 50% 50% }
+			100% { background-position: 0% 50% }
+	}
+
+	-webkit-animation: Scrollify 30s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+	-moz-animation: Scrollify 30s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+	animation: Scrollify 30s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@mixin alive {
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+@mixin placeholderz ($color, $opacity: 1) {
+	::-webkit-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	::-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	:-ms-input-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	:-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	::placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+}
+
+@mixin gradient ($start: #FFFFFF, $end: #000000) {
+  background: $start;
+  background: -moz-linear-gradient(top,  $start 0%,  $end 100%);
+  background: -webkit-linear-gradient(top,  $start 0%, $end 100%);
+  background: linear-gradient(to bottom,  $start 0%, $end 100%);
+}
+@mixin gradientX ($start: #FFFFFF, $end: #000000) {
+  background: $start;
+  background: -moz-linear-gradient(left,  $start 0%,  $end 100%);
+  background: -webkit-linear-gradient(left,  $start 0%, $end 100%);
+  background: linear-gradient(to right,  $start 0%, $end 100%);
+}
+
+@mixin transition ($duration: 0.3s) {
+	transition: all $duration;
+	-webkit-transition: all $duration;
+}
+
+
+@mixin slide-horizontal ($amount: 100vw, $duration: 30s) {
+	@-webkit-keyframes SlideX {
+		0% { transform: translate(-$amount, 0); }
+		50% { transform: translate(0, 0); }
+		100% { transform: translate(-$amount, 0); }
+	}
+	@-moz-keyframes SlideX {
+		0% { transform: translate(-$amount, 0); }
+		50% { transform: translate(0, 0); }
+		100% { transform: translate(-$amount, 0); }
+	}
+	@keyframes SlideX {
+		0% { transform: translate(-$amount, 0); }
+		50% { transform: translate(0, 0); }
+		100% { transform: translate(-$amount, 0); }
+	}
+
+	-webkit-animation: SlideX $duration ease infinite;
+	-moz-animation: SlideX $duration ease infinite;
+	animation: SlideX $duration ease infinite;
+}

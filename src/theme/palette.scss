@@ -1,0 +1,35 @@
+$orange: #DA5234;
+$light-blue: #1C90C9;
+$blue: #0A6AA3;
+$grey: #748A93;
+$black: #131616;
+$white: #F2F0F0;
+$silver: #898686;
+
+.orange { color: $orange; }
+.orange-border { border-color: $orange; }
+.orange-bg { background-color: $orange; }
+
+.light-blue { color: $light-blue; }
+.light-blue-border { border-color: $light-blue; }
+.light-blue-bg { background-color: $light-blue; }
+
+.blue { color: $blue; }
+.blue-border { border-color: $blue; }
+.blue-bg { background-color: $blue; }
+
+.white { color: $white; }
+.white-border { border-color: $white; }
+.white-bg { background-color: $white; }
+
+.silver { color: $silver; }
+.silver-border { border-color: $silver; }
+.silver-bg { background-color: $silver; }
+
+.black { color: $black; }
+.black-border { border-color: $black; }
+.black-bg { background-color: $black; }
+
+.grey { color: $grey; }
+.grey-border { border-color: $grey; }
+.grey-bg { background-color: $grey; }

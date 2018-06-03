@@ -1,0 +1,28 @@
+@import '~theme';
+
+header.Header {
+  background-color: $header-background;
+  padding: 20px;
+
+  img.logo {
+    max-width: 300px;
+  }
+
+  nav.header-nav {
+    padding: 3px;
+    width: 100%;
+    flex: 0 0 auto;
+    float: right;
+    display: flex;
+    max-width: 500px;
+    justify-content: space-between;
+
+    a.item {
+      text-transform: uppercase;
+      color: $white;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

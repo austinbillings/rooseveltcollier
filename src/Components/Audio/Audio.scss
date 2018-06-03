@@ -1,0 +1,75 @@
+.Audio {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  display: flex;
+
+
+  .icon {
+    padding: 10px;
+    line-height: 1em;
+    color: $light-gray;
+  }
+
+  &.playing {
+    .fa-play {
+      color: $gold;
+    }
+  }
+  &.paused {
+    .fa-pause {
+      color: $gold;
+    }
+  }
+  &.empty {
+    opacity: 0.5;
+  }
+
+  .Audio-Controls {
+    @media (max-width: 768px) {
+      flex: 0 0 auto;
+    }
+  }
+
+  .Audio-Progress {
+    flex-basis: 100%;
+    background-color: $med-gray;
+    width: 100%;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .Audio-Time {
+    min-width: 50px;
+    text-align: center;
+    display: inline-block;
+    padding: 8.5px;
+    color: $silver;
+    line-height: 1em;
+  }
+}
+
+.Player {
+  display: flex;
+
+  .Player-Meta {
+    text-align: right;
+    padding: 10px;
+    flex: 1;
+    .Player-Meta-Artist {
+      font-weight: 500;
+      margin-right: 10px;
+      opacity: 0.6;
+      color: $white;
+      a {
+        color: $white;
+        &:hover { color: $blue; }
+      }
+    }
+    .Player-Meta-Title {
+      font-weight: 100;
+      color: $gold;
+    }
+  }
+}

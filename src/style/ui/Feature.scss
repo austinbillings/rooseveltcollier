@@ -1,0 +1,39 @@
+.Feature {
+  .ShadowBox-Outer {
+    margin-bottom: $panel-spacing;
+  }
+
+  .Feature-Header {
+    .CardOverlay {
+      min-height: 60vh;
+    }
+    .Feature-Header-Text {
+      @include transition;
+      background-color: fade-out($white, 0.1);
+      color: $black;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    &:hover {
+      .Feature-Header-Text {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .Feature-Info {
+    padding: 2rem;
+    background-color: $med-gray;
+    border-left: 12px solid $blue;
+
+    p {
+      // @extend .serif;
+      line-height: 2.2em;
+      font-size: 1rem;
+      margin: 0 auto 20px;
+      color: $white;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

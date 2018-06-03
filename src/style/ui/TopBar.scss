@@ -1,0 +1,111 @@
+.TopBar {
+  background-color: fade-out($black, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  overflow: hidden;
+
+  &>grid>row {
+    align-items: center;
+    min-height: 40px;
+    width: 100%;
+  }
+
+  box {
+    flex-grow: 1;
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+    }
+    &.brand {
+      @include alive;
+      opacity: 0.5;
+      cursor: pointer;
+      line-height: 0;
+      a {
+        color:$white;
+        &:hover {
+          color: $red;
+        }
+      }
+
+      @media(max-width: 768px) {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .SocialNav {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        margin: 0 30px;
+      }
+
+      strong {
+        display: inline-block;
+        position: relative;
+        top: -5px;
+      }
+
+      .symbol {
+        height: 25px;
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    &.middle {
+      font-weight: 100;
+      margin-top: 5px;
+      flex: 1 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+      a {
+        @extend .white;
+        em {
+          @extend .gold;
+          font-style: normal;
+        }
+        &:hover {
+          @extend .red;
+        }
+      }
+    }
+  }
+  .TopBar-Message {
+    @include transition;
+    margin-top: 0.5em;
+    margin-bottom: -2em;
+    display: block;
+    transform: translateY(0);
+  }
+
+  .NavMenu {
+    @include transition;
+    justify-content: center;
+    margin-top: -5px;
+    transform: translateY(-300px);
+    opacity: 0;
+
+    .item {
+      padding: 10px 15px;
+
+      &.active {
+        color: $gold;
+      }
+    }
+  }
+  &.docked {
+    .TopBar-Message {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    .NavMenu {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

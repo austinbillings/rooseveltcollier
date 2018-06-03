@@ -1,0 +1,86 @@
+.TrackCard {
+  padding: 25px;
+  text-align: center;
+
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 500;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    .icon {
+      margin-right: 0.5em;
+    }
+  }
+
+  .TrackCard-Downloads {
+    margin-top: 20px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: $black;
+    color: $silver;
+    .icon {
+      margin-right: 5px;
+    }
+    &:hover {
+      transform: scale(0.96);
+      background-color: $red;
+      color: $white;
+      .icon { color: $black; }
+    }
+  }
+
+  .SongLink {
+    @include alive;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+    .icon {
+      @include transition;
+      margin-right: 0.5em;
+      color: $red;
+      &:hover { color: $orange; }
+    }
+  }
+
+  small {
+    opacity: 0.5;
+  }
+  a {
+    color: $blue;
+  }
+
+  .TrackCard-Album {
+    color: $light-gray;
+  }
+
+  .TrackCard-CoverWrapper {
+    @include transition;
+    margin-bottom: 10px;
+    &:hover {
+      .TrackCard-CoverContainer {
+        box-shadow: inset 0px 0px 40px black;
+        z-index: 10000;
+      }
+      transform: scale(0.95);
+    }
+  }
+
+  .TrackCard-Cover {
+    @include transition;
+    width: 100%;
+    display: block;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #444;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+$bottom-height: 50px;
+
+.CarouselWrapper {
+  margin-bottom: $bottom-height;
+}
+
+.Carousel {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  display: block;
+
+  &, &:hover, a, a:hover {
+    color: $white;
+  }
+
+  .Arrow {
+    @include alive;
+    @extend .white;
+    display: block;
+    font-size: 4rem;
+    position: absolute;
+    cursor: pointer;
+    top: 45%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    &:hover { @extend .blue; }
+    &.PrevArrow { left: -50px; }
+    &.NextArrow { right: -50px; }
+  }
+
+  .progress-bar-inner {
+    @include gradientX($med-gray, $light-gray);
+  }
+
+  .Controls {
+    position: absolute;
+    bottom: -$bottom-height;
+    height: $bottom-height;
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      flex: 0 1 auto;
+      color: white;
+      padding: 5px;
+      &:hover {
+        color: $blue;
+      }
+      .icon {
+        @include transition;
+      }
+    }
+  }
+}

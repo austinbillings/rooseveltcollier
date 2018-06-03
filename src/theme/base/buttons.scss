@@ -1,0 +1,33 @@
+button {
+  @include transition;
+  padding: 10px 15px;
+  border: 1px solid $grey;
+  background-color: $orange;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: $orange;
+  }
+
+  &.sleek {
+    width: auto;
+    border: none;
+    display: inline-block;
+    background: transparent;
+    font-size: 1rem;
+    padding: 5px;
+    border-bottom: 1px solid $white;
+  }
+
+  &.attache {
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 10px 12px;
+    margin: 0 10px;
+    .icon {
+      transform: scale(1.4);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.CardOverlay {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column-reverse;
+
+  .inner {
+    padding: 15px 20px;
+    flex: none;
+    flex-basis: auto;
+
+    @mixin aligned () { max-width: 85% }
+    &.align-center { @include aligned; align-self: center; }
+    &.align-right { @include aligned; align-self: flex-end; }
+    &.align-left { @include aligned; align-self: flex-start; }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}

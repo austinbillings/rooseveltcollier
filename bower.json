@@ -1,0 +1,22 @@
+{
+  "name": "vlm",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Austin Billings <austin@austinbillings.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mansion": "^2.3.1",
+    "xx": "^1.0.3",
+    "font-awesome": "^4.7.0"
+  }
+}

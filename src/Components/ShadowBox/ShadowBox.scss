@@ -1,0 +1,18 @@
+.ShadowBox-Outer {
+  width: 100%;
+
+  .ShadowBox {
+    @extend .med-gray-bg;
+  }
+
+  &::after {
+    background: rgba(0,0,0,0.3);
+
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 10px;
+    margin-left: 2%;
+    width: 96%;
+  }
+}

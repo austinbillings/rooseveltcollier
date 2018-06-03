@@ -1,0 +1,31 @@
+.Footer {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-top: $panel-spacing;
+
+  .ShadowBox {
+    padding: 20px 15px;
+  }
+
+  .SocialNav {
+    a {
+      @extend .silver;
+      &:hover {
+        @extend .blue;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    box {
+      padding: 10px 0;
+      flex-basis: 100%;
+      align-self: center;
+      text-align: center;
+
+      .NavMenu {
+        justify-content: center;
+      }
+    }
+  }
+}
