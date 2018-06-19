@@ -16,7 +16,7 @@ $bottom-height: 50px;
 
   .Arrow {
     @include alive;
-    @extend .white;
+    @extend .white-text;
     display: block;
     font-size: 4rem;
     position: absolute;
@@ -27,7 +27,7 @@ $bottom-height: 50px;
       display: none;
     }
 
-    &:hover { @extend .blue; }
+    &:hover { @extend .blue-text; }
     &.PrevArrow { left: -50px; }
     &.NextArrow { right: -50px; }
   }

@@ -1,0 +1,50 @@
+@import '~theme';
+
+.section-heading {
+  $base-color: fade-out($grey, 0.1);
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  margin-top: $panel-spacing;
+  margin-bottom: $panel-spacing;
+
+  h3 {
+    transition: all 0.25s;
+    color: $light-blue;
+    font-size: 60px;
+    margin: 0 25px;
+    flex: 0 0 auto;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    .icon {
+      transform: scale(0.75);
+
+    }
+  }
+
+  hr {
+    flex: 1;
+    width: 80%;
+    border: none;
+    max-width: 500px;
+    transition: all 0.25s;
+    border-bottom: 2px solid $light-blue;
+  }
+
+  &:hover {
+    h1,h2,h3,h4,h5,h6 {
+
+    }
+
+    hr {
+      // border-bottom-color: $red;
+    }
+  }
+  .icon {
+    transform: scale(0.8);
+    margin-right: 15px;
+  }
+}

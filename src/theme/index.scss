@@ -1,5 +1,13 @@
-@import '~mansion-ui';
-@import './base/base.scss';
-@import './colors.scss';
-@import './fonts.scss';
-@import './vars.scss';
+@import '~mansion-ui/dist/mansion.css';
+
+@import './base/3d.scss';
+@import './base/buttons.scss';
+@import './base/mixins.scss';
+@import './base/forms.scss';
+@import './base/grid.scss';
+@import './base/headings.scss';
+
+@import './theme/palette';
+@import './theme/fonts';
+@import './theme/vars';
+@import './theme/app';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Icon from 'Components/Icon';
-import Reader from 'Components/Reader';
+import Icon from 'components/Icon';
+import Reader from 'components/Reader';
 
 const digitize = (i) => i >= 10 ? i.toString() : '0' + i.toString();
 

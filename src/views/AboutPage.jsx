@@ -1,8 +1,7 @@
 import React from 'react';
 
-import About from 'Content/About';
-import AboutPane from 'Ui/AboutPane';
-import SectionHeading from 'Ui/SectionHeading';
+import aboutSections from 'data/about-sections';
+import AboutPane from 'ui/AboutPane';
 
 class AboutPage extends React.Component {
   constructor (props) {
@@ -10,13 +9,10 @@ class AboutPage extends React.Component {
   }
 
   render () {
-    const panes = About.panes.map((pane, idx) => <AboutPane key={idx} content={pane} />);
+    const panes = aboutSections.map((pane, idx) => <AboutPane key={idx} content={pane} />);
     return (
-      <div className="AboutPage">
-        <grid>
-          <SectionHeading text="About" icon="book" />
-          {panes}
-        </grid>
+      <div className="about-page">
+        {panes}
       </div>
     );
   }

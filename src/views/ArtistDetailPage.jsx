@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Urls from 'Meta/Urls';
+import Urls from 'meta/Urls';
 import Artists from 'Content/Artists';
-import Icon from 'Components/Icon';
-import NotFound from 'Ui/NotFound';
-import CardOverlay from 'Components/CardOverlay';
-import SocialNav from 'Ui/SocialNav';
-import ShadowBox from 'Components/ShadowBox';
-import MemberListing from 'Ui/MemberListing';
-import Overlay from 'Components/Overlay';
-import TrackCard from 'Ui/TrackCard';
+import Icon from 'components/Icon';
+import NotFound from 'ui/NotFound';
+import CardOverlay from 'components/CardOverlay';
+import SocialNav from 'ui/SocialNav';
+import ShadowBox from 'components/ShadowBox';
+import MemberListing from 'ui/MemberListing';
+import Overlay from 'components/Overlay';
+import TrackCard from 'ui/TrackCard';
 import Features from 'Content/Features';
-import FeatureListItem from 'Ui/FeatureListItem';
+import FeatureListItem from 'ui/FeatureListItem';
 
 class ArtistDetailPage extends React.Component {
   constructor (props) {

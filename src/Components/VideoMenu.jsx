@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ShadowBox from 'Components/ShadowBox';
+import Icon from 'components/Icon';
 
 class VideoMenu extends React.Component {
   constructor (props) {
@@ -11,18 +11,16 @@ class VideoMenu extends React.Component {
   makeMenuItem (video, index) {
     const { activeIndex, onChoose } = this.props;
     const isActive = index === activeIndex;
-    const className = 'MenuItem' + (isActive ? ' active' : '');
+    const className = 'menu-item' + (isActive ? ' menu-item--active' : '');
 
     return (
-      <div className={className} key={index}>
-        <ShadowBox>
-          <div onClick={() => onChoose(video, index)}>
-            {video.title && <h2>{video.title}</h2>}
-            {video.artist && <h3>{video.artist}</h3>}
-            {video.album && <div><small>From the album </small><h4>{video.album}</h4></div>}
-            {isActive && <h5 className="red w200 drag3 ls3"><Icon fa="play" /> Watching</h5>}
-          </div>
-        </ShadowBox>
+      <div className={className} key={index} onClick={() => onChoose(video, index)}>
+        <div className="player-meta">
+          {video.title && <h2>{video.title}</h2>}
+          {video.subtitle && <span className="meta-subtitle">{video.subtitle}</span>}
+          {video.album && <div><small>From the album </small><h4>{video.album}</h4></div>}
+          {isActive && <h5 className="watching-flag"><Icon fa="play" /> Watching</h5>}
+        </div>
       </div>
     );
   }
@@ -31,7 +29,7 @@ class VideoMenu extends React.Component {
     const { videos, activeIndex, onChoose } = this.props;
     const list = videos.map(this.makeMenuItem);
 
-    return <div className="VideoMenu">{list}</div>
+    return <div className="video-menu">{list}</div>
   }
 };
 

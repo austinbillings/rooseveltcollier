@@ -1,8 +1,8 @@
 @import '~theme';
 
-header.Header {
+header.header {
   background-color: $header-background;
-  padding: 20px;
+  padding: 20px 0;
 
   img.logo {
     max-width: 300px;
@@ -15,13 +15,21 @@ header.Header {
     float: right;
     display: flex;
     max-width: 500px;
+    font-size: 14px;
     justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      margin-top: 30px;
+    }
 
     a.item {
       text-transform: uppercase;
       color: $white;
       &:hover {
-        color: $blue;
+        color: $light-blue;
+      }
+      &.active {
+        font-weight: 800;
       }
     }
   }

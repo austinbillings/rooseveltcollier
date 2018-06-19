@@ -17,6 +17,11 @@ const Pages = [
     url: Urls.music.index
   },
   {
+    id: 'video',
+    name: 'Video',
+    url: Urls.video.index
+  },
+  {
     id: 'live',
     name: 'Live',
     url: Urls.live,
@@ -30,7 +35,8 @@ const Pages = [
   {
     id: 'press',
     name: 'Press',
-    url: Urls.press
+    url: Urls.press,
+    hidden: true
   },
   {
     id: 'features',

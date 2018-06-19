@@ -1,0 +1,76 @@
+@import '~theme';
+
+.video-panel {
+  display: block;
+  width: 100%;
+
+  .player {
+    margin-bottom: -4px;
+  }
+
+  .player-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid $blue;
+    margin-right: -4px;
+  }
+
+  .player-container {
+    max-width: 100%;
+    overflow: hidden;
+    background: black;
+  }
+
+  .player-meta {
+    .meta-artist {
+      color: $blue;
+      font-weight: 100;
+      margin-right: 10px;
+    }
+    .meta-title {
+      color: $orange;
+    }
+    .meta-subtitle {
+      font-size: 0.8em;
+    }
+  }
+  .video-menu {
+    width: 100%;
+    margin: 0;
+
+    .menu-item {
+      @include transition;
+      transform: scale(1);
+      margin: 15px 10px;
+      width: 100%;
+      padding: 10px 10px 20px;
+      cursor: pointer;
+      border-bottom: 1px solid $grey;
+
+      &:hover {
+        background-color: $black;
+      }
+
+      &--active {
+        border-bottom: 1px solid $blue;
+        transform: scale(0.97);
+      }
+
+      .watching-flag {
+        margin-top: 5px;
+        color: $blue;
+
+        .icon {
+          font-size: 0.7em;
+          position: relative;
+          top: -3px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+video {
+  width: 100%;
+}

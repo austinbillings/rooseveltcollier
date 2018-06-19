@@ -1,4 +1,5 @@
 const path = require('path');
+const open = require('opn');
 const webpack = require('webpack');
 const bundleName = 'bundle';
 
@@ -6,6 +7,7 @@ const prodMode = (process.env.NODE_ENV === 'production');
 const plugins = [
 	new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
 ];
+const PORT = 7700;
 
 if (prodMode) {
 	const divider = new Array(20).fill('-=~').join('');
@@ -19,6 +21,8 @@ if (prodMode) {
 		output: { comments: false }
 	});
 	plugins.push(minifier);
+} else {
+    open(`http://localhost:${PORT}`);
 }
 
 module.exports = {
@@ -30,7 +34,7 @@ module.exports = {
 		publicPath: '/dist/'
 	},
 	devServer: {
-    port: 7700,
+    port: PORT,
     historyApiFallback: {
 	    index: 'index.html'
     }

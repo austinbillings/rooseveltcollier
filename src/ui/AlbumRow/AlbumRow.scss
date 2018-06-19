@@ -1,0 +1,170 @@
+@import '~theme';
+
+.album-row {
+  display: flex;
+  flex-direction: row;
+  background-color: $black;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+
+  .album-cover-container {
+    flex: 0 0 250px;
+    display: block;
+
+    .album-cover {
+      width: 230px;
+      margin: 0;
+    }
+  }
+
+  .album-details {
+    flex: 1 1 100%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+
+    .album-info {
+      flex: 1;
+      padding-right: 10px;
+    }
+
+    .album-links {
+      flex: 0 0 auto;
+      margin-bottom: -20px;
+    }
+  }
+
+  .album-sidebar {
+    flex: 0 0 250px;
+    margin: -30px;
+    margin-left: 0;
+    padding: 5px;
+    background-color: darken($black, 2%);
+
+    .tab-bar {
+      margin: 20px 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+
+    .album-cover-container, .album-details, .album-sidebar {
+      flex: 1 1 auto;
+      margin: 20px 0;
+
+      .album-cover {
+        width: 100%;
+      }
+    }
+  }
+
+  .album-info {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 0;
+      margin-top: -10px;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: $light-blue;
+    }
+
+    h3 {
+      font-size: 22px;
+      letter-spacing: 0;
+      color: $blue;
+      font-weight: 400;
+    }
+
+    blockquote {
+      color: $grey;
+      border-left-color: $grey;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 150%;
+    }
+
+    p {
+      line-height: 150%;
+    }
+  }
+
+  .album-links {
+
+  }
+
+  .album-link {
+
+  }
+
+  .album-link-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+
+  .album-tracklist {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+    .album-track {
+      flex: 0 0 auto;
+    }
+  }
+
+  .album-track {
+    padding: 10px 5px;
+    display: flex;
+    border-bottom: 1px solid fade-out($grey, 0.7);
+    align-items: center;
+
+    .album-track-number {
+      width: 20px;
+      margin-right: 10px;
+      text-align: right;
+      font-weight: 100;
+      color: $blue;
+      font-size: 0.8em;
+    }
+
+    .album-track-title {
+      margin-right: 5px;
+    }
+
+    .album-track-length {
+      font-size: 0.8em;
+      font-weight: 500;
+      opacity: 0.25;
+    }
+  }
+
+  .album-credits {
+    margin-bottom: 10px;
+  }
+
+  .album-credit {
+    padding: 10px 5px;
+    border-bottom: 1px solid fade-out($grey, 0.7);
+    text-align: center;
+
+    .album-credit-name {
+      margin-right: 5px;
+      display: block;
+    }
+
+    .album-credit-part {
+      font-size: 0.8em;
+      font-weight: 500;
+      opacity: 0.25;
+    }
+  }
+}

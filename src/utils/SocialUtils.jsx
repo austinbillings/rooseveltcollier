@@ -35,10 +35,16 @@ SocialUtils.types = [
     url: ({ uri }) => `mailto:${uri}`
   },
   {
+    id: 'spotify',
+    icon: 'spotify',
+    name: (profile) => SocialUtils.getLabel(profile, '%name% on Spotify'),
+    url: ({ uri }) => `https://open.spotify.com/artist/${uri}`
+  },
+  {
     id: 'youtube',
-    icon: 'youtube-play',
+    icon: 'youtube-square',
     name: ({ name }) => SocialUtils.getLabel({ name }, '%name% on YouTube'),
-    url: ({ uri }) => `https://youtube.com/channel/${uri}`
+    url: ({ uri }) => `https://youtube.com/${uri}`
   },
   {
     id: 'website',

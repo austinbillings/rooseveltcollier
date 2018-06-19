@@ -1,0 +1,71 @@
+$red: red;
+$silver: silver;
+$grey: grey;
+
+.Fieldset {
+  .Validator {
+    &.active { margin-bottom: 20px }
+    &.inactive { margin-bottom: 0 }
+  }
+}
+
+.Validator {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column;
+  width: 100%;
+  position: relative;
+  min-height: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background-color: rgba(255,10,20, 0.1);
+  transition: all 0.4s;
+
+  &.active {
+    max-height: 120px;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  &.inactive {
+    max-height: 1px;
+    opacity: 0;
+    padding: 0;
+  }
+}
+
+.Validator-Message {
+  color: darken($red, 30%);
+  font-weight: 500;
+  small { font-weight: 300; }
+}
+
+.Validator-Closer {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  top: 10px;
+  position: absolute;
+  margin-top: -5px;
+  bottom: 13px;
+  right: -32px;
+  height: 26px;
+  display: block;
+  color: $silver;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.4s;
+  &:hover {
+    color: $grey;
+  }
+  .Icon {
+    margin-right: 5px;
+  }
+}

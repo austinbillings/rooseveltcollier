@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Header.scss';
-import Urls from 'Meta/Urls';
-import NavMenu from 'Ui/NavMenu';
+import Urls from 'meta/Urls';
+import NavMenu from 'ui/NavMenu';
 
 class Header extends React.Component {
   constructor (props) {
@@ -13,7 +13,7 @@ class Header extends React.Component {
   render () {
     const { location } = this.props;
     return (
-      <header className="Header">
+      <header className="header">
         <grid>
           <row>
             <box className="xs-10 xs-offset-1 sm-6 sm-offset-0 md-4 self-center text-center">

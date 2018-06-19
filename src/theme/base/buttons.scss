@@ -1,14 +1,26 @@
+@import '../theme/palette';
+
 button {
-  @include transition;
-  padding: 10px 15px;
-  border: 1px solid $grey;
-  background-color: $orange;
+  transition: all 0.25s;
+  padding: 15px 40px;
+  border: 1px solid transparent;
+  background-color: $black;
   color: $white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 300;
   cursor: pointer;
+
+  .icon-right {
+    margin-left: 15px;
+  }
 
   &:hover {
     transform: scale(1.05);
-    background-color: $orange;
+    background-color: $blue;
   }
 
   &.sleek {
@@ -19,6 +31,28 @@ button {
     font-size: 1rem;
     padding: 5px;
     border-bottom: 1px solid $white;
+  }
+
+  &.btn-center {
+    display: block;
+    margin: 10px auto;
+  }
+
+  &.btn-light {
+    color: $black;
+    background-color: $white;
+    &:hover {
+      background-color: $grey;
+    }
+  }
+
+  &.btn-blue {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &.btn-dark {
+    background-color: $black;
   }
 
   &.attache {

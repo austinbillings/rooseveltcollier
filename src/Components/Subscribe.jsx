@@ -1,8 +1,8 @@
 import React from 'react';
 import Axios from 'axios';
 
-import Icon from 'Components/Icon';
-import Submit from 'Components/Submit';
+import Icon from 'components/Icon';
+import Submit from 'components/Submit';
 
 const text = {
   ui: {

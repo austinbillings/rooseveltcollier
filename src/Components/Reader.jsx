@@ -1,7 +1,7 @@
 import React from 'react';
 
-import LightBox from 'Components/LightBox';
-import Carousel from 'Components/Carousel';
+import LightBox from 'components/LightBox';
+import Carousel from 'components/Carousel';
 
 class Reader extends React.Component {
   constructor (props) {

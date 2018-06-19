@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Features from 'Content/Features';
-import SectionHeading from 'Ui/SectionHeading';
-import CardOverlay from 'Components/CardOverlay';
-import Icon from 'Components/Icon';
-import ShadowBox from 'Components/ShadowBox';
-import Overlay from 'Components/Overlay';
+// import Features from 'Content/Features';
+import SectionHeading from 'ui/SectionHeading';
+import CardOverlay from 'components/CardOverlay';
+import Icon from 'components/Icon';
+import ShadowBox from 'components/ShadowBox';
+import Overlay from 'components/Overlay';
 
 class FeatureDetailPage extends React.Component {
   constructor (props) {
@@ -14,7 +14,7 @@ class FeatureDetailPage extends React.Component {
 
   render () {
     const id = this.props.match.params.feature;
-    const feature = Features.find(f => f.id === id);
+    const feature = [].find(f => f.id === id);
 
     return (
       <div className="FeatureDetailPage Page">

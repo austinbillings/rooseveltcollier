@@ -1,6 +1,7 @@
 import React from 'react';
+import axios from 'axios';
 
-import Icon from 'Components/Icon';
+import Icon from 'components/Icon';
 
 class SignUpForm extends React.Component {
   constructor (props) {
@@ -8,7 +9,7 @@ class SignUpForm extends React.Component {
   }
 
   handleSubmit (e) {
-    return e.preventDefault();
+    e.preventDefault();
   }
 
   render () {

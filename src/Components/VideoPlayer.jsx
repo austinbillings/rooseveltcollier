@@ -1,7 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-import LoaderBg from 'Components/LoaderBg';
+import LoaderBg from 'components/LoaderBg';
 
 class VideoPlayer extends React.Component {
   constructor (props) {

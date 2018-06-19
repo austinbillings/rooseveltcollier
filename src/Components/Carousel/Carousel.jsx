@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-import Icon from 'Components/Icon';
-import ProgressBar from 'Components/ProgressBar';
+import Icon from 'components/Icon';
+import ProgressBar from 'components/ProgressBar';
 
 const SlideDuration = 100;
 

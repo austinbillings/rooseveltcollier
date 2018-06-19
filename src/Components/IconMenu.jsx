@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Icon from 'Components/Icon';
+import Icon from 'components/Icon';
 
 class IconMenu extends React.Component {
   constructor (props) {
@@ -9,21 +9,22 @@ class IconMenu extends React.Component {
 
   makeLinkList (list) {
     return list.map(({ id, url, icon, name }) => (
-      <a key={id} href={url} title={name} target="_blank">
+      <a
+        key={id}
+        href={url}
+        title={name}
+        className="item icon-menu-item"
+        target="_blank">
         <Icon fa={icon} />
       </a>
     ));
   }
 
   render () {
-    const { list, className } = this.props;
+    const { list, className, style } = this.props;
     const linkList = this.makeLinkList(list);
 
-    return (
-      <div className={'IconMenu' + (className ? ' ' + className : '')}>
-        {linkList}
-      </div>
-    );
+    return <div className={'icon-menu' + (className ? ' ' + className : '')} children={linkList} style={style} />
   }
 };
 

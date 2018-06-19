@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ShadowBox from 'Components/ShadowBox';
+import ShadowBox from 'components/ShadowBox';
 import Artists from 'Content/Artists';
-import ArtistListItem from 'Ui/ArtistListItem';
-import SectionHeading from 'Ui/SectionHeading';
+import ArtistListItem from 'ui/ArtistListItem';
+import SectionHeading from 'ui/SectionHeading';
 
 class ArtistListView extends React.Component {
   constructor (props) {

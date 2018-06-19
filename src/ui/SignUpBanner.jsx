@@ -1,8 +1,8 @@
 import React from 'react';
-import SignUpForm from 'Ui/SignUpForm';
+import SignUpForm from 'ui/SignUpForm';
 
-import Subscribe from 'Components/Subscribe';
-import Globals from 'Meta/Globals';
+import Subscribe from 'components/Subscribe';
+import Globals from 'meta/Globals';
 
 class SignUpBanner extends React.Component {
   constructor (props) {

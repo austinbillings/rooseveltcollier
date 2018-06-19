@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TrackPanel from 'Ui/TrackPanel';
+import TrackPanel from 'ui/TrackPanel';
 
 const Tracks = [
   {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Events from 'Utils/Events';
-import Icon from 'Components/Icon';
+import Icon from 'components/Icon';
 
 class LightBox extends React.Component {
   constructor (props) {

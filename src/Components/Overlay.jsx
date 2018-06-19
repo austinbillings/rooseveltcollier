@@ -3,6 +3,7 @@ import React from 'react';
 class Overlay extends React.Component {
   constructor (props) {
     super(props);
+
     this.getWrapStyle = this.getWrapStyle.bind(this);
     this.getInnerStyle = this.getInnerStyle.bind(this);
   }
@@ -17,7 +18,7 @@ class Overlay extends React.Component {
   }
 
   getInnerStyle () {
-    const { overlay: backgroundColor } = this.props;
+    const { overlay: backgroundColor, background } = this.props;
     return backgroundColor ? { backgroundColor } : {};
   }
 

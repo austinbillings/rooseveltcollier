@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Icon from 'Components/Icon';
-import ProgressBar from 'Components/ProgressBar';
+import Icon from 'components/Icon';
+import ProgressBar from 'components/ProgressBar';
 
 class Audio extends React.Component {
   constructor () {

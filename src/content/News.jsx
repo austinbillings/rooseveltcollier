@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import VideoPlayer from 'Components/VideoPlayer';
+import VideoPlayer from 'components/VideoPlayer';
 
 const News = [
   // {

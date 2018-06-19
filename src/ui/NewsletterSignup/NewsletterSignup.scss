@@ -1,0 +1,18 @@
+@import '~theme';
+
+.newsletter-signup {
+  p {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .text-box-wrapper {
+    border: 1px solid fade-out($grey, 0.7);
+    margin: 10px 0;
+
+    &.text-box-wrapper--focused {
+      border: 1px solid $blue;
+    }
+  }
+}

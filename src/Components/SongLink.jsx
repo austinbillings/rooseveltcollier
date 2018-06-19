@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Icon from './Icon';
-import Store from 'State/Store';
-import { selectSong } from 'State/Actions';
+import Store from 'state/Store';
+import { selectSong } from 'state/Actions';
 
 class SongLink extends React.Component {
   constructor (props) {

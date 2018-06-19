@@ -1,0 +1,16 @@
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+
+  .card {
+    flex: 1 0 calc(33% - 30px);
+    margin: 15px;
+
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+    }
+  }
+}

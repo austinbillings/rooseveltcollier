@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Urls from 'Meta/Urls';
-import Overlay from 'Components/Overlay';
+import Urls from 'meta/Urls';
+import Overlay from 'components/Overlay';
 
 class ArtistListItem extends React.Component {
   constructor (props) {

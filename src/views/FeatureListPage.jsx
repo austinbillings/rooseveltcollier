@@ -1,8 +1,8 @@
 import React from 'react';
 
-import FeatureListItem from 'Ui/FeatureListItem';
-import SectionHeading from 'Ui/SectionHeading';
-import Features from 'Content/Features';
+import FeatureListItem from 'ui/FeatureListItem';
+import SectionHeading from 'ui/SectionHeading';
+// import Features from 'content/features';
 
 class FeatureListPage extends React.Component {
   constructor (props) {
@@ -10,7 +10,7 @@ class FeatureListPage extends React.Component {
   }
 
   render () {
-    const list = Features
+    const list = []
       .filter(feature => !feature.hidden)
       .map(feature => (
         <FeatureListItem

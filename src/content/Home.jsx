@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Urls from 'Meta/Urls';
-import Icon from 'Components/Icon';
-import CardOverlay from 'Components/CardOverlay';
-import Overlay from 'Components/Overlay';
+import Urls from 'meta/Urls';
+import Icon from 'components/Icon';
+import CardOverlay from 'components/CardOverlay';
+import Overlay from 'components/Overlay';
 
 const Home = {
   Slides: [

@@ -3,7 +3,7 @@ const Urls = {
   home: '/home',
   music: {
     index: '/music',
-    artist: '/music/:release'
+    release: '/music/:release'
   },
   features: {
     index: '/features',
@@ -12,7 +12,9 @@ const Urls = {
   about: {
     index: '/about'
   },
-  video: '/video',
+  video: {
+    index: '/video'
+  },
   contact: '/contact',
   live: '/live',
   press: '/press',

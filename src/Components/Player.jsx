@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Audio from './Audio';
-import Utils from 'Utils/Utils';
+import { scrollToTop } from 'Utils/Utils';
 
 class Player extends React.Component {
   constructor (props) {
@@ -27,7 +27,7 @@ class Player extends React.Component {
     let artist = !song
       ? (<em className="o5">No Song Selected</em>)
       : song.artistId
-        ? (<Link onClick={() => Utils.scrollToTop()} to={'/music/' + song.artistId}>{song.artist}</Link>)
+        ? (<Link onClick={() => scrollToTop()} to={'/music/' + song.artistId}>{song.artist}</Link>)
         : song.artist;
 
     return (

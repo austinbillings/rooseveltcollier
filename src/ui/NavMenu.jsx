@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Pages from 'Meta/Pages';
+import Pages from 'meta/Pages';
 
 class NavMenu extends React.Component {
   constructor (props) {
@@ -13,7 +13,7 @@ class NavMenu extends React.Component {
     return list
       .filter(page => !page.hidden)
       .map(({ name, url, id }) => {
-        const className = 'item ' + id + '-page';
+        const className = 'item ' + id + '-page-link';
         return (
           <NavLink key={id} to={url} activeClassName="active" title={name} className={className}>
             {name}
