@@ -1,0 +1,35 @@
+.contact-page {
+  .contact-content {
+    min-height: calc(100vh - 200px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-item {
+    align-items: center;
+
+    box {
+      padding: 20px;
+    }
+
+    .contact-type {
+      text-align: right;
+    }
+
+    .contact-info {
+      word-wrap: break-word;
+
+      tel, a {
+        display: block;
+      }
+
+      a {
+        text-transform: uppercase;
+        font-weight: bold;
+        word-wrap: break-word;
+        margin: 10px 0;
+      }
+    }
+  }
+}
