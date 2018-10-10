@@ -33,6 +33,12 @@ export default [
       { title: 'That Could\'ve Been Bad', length: '8:06' },
       { title: 'Supernatural Encounters', length: '4:28' },
       { title: 'Spike', length: '8:37' },
+    ],
+    credits: [
+      { name: 'Roosevelt Collier', part: 'Lap Steel Guitar' },
+      { name: 'Michael League', part: 'Bass, Producer' },
+      { name: 'Bobby Sparks II', part: 'Organ' },
+      { name: 'Jason JT Thomas', part: 'Drums' }
     ]
   },
   {
