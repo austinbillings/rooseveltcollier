@@ -15,23 +15,23 @@ const features = [
     ),
     action: {
       text: <span>Check it out &nbsp; <Icon fa="angle-right"/></span>,
-      url: '#'
+      url: '/music#exit16'
     }
   },
   {
-    title: <span>New Tour Dates Announced</span>,
+    title: <span>New North American Tour Dates Announced</span>,
     image: {
       url: '/assets/photos/wall-distant.jpg'
     },
     accent: '#DA5234',
     content: (
       <p>
-        Get ready for the funk and boom.  Roosevelt’s debut album Exit 16 is now available everywhere on GroundUP Music. A maestro known all over Miami as “The Dr.”, Roosevelt shines like a diamond on the all new Exit 16.
+        Roosevelt Collier is going on tour all over the U.S. and playing your favorites from the upcoming album, <b><i>Exit 16</i></b>. See where and when he's coming to a city near you.
       </p>
     ),
     action: {
       text: <span>Check it out &nbsp; <Icon fa="angle-right"/></span>,
-      url: '#'
+      url: '/tour'
     }
   },
   {
@@ -42,12 +42,12 @@ const features = [
     accent: '#302F2F',
     content: (
       <p>
-        Get ready for the funk and boom.  Roosevelt’s debut album Exit 16 is now available everywhere on GroundUP Music. A maestro known all over Miami as “The Dr.”, Roosevelt shines like a diamond on the all new Exit 16.
+        Recorded in a
       </p>
     ),
     action: {
       text: <span>Check it out &nbsp; <Icon fa="angle-right"/></span>,
-      url: '#'
+      url: '/music#themiamisessions'
     }
   }
 ];

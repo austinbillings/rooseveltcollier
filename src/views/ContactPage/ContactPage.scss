@@ -1,15 +1,14 @@
 .contact-page {
-  min-height: 80vh;
-
   .contact-content {
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 110px);
   }
 
   .contact-item {
     flex-direction: column;
+    margin-bottom: 10vh;
 
     box {
       padding: 20px;

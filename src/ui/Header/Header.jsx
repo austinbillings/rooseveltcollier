@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SocialNav from 'ui/SocialNav';
 
 import './Header.scss';
+import Socials from 'meta/Socials';
 import Urls from 'meta/Urls';
 import NavMenu from 'ui/NavMenu';
 
@@ -16,14 +18,12 @@ class Header extends React.Component {
       <header className="header">
         <grid>
           <row>
-            <box className="xs-10 xs-offset-1 sm-6 sm-offset-0 md-4 self-center text-center">
-              <Link to={Urls.home}>
-                <img src="/assets/logo.png" alt="Roosvelt Collier (Textual Logo)" className="logo" />
-              </Link>
-            </box>
-            <box className="xs-12 md-8 self-center items-center justify-end">
-              <NavMenu className="header-nav" location={location} />
-            </box>
+            {/*<img src="/assets/cartoon.png" alt="" className="logo-icon" />*/}
+            <Link to={Urls.home}>
+              <img src="/assets/logo.png" alt="Roosvelt Collier (Textual Logo)" className="logo" />
+            </Link>
+            <SocialNav socials={Socials} />
+            <NavMenu className="header-nav" location={location} />
           </row>
         </grid>
       </header>

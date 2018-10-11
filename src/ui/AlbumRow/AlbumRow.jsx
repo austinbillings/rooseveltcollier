@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 import './AlbumRow.scss';
+import Overlay from 'components/Overlay';
 import TabPanel from 'components/TabPanel';
 
 class AlbumRow extends React.Component {
@@ -27,9 +28,12 @@ class AlbumRow extends React.Component {
     return !image
       ? null
       : (
-        <div className="album-cover-container">
-          <img src={image} className="album-cover"/>
-        </div>
+        <Overlay className="album-cover-container"
+          innerClass="album-cover-wrapper"
+          image={image}
+          overlay="rgba(19, 22, 22, 0.95)">
+            <img src={image} className="album-cover"/>
+        </Overlay>
       );
   }
 
@@ -115,13 +119,14 @@ class AlbumRow extends React.Component {
   // ==========================================================================
 
   render () {
-    const { tracks, links, credits } = this.props;
+    const { id, tracks, links, credits, isFeatured } = this.props;
 
     const Info = this.renderInfo;
     const Cover = this.renderCover;
     const Links = this.renderLinks;
     const Tracks = this.renderTracks;
     const Credits = this.renderCredits;
+    const className = 'album-row ' + (isFeatured ? 'featured' : 'not-featured');
 
     const tabs = [
       { name: 'Tracklist', content: <Tracks list={tracks}/> },
@@ -129,7 +134,8 @@ class AlbumRow extends React.Component {
     ];
 
     return (
-      <div className="album-row">
+      <div className={className}>
+        <a name={id}/>
         <Cover {...this.props} />
         <div className="album-details">
           <Info {...this.props} />

@@ -2,7 +2,9 @@ import React from 'react';
 
 export default [
   {
+    isFeatured: true,
     title: 'Exit 16',
+    id: 'exit16',
     subtitle: 'Now Available',
     releaseDate: '2018-03-09',
     image: '/assets/exit-16.jpg',
@@ -42,7 +44,40 @@ export default [
     ]
   },
   {
+    title: 'Let The Steel Play',
+    id: 'letthesteelplay',
+    image: '/assets/albums/let-the-steel-play.jpg',
+    subtitle: <span>with <b>Andy Hall</b></span>,
+    releaseDate: '2017-06-16',
+    content: (
+      <div>
+        <p>Andy Hall of The Infamous Stringdusters and Roosevelt Collier of the Lee Boys have come together on a new album, Let The Steel Play, which is set for independent release June 16, 2017. Let the Steel Play was born out of a love of slide guitar, and a friendship made through music. Andy Hall and Roosevelt Collier met in 2012 on Jam Cruise, and began playing music together when their paths would cross. Both are sought after sit-in players at festivals throughout the country and known for their dexterity, versatility, and intuitive knack for picking up rhythms and melodies.</p>
+
+        <p>Coming from different backgrounds and methods, yet brought together through slide guitar, Roosevelt and Andy have joined forces to create a musical bridge that emanates a freshness, yet honors both traditions.</p>
+      </div>
+    ),
+    tracks: [
+      { title: 'This Little Light Of Mine', length: '4:51' },
+      { title: 'Maiden’s Prayer', length: '3:48' },
+      { title: 'Singing Steel', length: '4:01' },
+      { title: 'Crazy Fingers', length: '4:40' },
+      { title: 'Rosebud', length: '3:04' },
+      { title: 'Reuben’s Train', length: '3:34' },
+      { title: 'Remington', length: '3:06' },
+      { title: 'The Darkest Hour', length: '4:05' },
+      { title: 'Power In the Blood', length: '3:50' },
+      { title: 'Colfax Boogie (W/ Anders Beck)', length: '4:46' }
+    ],
+    credits: [
+      { name: 'Andy Hall', part: 'Tricone, Resonator, Guitar' },
+      { name: 'Roosevelt Collier', part: 'Lap Steel Guitar, Resonator' },
+      { name: 'Anders Beck', part: 'Resonator' },
+      { name: 'John Macy', part: 'Producer' }
+    ]
+  },
+  {
     title: 'Strange Circles',
+    id: 'strangecircles',
     subtitle: <span>with <b>Bokanté</b></span>,
     releaseDate: '2017-06-09',
     image: '/assets/strange-circles-small.jpg',
@@ -94,6 +129,7 @@ export default [
   },
   {
     title: 'The Miami Sessions',
+    id: 'themiamisessions',
     subtitle: 'Recorded live on February 7, 2017',
     image: '/assets/miami-sessions-alt.png',
     credits: [
@@ -101,6 +137,12 @@ export default [
       { name: 'Michael League', part: 'Bass' },
       { name: 'Dave "Lil Dave" Chiverton', part: 'Drums' },
       { name: 'Vaughn Henry', part: 'Organ' }
+    ],
+    links: [
+        {
+          text: 'Free Download (19.6 MB)',
+          url: '/downloads/The_Miami_Sessions_[2017].zip'
+        }
     ],
     content: (
       <div>

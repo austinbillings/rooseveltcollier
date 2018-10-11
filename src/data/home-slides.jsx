@@ -21,7 +21,12 @@ const homeSlides = [
           style={{ width: '200px' }}
         />
         <h1>Exit 16</h1>
-        <big>Debut Album <b>Available Now</b></big>
+        <big>
+          Debut Album <b>Available Now</b>
+          <br />
+          on GroundUP Music!
+          <img src="/assets/gu-logo.png" className="logo-small" />
+        </big>
         <p className="white-text"><i>“This record is a record about me,” says Roosevelt Collier.<br/>“It’s telling a story of who I am, where I’m from, and where I’m going.”</i></p>
         <button>
           Listen Now &nbsp;<Icon fa="angle-right"/>

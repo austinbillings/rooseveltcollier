@@ -8,6 +8,12 @@
     margin-bottom: -4px;
   }
 
+  .player-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
   .player-wrapper {
     width: 100%;
     box-sizing: border-box;

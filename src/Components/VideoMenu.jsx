@@ -16,7 +16,7 @@ class VideoMenu extends React.Component {
     return (
       <div className={className} key={index} onClick={() => onChoose(video, index)}>
         <div className="player-meta">
-          {video.title && <h2>{video.title}</h2>}
+          {video.title && <h3>{video.title}</h3>}
           {video.subtitle && <span className="meta-subtitle">{video.subtitle}</span>}
           {video.album && <div><small>From the album </small><h4>{video.album}</h4></div>}
           {isActive && <h5 className="watching-flag"><Icon fa="play" /> Watching</h5>}

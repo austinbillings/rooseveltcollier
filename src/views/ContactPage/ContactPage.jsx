@@ -30,12 +30,10 @@ class ContactPage extends React.Component {
         return (
             <div className="page contact-page">
               <grid className="contact-content items-center">
-                <row className="grow-0">
-                  <SectionHeading color="#0A6AA3" text="Contact" align="center" />
-                </row>
-                <row className="grow-1">
+                <SectionHeading color="#0A6AA3" text="Contact" align="left" />
+                <stack className="grow-1">
                   {contacts.map(this.renderContactItem)}
-                </row>
+                </stack>
               </grid>
             </div>
         );

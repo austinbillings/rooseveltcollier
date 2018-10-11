@@ -9,17 +9,25 @@ class Overlay extends React.Component {
   }
 
   getWrapStyle () {
-    const { image, position, size } = this.props;
+    const { image, position, size, style } = this.props;
     return {
       backgroundImage: `url(${image})`,
       backgroundPosition: position || 'center center',
-      backgroundSize: size || 'cover'
+      backgroundSize: size || 'cover',
+      ...style
     };
   }
 
   getInnerStyle () {
-    const { overlay: backgroundColor, background } = this.props;
-    return backgroundColor ? { backgroundColor } : {};
+    const { overlay: backgroundColor } = this.props;
+    const baseStyle = {
+      height: '100%',
+      width: '100%'
+    };
+
+    return backgroundColor
+      ? { backgroundColor, ...baseStyle }
+      : baseStyle;
   }
 
   render () {
