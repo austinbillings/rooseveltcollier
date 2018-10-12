@@ -17,6 +17,11 @@ const Pages = [
     url: Urls.music.index
   },
   {
+    id: 'tour',
+    name: 'Tour',
+    url: Urls.tour 
+  },
+  {
     id: 'video',
     name: 'Video',
     url: Urls.video.index

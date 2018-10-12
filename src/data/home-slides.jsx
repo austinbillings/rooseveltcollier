@@ -28,9 +28,11 @@ const homeSlides = [
           <img src="/assets/gu-logo.png" className="logo-small" />
         </big>
         <p className="white-text"><i>“This record is a record about me,” says Roosevelt Collier.<br/>“It’s telling a story of who I am, where I’m from, and where I’m going.”</i></p>
-        <button>
-          Listen Now &nbsp;<Icon fa="angle-right"/>
-        </button>
+        <a href="/music#exit16">
+          <button>
+            Listen Now &nbsp;<Icon fa="angle-right"/>
+          </button>
+        </a>
       </div>
     )
   },
@@ -48,9 +50,11 @@ const homeSlides = [
       <div>
         <h1>"The Dr." meets Creole.</h1>
         <big>Check out <b>Bokanté</b>, the world music supergroup that's breaking down musical barriers.</big>
-        <button>
-          Check out Bokante &nbsp;<Icon fa="angle-right"/>
-        </button>
+        <a href="http://www.bokante.com" target="_blank">
+          <button>
+            Check out Bokante &nbsp;<Icon fa="angle-right"/>
+          </button>
+        </a>
       </div>
     )
   },
@@ -67,9 +71,11 @@ const homeSlides = [
       <div>
         <h1>SOUL OF MIAMI</h1>
         <p style={{ maxWidth: '800px' }}>Read about why Roosevelt Collier has been Miami's premiere genre-defying blues steel guitarist for years— and how working with Snarky Puppy's Michael League has breathed life into an all-new solo project from <i>The Dr.</i> himself.</p>
-        <button>
-          Learn more <Icon fa="angle-right"/>
-        </button>
+        <a href="/about">
+          <button>
+            Learn more <Icon fa="angle-right"/>
+          </button>
+        </a>
       </div>
     )
   },
@@ -86,9 +92,11 @@ const homeSlides = [
       <div>
         <h1>On Tour</h1>
         <big>Catch <i>The Dr.</i> when he comes to your city.</big>
-        <button>
-          See Dates <Icon fa="calendar icon-right"/>
-        </button>
+        <a href="/tour">
+          <button>
+            See Dates <Icon fa="calendar icon-right"/>
+          </button>
+        </a>
       </div>
     )
   }

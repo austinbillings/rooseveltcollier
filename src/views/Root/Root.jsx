@@ -14,8 +14,10 @@ import Header from 'ui/Header';
 import Footer from 'ui/Footer';
 
 import HomePage from 'Views/HomePage';
+import TourPage from 'Views/TourPage';
 import AboutPage from 'Views/AboutPage';
 import MusicPage from 'Views/MusicPage';
+import VideoPage from 'Views/VideoPage';
 import ContactPage from 'Views/ContactPage';
 import FeatureListPage from 'Views/FeatureListPage';
 import FeatureDetailPage from 'Views/FeatureDetailPage';
@@ -37,6 +39,8 @@ class Root extends React.Component {
             <Route exact path={Urls.about.index} component={AboutPage} />
             <Route exact path={Urls.music.index} component={MusicPage} />
             <Route exact path={Urls.contact} component={ContactPage} />
+            <Route exact path={Urls.tour} component={TourPage} />
+            <Route exact path={Urls.video.index} component={VideoPage} />
             <Route exact path={Urls.features.index} component={FeatureListPage} />
             <Route exact path={Urls.features.one} history={history} component={FeatureDetailPage} />
             <Route component={NotFound}/>

@@ -15,6 +15,7 @@ const Urls = {
   video: {
     index: '/video'
   },
+  tour: '/tour',
   contact: '/contact',
   live: '/live',
   press: '/press',

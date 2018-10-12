@@ -2,6 +2,7 @@ import React from 'react';
 
 import './HomePage.scss';
 import socials from 'meta/Socials';
+import Urls from 'meta/Urls';
 
 import videos from 'data/videos';
 import features from 'data/features';
@@ -51,7 +52,9 @@ class HomePage extends React.Component {
         <SectionHeading text="Watch Now"/>
         <div className="grid">
           <VideoPanel videos={videos} max={3}>
-            <button className="btn-center">See All &nbsp; <Icon fa="angle-right"/></button>
+            <a href={Urls.video.index}>
+              <button className="btn-center">See All &nbsp; <Icon fa="angle-right"/></button>
+            </a>
           </VideoPanel>
         </div>
 

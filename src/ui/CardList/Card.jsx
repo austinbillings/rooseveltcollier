@@ -30,9 +30,11 @@ class Card extends React.Component {
         )}
         {!action || !action.text || !action.url ? null : (
           <div className="card-action">
-            <button>
-              {action.text}
-            </button>
+            <a href={action.url}>
+              <button>
+                {action.text}
+              </button>
+            </a>
           </div>
         )}
       </div>

@@ -1,0 +1,100 @@
+@import '~theme';
+
+.event-list {
+  width: 100%;
+
+  .event-row {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: transform 0.25s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+
+      .event-setting {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .event-date, .event-tickets {
+        flex-basis: auto;
+      }
+    }
+  }
+
+  .event-date {
+    flex: 0 0 120px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: $title-font;
+  }
+
+  .event-date, .event-venue, .event-city {
+    padding: 10px 0;
+  }
+
+  .event-setting {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 1.3em;
+    font-family: $title-font;
+  }
+
+  .event-venue, .event-city {
+    padding: 10px 15px;
+    flex: 1 0 auto;
+  }
+
+  .event-venue {
+    font-weight: 300;
+  }
+
+  .event-city {
+    font-weight: 700;
+    color: $light-blue;
+  }
+
+  .event-tickets {
+    button {
+      width: 100%;
+      font-size: 13px;
+      border: 1px solid fade-out($white, 0.6);
+
+      .icon {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .event-setting {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .event-setting {
+      padding: 10px;
+
+      .event-venue, .event-city {
+        padding: 0;
+      }
+    }
+  }
+}

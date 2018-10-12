@@ -19,14 +19,14 @@ const features = [
     }
   },
   {
-    title: <span>New North American Tour Dates Announced</span>,
+    title: <span>New North U.S. Tour Dates Announced</span>,
     image: {
       url: '/assets/photos/wall-distant.jpg'
     },
     accent: '#DA5234',
     content: (
       <p>
-        Roosevelt Collier is going on tour all over the U.S. and playing your favorites from the upcoming album, <b><i>Exit 16</i></b>. See where and when he's coming to a city near you.
+        Roosevelt Collier is going on tour all over the southeastern U.S., with dates also in California and New Jersey, playing your favorites from his stunning debut, <b><i>Exit 16</i></b>. See where and when he's coming to a city near you.
       </p>
     ),
     action: {
@@ -42,7 +42,7 @@ const features = [
     accent: '#302F2F',
     content: (
       <p>
-        Recorded in a
+        Recorded late at night with a full moon shining through the windows in a Miami basement. For a limited time, get an exclusive free MP3 download of this live EP.
       </p>
     ),
     action: {

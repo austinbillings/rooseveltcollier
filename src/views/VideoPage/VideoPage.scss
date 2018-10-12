@@ -1,0 +1,53 @@
+@import '~theme';
+
+.video-page {
+  min-height: calc(100vh - 110px);
+  background-image: url('/assets/background-texture.jpg');
+  background-size: cover;
+
+  .video-menu {
+    margin: 50px 0;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+    .menu-item {
+      flex: 0 0 32%;
+      margin: 0.5%;
+      background-color: $white;
+      border: 10px solid $white;
+      box-sizing: border-box;
+      padding: 10px;
+      min-height: 180px;
+      color: $black;
+
+      &.menu-item--active {
+        border: 10px solid $orange;
+      }
+
+      @media (max-width: 992px) {
+        flex-basis: 49%;
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 99%;
+      }
+
+      .meta-subtitle {
+        color: $grey;
+      }
+
+      .watching-flag {
+        color: $orange;
+        margin: 15px 0 0;
+
+        .icon {
+          font-size: 15px;
+          margin-right: 5px;
+          position: relative;
+          top: -2px;
+        }
+      }
+    }
+  }
+}

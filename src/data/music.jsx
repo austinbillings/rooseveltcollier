@@ -56,6 +56,10 @@ export default [
         <p>Coming from different backgrounds and methods, yet brought together through slide guitar, Roosevelt and Andy have joined forces to create a musical bridge that emanates a freshness, yet honors both traditions.</p>
       </div>
     ),
+    links: [
+      { text: 'Buy MP3', url: 'https://www.amazon.com/Steel-Play-Andy-Roosevelt-Collier/dp/B072N1CLHF' },
+      { text: 'Stream on Amazon Music', url: 'https://music.amazon.com/albums/B072N1CLHF' }
+    ],
     tracks: [
       { title: 'This Little Light Of Mine', length: '4:51' },
       { title: 'Maiden’s Prayer', length: '3:48' },
@@ -66,7 +70,7 @@ export default [
       { title: 'Remington', length: '3:06' },
       { title: 'The Darkest Hour', length: '4:05' },
       { title: 'Power In the Blood', length: '3:50' },
-      { title: 'Colfax Boogie (W/ Anders Beck)', length: '4:46' }
+      { title: 'Colfax Boogie', length: '4:46' }
     ],
     credits: [
       { name: 'Andy Hall', part: 'Tricone, Resonator, Guitar' },
