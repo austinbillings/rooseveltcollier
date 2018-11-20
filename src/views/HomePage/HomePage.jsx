@@ -61,7 +61,7 @@ class HomePage extends React.Component {
         {/* FEATURES SECTION */}
         <SectionHeading text="Features"/>
         <div className="grid">
-          <CardList list={features}/>
+          <CardList axis="x" list={features}/>
         </div>
       </div>
     );
