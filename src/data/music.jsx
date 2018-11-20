@@ -40,7 +40,9 @@ export default [
       { name: 'Roosevelt Collier', part: 'Lap Steel Guitar' },
       { name: 'Michael League', part: 'Bass, Producer' },
       { name: 'Bobby Sparks II', part: 'Organ' },
-      { name: 'Jason JT Thomas', part: 'Drums' }
+      { name: 'Jason JT Thomas', part: 'Drums' },
+      { name: 'Dave "Lil Dave" Chiverton', part: 'Drums' },
+      { name: 'Vaughn Henry', part: 'Organ' }
     ]
   },
   {
