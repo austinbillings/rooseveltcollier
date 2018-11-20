@@ -25,7 +25,7 @@ const About = [
     },
     heading: (
       <row className="items-end">
-        <SectionHeading text="Exit 13" align="left" color="white" />
+        <SectionHeading text="Exit 12" align="left" color="white" />
         <div>
           <button className="btn-dark">
             Listen Now <Icon fa="chevron-circle-right icon-right"/>
