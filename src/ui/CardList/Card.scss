@@ -4,6 +4,20 @@
   background-color: $black;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &.card-axis-y {
+    flex-direction: column;
+  }
+
+  &.card-axis-x {
+    flex-direction: row;
+
+    .card-image {
+      flex: 0 0 40%;
+    }
+  }
 
   .card-image {
     min-height: 350px;

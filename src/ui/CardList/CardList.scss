@@ -6,11 +6,18 @@
   width: 100%;
 
   .card {
-    flex: 1 0 calc(33% - 30px);
     margin: 15px;
 
     @media (max-width: 768px) {
       flex-basis: 100%;
+    }
+
+    &.card-axis-y {
+      flex: 1 0 calc(33% - 30px);
+    }
+
+    &.card-axis-x {
+      flex: 1 0 calc(50% - 30px);
     }
   }
 }

@@ -10,20 +10,22 @@ class CardList extends React.Component {
   }
 
   renderCard (card, index) {
-    return (
-      <Card key={index} {...card}/>
-    );
+    const { axis } = this.props;
+
+    return <Card key={index} axis={axis} {...card}/>
   }
 
   render () {
     const { list } = this.props;
+    const cards = list.map(this.renderCard);
 
-    return (
-      <div className="card-list">
-        {!list || !list.length ? null : list.map(this.renderCard)}
-      </div>
-    )
+    return <div className="card-list" children={cards} />
   }
+};
+
+CardList.defaultProps = {
+  list: [],
+  axis: 'x'
 };
 
 export default CardList;
