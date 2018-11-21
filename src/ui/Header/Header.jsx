@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialNav from 'ui/SocialNav';
+import SocialNav from 'ui/social-nav';
 
 import './Header.scss';
 import Socials from 'meta/Socials';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from 'components/Icon';
+import Icon from 'components/icon';
 
 const homeSlides = [
   {
@@ -71,6 +71,12 @@ const homeSlides = [
         <a href="http://www.bokante.com" target="_blank">
           <button>
             Check out Bokante &nbsp;<Icon fa="angle-right"/>
+          </button>
+        </a>
+        <span> &nbsp; </span>
+        <a href="http://www.bokante.com/#!/tour" target="_blank">
+          <button>
+            Tour Dates
           </button>
         </a>
       </div>

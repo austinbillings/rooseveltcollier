@@ -1,7 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
 
-import Icon from 'components/Icon';
+import Icon from 'components/icon';
 import Submit from 'components/Submit';
 
 const text = {

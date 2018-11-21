@@ -18,6 +18,7 @@ const videos = [
   },
   {
     title: 'Let The Steel Play',
+    id: 'letthesteelplay',
     subtitle: 'Roosevelt Collier & Andy Hall',
     youtubeId: 'l57tZrFl8e0'
   },

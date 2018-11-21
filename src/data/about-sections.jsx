@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Icon from 'components/Icon';
-import SectionHeading from 'ui/SectionHeading';
+import Icon from 'components/icon';
+import SectionHeading from 'ui/section-heading';
 
 const About = [
   {

@@ -74,4 +74,12 @@ export function stripLeadingSlash (urlValue) {
     : urlValue;
 };
 
+export function getQueryStringValue (queryString, paramKey) {
+  return new URLSearchParams(queryString).get(paramKey);
+};
+
+export function getCurrentQueryStringValue (paramKey) {
+  return getQueryStringValue(window.location.search, paramKey);
+};
+
 window.uid = uid;

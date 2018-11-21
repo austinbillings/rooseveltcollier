@@ -5,7 +5,7 @@ import { scrollToTop } from 'utils/Dom';
 import globals from 'meta/Globals';
 import Socials from 'meta/Socials';
 import NavMenu from 'ui/NavMenu';
-import SocialNav from 'ui/SocialNav';
+import SocialNav from 'ui/social-nav';
 import ShadowBox from 'components/ShadowBox';
 
 class Footer extends React.Component {
