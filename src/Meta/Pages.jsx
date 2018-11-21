@@ -1,4 +1,4 @@
-import Urls from './Urls';
+import Urls from './urls';
 
 const Pages = [
   {
@@ -19,7 +19,7 @@ const Pages = [
   {
     id: 'tour',
     name: 'Tour',
-    url: Urls.tour 
+    url: Urls.tour
   },
   {
     id: 'video',

@@ -1,9 +1,9 @@
 import React from 'react';
 import moment from 'moment';
 
-import './AlbumRow.scss';
-import Overlay from 'components/Overlay';
-import TabPanel from 'components/TabPanel';
+import './album-row.scss';
+import Overlay from 'components/overlay';
+import TabPanel from 'components/tab-panel';
 
 class AlbumRow extends React.Component {
   constructor (props) {

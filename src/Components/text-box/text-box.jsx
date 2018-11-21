@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './TextBox.scss';
+import './text-box.scss';
 import Icon from 'components/icon';
-import Submit from 'components/Submit';
+import Submit from 'components/submit';
 
 class TextBox extends React.Component {
   constructor (props) {

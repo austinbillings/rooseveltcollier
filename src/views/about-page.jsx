@@ -1,7 +1,7 @@
 import React from 'react';
 
 import aboutSections from 'data/about-sections';
-import AboutPane from 'ui/AboutPane';
+import AboutPane from 'ui/about-pane';
 
 class AboutPage extends React.Component {
   constructor (props) {

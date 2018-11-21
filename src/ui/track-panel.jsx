@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TrackCard from 'ui/TrackCard';
+import TrackCard from 'ui/track-card';
 
 class TrackPanel extends React.Component {
   constructor (props) {

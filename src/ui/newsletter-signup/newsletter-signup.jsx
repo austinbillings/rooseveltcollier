@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 
 import './newsletter-signup.scss';
-import TextBox from 'components/TextBox';
-import { isValidEmail } from 'utils/Validation';
+import TextBox from 'components/text-box';
+import { isValidEmail } from 'utils/validation';
 
 class NewsletterSignup extends React.Component {
   constructor (props) {

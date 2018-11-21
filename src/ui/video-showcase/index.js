@@ -1,2 +1,2 @@
-import VideoShowcase from './VideoShowcase';
+import VideoShowcase from './video-showcase';
 export default VideoShowcase;

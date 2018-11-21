@@ -1,2 +1,2 @@
-import SlidePanel from './SlidePanel';
+import SlidePanel from './slide-panel';
 export default SlidePanel;

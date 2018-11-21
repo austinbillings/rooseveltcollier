@@ -1,2 +1,2 @@
-import Audio from './Audio';
+import Audio from './audio-player';
 export default Audio;

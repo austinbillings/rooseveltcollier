@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-import './EventList.scss';
+import './event-list.scss';
 import Icon from 'components/icon';
 
 class EventList extends React.Component {

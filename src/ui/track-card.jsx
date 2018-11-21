@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Icon from 'components/icon';
-import SongLink from 'components/SongLink';
-import ShadowBox from 'components/ShadowBox';
-import Store from 'state/Store';
-import { selectSong } from 'state/Actions';
+import SongLink from 'components/song-link';
+import ShadowBox from 'components/shadow-box';
+import Store from 'state/store';
+import { selectSong } from 'state/actions';
 
 class TrackCard extends React.Component {
   constructor (props) {

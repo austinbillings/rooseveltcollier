@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Validator.scss';
+import './validator.scss';
 import Icon from 'components/icon';
-import { isValid } from 'utils/Validation';
+import { isValid } from 'utils/validation';
 
 class Validator extends React.Component {
   constructor (props) {

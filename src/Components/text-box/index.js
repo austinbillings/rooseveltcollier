@@ -1,2 +1,2 @@
-import TextBox from './TextBox';
+import TextBox from './text-box';
 export default TextBox;

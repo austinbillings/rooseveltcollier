@@ -1,8 +1,8 @@
 import React from 'react';
 
-import VideoMenu from 'components/VideoMenu';
-import VideoPlayer from 'components/VideoPlayer';
-import { autoWidth, autoFactor, colWidth, currentBreakpoint } from 'Utils/Breakpoints';
+import VideoMenu from 'components/video-menu';
+import VideoPlayer from 'components/video-player';
+import { autoWidth, autoFactor, colWidth, currentBreakpoint } from 'utils/breakpoints';
 
 class VideoGallery extends React.Component {
   constructor (props) {

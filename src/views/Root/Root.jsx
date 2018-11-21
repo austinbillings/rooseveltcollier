@@ -8,20 +8,20 @@ import {
   browserHistory as history
 } from 'react-router-dom';
 
-import './Root.scss';
-import Urls from 'meta/Urls';
-import Header from 'ui/Header';
-import Footer from 'ui/Footer';
+import './root.scss';
+import Urls from 'meta/urls';
+import Header from 'ui/header';
+import Footer from 'ui/footer';
 
-import HomePage from 'Views/HomePage';
-import TourPage from 'Views/TourPage';
-import AboutPage from 'Views/AboutPage';
-import MusicPage from 'Views/MusicPage';
-import VideoPage from 'Views/VideoPage';
-import ContactPage from 'Views/ContactPage';
-import FeatureListPage from 'Views/FeatureListPage';
-import FeatureDetailPage from 'Views/FeatureDetailPage';
-import NotFound from 'Views/NotFound';
+import NotFound from 'views/not-found';
+import HomePage from 'views/home-page';
+import TourPage from 'views/tour-page';
+import AboutPage from 'views/about-page';
+import MusicPage from 'views/music-page';
+import VideoPage from 'views/video-page';
+import ContactPage from 'views/contact-page';
+import FeatureListPage from 'views/feature-list-page';
+import FeatureDetailPage from 'views/feature-detail-page';
 
 class Root extends React.Component {
   constructor (props) {

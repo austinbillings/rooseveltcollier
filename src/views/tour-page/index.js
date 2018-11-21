@@ -1,2 +1,2 @@
-import TourPage from './TourPage';
+import TourPage from './tour-page';
 export default TourPage;

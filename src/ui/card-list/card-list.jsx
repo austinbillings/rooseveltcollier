@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './card-list.scss';
-import Card from './Card';
+import Card from './card';
 
 class CardList extends React.Component {
   constructor (props) {

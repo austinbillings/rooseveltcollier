@@ -2,11 +2,11 @@ import React from 'react';
 
 import './video-panel.scss';
 import Icon from 'components/icon';
-import ShadowBox from 'components/ShadowBox';
+import ShadowBox from 'components/shadow-box';
 
-import VideoMenu from 'components/VideoMenu';
-import VideoGallery from 'ui/VideoGallery';
-import { autoWidth, autoFactor, colWidth, currentBreakpoint } from 'Utils/Breakpoints';
+import VideoMenu from 'components/video-menu';
+import VideoGallery from 'ui/video-gallery';
+import { autoWidth, autoFactor, colWidth, currentBreakpoint } from 'utils/breakpoints';
 
 class VideoPanel extends VideoGallery {
   constructor (props) {

@@ -4,12 +4,13 @@ class Overlay extends React.Component {
   constructor (props) {
     super(props);
 
-    this.getWrapStyle = this.getWrapStyle.bind(this);
+    this.getWrapperStyle = this.getWrapperStyle.bind(this);
     this.getInnerStyle = this.getInnerStyle.bind(this);
   }
 
-  getWrapStyle () {
+  getWrapperStyle () {
     const { image, position, size, style } = this.props;
+
     return {
       backgroundImage: `url(${image})`,
       backgroundPosition: position || 'center center',
@@ -31,7 +32,7 @@ class Overlay extends React.Component {
   }
 
   render () {
-    const wrapStyle = this.getWrapStyle();
+    const wrapStyle = this.getWrapperStyle();
     const innerStyle = this.getInnerStyle();
 
     const { onClick, className: givenClassName, id, innerClass, children } = this.props;

@@ -10,19 +10,26 @@ class SectionHeading extends React.Component {
 
   render () {
     const { text, icon, children, color, align } = this.props;
+
     const styles = { box: {}, text: {}, divider: {} };
+
     if (color) {
       styles.text.color = color;
       styles.divider.borderColor = color;
     }
+
     if (align) {
       switch (align.toLowerCase()) {
         case 'left':
           styles.divider.marginLeft = 0;
-          styles.box.alignItems = 'flex-start'; break;
+          styles.box.alignItems = 'flex-start';
+          break;
+
         case 'right':
           styles.divider.marginRight = 0;
-          styles.box.alignItems = 'flex-end'; break;
+          styles.box.alignItems = 'flex-end';
+          break;
+
         case 'center':
           styles.box.alignItems = 'center';
       }

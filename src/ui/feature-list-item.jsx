@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Urls from 'meta/Urls';
-import Overlay from 'components/Overlay';
-import CardOverlay from 'components/CardOverlay';
-import ShadowBox from 'components/ShadowBox';
+import Urls from 'meta/urls';
+import Overlay from 'components/overlay';
+import CardOverlay from 'components/card-overlay';
+import ShadowBox from 'components/shadow-box';
 
 class FeatureListItem extends React.Component {
   constructor (props) {

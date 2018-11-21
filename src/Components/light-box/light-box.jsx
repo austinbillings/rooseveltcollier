@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Events from 'Utils/Events';
+import Events from 'utils/events';
 import Icon from 'components/icon';
 
 class LightBox extends React.Component {

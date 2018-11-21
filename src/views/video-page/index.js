@@ -1,3 +1,3 @@
-import VideoPage from './VideoPage';
+import VideoPage from './video-page';
 
 export default VideoPage;

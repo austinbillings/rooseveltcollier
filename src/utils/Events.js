@@ -1,5 +1,6 @@
-import KeyCodes from 'Utils/KeyCodes';
-const idPrefix = 'listener_';
+import KeyCodes from 'utils/key-codes';
+
+const ID_PREFIX = 'listener_';
 
 const Events = {
   listenerStore: [],
@@ -7,10 +8,10 @@ const Events = {
     let signature = [ event, callback ];
     let length = Events.listenerStore.push(signature);
     window.addEventListener(event, callback);
-    return idPrefix + (--length);
+    return ID_PREFIX + (--length);
   },
   remove: (id) => {
-    const offset = idPrefix.length;
+    const offset = ID_PREFIX.length;
     let index = parseInt(id.substring(offset));
     let [ event, callback ] = Events.listenerStore[index];
     window.removeEventListener(event, callback);

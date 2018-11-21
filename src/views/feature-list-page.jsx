@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FeatureListItem from 'ui/FeatureListItem';
+import FeatureListItem from 'ui/feature-list-item';
 import SectionHeading from 'ui/section-heading';
 // import Features from 'content/features';
 

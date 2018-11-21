@@ -1,2 +1,2 @@
-import MusicPage from './MusicPage';
+import MusicPage from './music-page';
 export default MusicPage;

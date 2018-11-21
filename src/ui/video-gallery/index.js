@@ -1,2 +1,2 @@
-import VideoGallery from './VideoGallery';
+import VideoGallery from './video-gallery';
 export default VideoGallery;

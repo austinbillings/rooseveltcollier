@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './TabPanel.scss';
+import './tab-panel.scss';
 
 class TabPanel extends React.Component {
   constructor (props) {

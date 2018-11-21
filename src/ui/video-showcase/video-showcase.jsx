@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { scrollTo } from 'utils/Dom';
-import VideoGallery from 'ui/VideoGallery';
-import VideoMenu from 'components/VideoMenu';
+import { scrollTo } from 'utils/dom';
+import VideoGallery from 'ui/video-gallery';
+import VideoMenu from 'components/video-menu';
 
 class VideoShowcase extends VideoGallery {
   constructor (props) {

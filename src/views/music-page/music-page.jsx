@@ -1,20 +1,14 @@
 import React from 'react';
 
-import './MusicPage.scss';
+import './music-page.scss';
 import music from 'data/music';
 
 import SectionHeading from 'ui/section-heading';
-import AlbumRow from 'ui/AlbumRow';
+import AlbumRow from 'ui/album-row';
 
 class MusicPage extends React.Component {
   constructor (props) {
     super(props);
-  }
-
-  renderMusicCard (release) {
-    return (
-      <div>{release.title}</div>
-    )
   }
 
   render () {
@@ -23,9 +17,7 @@ class MusicPage extends React.Component {
         <grid>
           <SectionHeading color="white" text="Music" align="right" />
           <row>
-            {music.map((release, index) =>
-              <AlbumRow key={index} {...release}/>
-            )}
+            {music.map((release, index) => <AlbumRow key={index} {...release}/>)}
           </row>
         </grid>
       </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './Footer.scss';
-import { scrollToTop } from 'utils/Dom';
-import globals from 'meta/Globals';
-import Socials from 'meta/Socials';
-import NavMenu from 'ui/NavMenu';
+import './footer.scss';
+import { scrollToTop } from 'utils/dom';
+import globals from 'meta/globals';
+import Socials from 'meta/socials';
+import NavMenu from 'ui/nav-menu';
 import SocialNav from 'ui/social-nav';
-import ShadowBox from 'components/ShadowBox';
+import ShadowBox from 'components/shadow-box';
 
 class Footer extends React.Component {
   constructor (props) {

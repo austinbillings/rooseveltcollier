@@ -1,8 +1,9 @@
 import React from 'react';
 
-import './SlidePanel.scss';
+import './slide-panel.scss';
+
 import Icon from 'components/icon';
-import { keylightGradient } from 'utils/Css';
+import { keylightGradient } from 'utils/css';
 
 class SlidePanel extends React.Component {
   constructor (props) {

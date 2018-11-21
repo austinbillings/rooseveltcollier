@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './HomePage.scss';
-import socials from 'meta/Socials';
-import Urls from 'meta/Urls';
+import './home-page.scss';
+import socials from 'meta/socials';
+import Urls from 'meta/urls';
 
 import videos from 'data/videos';
 import features from 'data/features';

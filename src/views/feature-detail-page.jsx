@@ -2,10 +2,10 @@ import React from 'react';
 
 // import Features from 'Content/Features';
 import SectionHeading from 'ui/section-heading';
-import CardOverlay from 'components/CardOverlay';
+import CardOverlay from 'components/card-overlay';
 import Icon from 'components/icon';
-import ShadowBox from 'components/ShadowBox';
-import Overlay from 'components/Overlay';
+import ShadowBox from 'components/shadow-box';
+import Overlay from 'components/overlay';
 
 class FeatureDetailPage extends React.Component {
   constructor (props) {

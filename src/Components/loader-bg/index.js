@@ -1,2 +1,2 @@
-import LoaderBg from './LoaderBg';
+import LoaderBg from './loader-bg';
 export default LoaderBg;

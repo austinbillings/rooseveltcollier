@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './VideoPage.scss';
+import './video-page.scss';
 import videos from 'data/videos';
 import Icon from 'components/icon';
-import VideoShowcase from 'ui/VideoShowcase';
+import VideoShowcase from 'ui/video-showcase';
 import { getCurrentQueryStringValue } from 'utils/utils';
 
 class VideoPage extends React.Component {

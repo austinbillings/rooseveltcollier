@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Audio from './Audio';
-import { scrollToTop } from 'Utils/Utils';
+import AudioPlayer from './audio-player';
+import { scrollToTop } from 'utils/utils';
 
 class Player extends React.Component {
   constructor (props) {
@@ -37,7 +37,7 @@ class Player extends React.Component {
           {false && song && <span> - </span>}
           <span className="Player-Meta-Title">{song ? song.title : ''}</span>
         </div>
-        <Audio className="Player-Audio" src={this.state.source} />
+        <AudioPlayer className="Player-Audio" src={this.state.source} />
       </player>
     );
   }

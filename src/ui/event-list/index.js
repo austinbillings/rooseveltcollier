@@ -1,2 +1,2 @@
-import EventList from './EventList';
+import EventList from './event-list';
 export default EventList;

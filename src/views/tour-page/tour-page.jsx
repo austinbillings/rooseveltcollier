@@ -1,7 +1,7 @@
 import React from 'react';
 
 import tourDates from 'data/tour-dates';
-import EventList from 'ui/EventList';
+import EventList from 'ui/event-list';
 import SectionHeading from 'ui/section-heading';
 
 class TourPage extends React.Component {

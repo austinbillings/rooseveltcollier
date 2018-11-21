@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Urls from 'meta/Urls';
+import Urls from 'meta/urls';
 import Icon from 'components/icon';
 
 class NotFound extends React.Component {

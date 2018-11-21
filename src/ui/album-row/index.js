@@ -1,2 +1,2 @@
-import AlbumRow from './AlbumRow';
+import AlbumRow from './album-row';
 export default AlbumRow;

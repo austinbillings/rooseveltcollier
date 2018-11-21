@@ -2,7 +2,7 @@ import React from 'react';
 
 import './social-nav.scss';
 import IconMenu from 'components/icon-menu';
-import SocialUtils from 'Utils/SocialUtils';
+import SocialUtils from 'utils/social-utils';
 
 class SocialNav extends React.Component {
   constructor (props) {

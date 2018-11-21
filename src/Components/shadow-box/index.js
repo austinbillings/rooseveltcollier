@@ -1,2 +1,2 @@
-import ShadowBox from './ShadowBox';
+import ShadowBox from './shadow-box';
 export default ShadowBox;

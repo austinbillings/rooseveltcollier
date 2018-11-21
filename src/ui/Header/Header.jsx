@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialNav from 'ui/social-nav';
 
-import './Header.scss';
-import Socials from 'meta/Socials';
-import Urls from 'meta/Urls';
-import NavMenu from 'ui/NavMenu';
+
+import './header.scss';
+import Urls from 'meta/urls';
+import Socials from 'meta/socials';
+import NavMenu from 'ui/nav-menu';
+import SocialNav from 'ui/social-nav';
 
 class Header extends React.Component {
   constructor (props) {

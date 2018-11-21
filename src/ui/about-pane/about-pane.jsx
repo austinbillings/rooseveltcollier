@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './AboutPane.scss';
-import Overlay from 'components/Overlay';
+import './about-pane.scss';
+import Overlay from 'components/overlay';
 
 class AboutPane extends React.Component {
   constructor (props) {

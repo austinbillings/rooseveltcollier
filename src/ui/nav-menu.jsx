@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Pages from 'meta/Pages';
+import Pages from 'meta/pages';
 
 class NavMenu extends React.Component {
   constructor (props) {
