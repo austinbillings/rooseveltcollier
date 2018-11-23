@@ -93,8 +93,16 @@ class Subscribe extends React.Component {
             <Icon fa="chevron-right" />
           </Submit>
 
-          {success && <span className="bloc p10 success-text blue">{success} <Icon fa="check-circle success-icon ml5" /></span>}
-          {error && <span className="bloc p10 error-text red">{error} <Icon fa="warning error-icon ml5" /></span>}
+          {!success ? null : (
+            <span className="bloc p10 success-text blue">
+              {success} <Icon fa="check-circle success-icon ml5" />
+            </span>
+          }
+          {!error ? null : (
+            <span className="bloc p10 error-text red">
+              {error} <Icon fa="warning error-icon ml5" />
+            </span>
+          }
 
         </form>
       </div>
