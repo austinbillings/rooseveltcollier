@@ -20,6 +20,10 @@ header.header {
         opacity: 1;
       }
     }
+
+    @media (max-width: 432px) {
+      margin-top: 10px;
+    }
   }
 
   img.logo {
