@@ -1,25 +1,33 @@
 .contact-page {
+  .section-heading {
+    flex: 0 0 auto;
+  }
+
   .contact-content {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding: 0 10px;
     min-height: calc(100vh - 110px);
   }
 
   .contact-item {
     flex-direction: column;
     margin-bottom: 10vh;
+    max-width: 100%;
 
     box {
       padding: 20px;
     }
 
     .contact-type {
-      height: 100px;
+      min-height: 100px;
+      margin-bottom: 10px;
     }
 
     .contact-info {
       margin: 0;
+      max-width: 100%;
       word-wrap: break-word;
 
       tel, a {
@@ -31,6 +39,16 @@
         font-weight: bold;
         word-wrap: break-word;
         margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .contact-type {
+        font-size: 15px;
+      }
+
+      h1,h2,h3,h4,h5,h6,big,p,a {
+        max-width: calc(90vw - 20px);
       }
     }
   }

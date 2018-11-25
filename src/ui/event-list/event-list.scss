@@ -22,6 +22,28 @@
       background-color: rgba(0, 0, 0, 0.9);
     }
 
+    &.event-row-passed {
+      opacity: 0.75;
+      pointer-events: none;
+      border: 1px solid $orange;
+
+      .event-date {
+        color: $orange;
+      }
+    }
+
+    transition: all 0.25s;
+
+    &.event-row-collapsed {
+      max-height: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: relative;
+      box-sizing: border-box;
+      margin-bottom: -1px;
+      margin-top: -1px;
+    }
+
     @media (max-width: 992px) {
       flex-direction: column;
 
@@ -78,6 +100,26 @@
       .icon {
         margin-left: 10px;
       }
+    }
+  }
+
+  .past-events-toggle {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background 0.25s;
+
+    &:hover {
+      color: $orange;
+      background-color: fade-out(black, 0.3);
+    }
+
+    .icon {
+      margin-left: 5px;
     }
   }
 

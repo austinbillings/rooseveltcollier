@@ -11,25 +11,24 @@ class VideoPage extends React.Component {
     super(props);
 
     this.state = {
-      requestedVideo: null
+      targetVideo: null
     };
 
     this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentDidMount () {
-    const video = getCurrentQueryStringValue('video');
+    const video = getCurrentQueryStringValue('vid');
 
-    this.setState({ requestedVideo: video });
+    this.setState({ targetVideo: video });
   }
 
   render () {
-    const { requestedVideo } = this.state;
-    console.info('rv: ', requestedVideo);
+    const { targetVideo } = this.state;
 
     return (
       <div className="video-page">
-          <VideoShowcase videos={videos} max={3} requestedVideo={requestedVideo} />
+          <VideoShowcase videos={videos} max={3} targetVideo={targetVideo} />
       </div>
     );
   }

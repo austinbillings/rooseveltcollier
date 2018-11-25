@@ -10,6 +10,10 @@ export default [
     image: '/assets/exit-16.jpg',
     links: [
       {
+        text: 'Listen on Spotify',
+        url: 'https://open.spotify.com/album/02n4Aj3cImlUQe70gdTX43?si=OPlEWL9dTd61VposlFrc6A'
+      },
+      {
         text: 'Buy MP3',
         url: 'https://store.groundupmusic.net/collections/roosevelt-collier/products/exit-16-mp3-download'
       },
@@ -24,7 +28,7 @@ export default [
     ],
     content: (
       <div>
-        <blockquote>“My mission is touch and heal people through music [...] That’s always been my mission, whether it’s in the church or in a club. I think people feel better about themselves after I play. That’s powerful, my man! I’ve been blessed to have that going for me. That’s my gift.”</blockquote>
+        <blockquote>“My mission is to touch and heal people through music [...] That’s always been my mission, whether it’s in the church or in a club. I think people feel better about themselves after I play. That’s powerful, my man! I’ve been blessed to have that going for me. That’s my gift.”</blockquote>
       </div>
     ),
     tracks: [
@@ -125,11 +129,11 @@ export default [
       },
       {
         text: 'Buy CD',
-        url: 'https://store.groundupmusic.net/collections/bokante/products/strange-circles-cd'
+        url: 'https://store.groundupmusic.net/collections/bokante/products/strange-circles'
       },
       {
         text: 'Buy MP3',
-        url: 'https://store.groundupmusic.net/collections/bokante/products/strange-circles-mp3'
+        url: 'https://store.groundupmusic.net/collections/bokante/products/strange-circles-mp3-download'
       }
     ]
   },

@@ -19,6 +19,16 @@
     }
   }
 
+  @media (max-width: 1199px) {
+    &.card-axis-x {
+      flex-wrap: wrap;
+    }
+
+    &.card-axis-x .card-image {
+      flex-basis: 100%;
+    }
+  }
+
   .card-image {
     min-height: 350px;
     background-size: cover;

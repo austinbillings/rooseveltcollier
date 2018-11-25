@@ -54,12 +54,20 @@ header.header {
     a.item {
       text-transform: uppercase;
       color: $white;
+
       &:hover {
         color: $light-blue;
       }
+
       &.active {
         font-weight: 800;
         color: $orange;
+      }
+
+      @media (max-width: 600px) {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0 5px;
       }
     }
   }

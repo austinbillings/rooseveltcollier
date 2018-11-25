@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Icon from 'components/icon';
+import LinkButton from 'components/link-button';
 import SectionHeading from 'ui/section-heading';
 
 const About = [
@@ -27,12 +28,12 @@ const About = [
       <row className="items-end">
         <SectionHeading text="Exit 16" align="left" color="white" />
         <div>
-          <button className="btn-dark">
-            Listen Now <Icon fa="chevron-circle-right icon-right"/>
-          </button>
-          <button className="btn-dark">
-            Buy <Icon fa="chevron-circle-right icon-right"/>
-          </button>
+          <LinkButton className="btn-dark" href="https://open.spotify.com/album/02n4Aj3cImlUQe70gdTX43?si=OPlEWL9dTd61VposlFrc6A">
+              Listen Now <Icon fa="chevron-circle-right icon-right"/>
+          </LinkButton>
+          <LinkButton className="btn-dark" href="https://store.groundupmusic.net/collections/bokante/products/strange-circles-mp3-download">
+              Buy <Icon fa="chevron-circle-right icon-right"/>
+          </LinkButton>
         </div>
       </row>
     ),

@@ -154,6 +154,10 @@
       font-weight: 500;
       opacity: 0.25;
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   .album-credits {
@@ -174,6 +178,10 @@
       font-size: 0.8em;
       font-weight: 500;
       opacity: 0.25;
+    }
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 }

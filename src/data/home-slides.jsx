@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from 'components/icon';
+import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
@@ -9,7 +10,7 @@ const homeSlides = [
     accent: 'rgba(219,66,25,1)',
     slideClass: 'slide-light',
     background: {
-      image: '/assets/photos/wall-tq.jpg',
+      image: '/assets/photos/wall-tq-altered.jpg',
       position: '90% 25%'
     },
     content: (
@@ -25,24 +26,24 @@ const homeSlides = [
           Debut Album <b>Available Now</b>
           <br />
           on GroundUP Music!
-          <img src="/assets/gu-logo.png" className="logo-small" />
+          <div className="logo-gu-small" />
         </big>
         <p>
           Produced by Snarky Puppy’s Michael League.
         </p>
-        <p className="white-text"><i>“This record is a record about me,” says Roosevelt Collier.<br/>“It’s telling a story of who I am, where I’m from, and where I’m going.”</i></p>
+        <p className="white-text">
+          <i>“This record is a record about me,” says Roosevelt Collier.<br/>“It’s telling a story of who I am, where I’m from, and where I’m going.”</i>
+        </p>
         <div className="row wrap">
-          <a href="/music#exit16">
-            <button>
-              Listen Now &nbsp;<Icon fa="angle-right"/>
-            </button>
-          </a>
+          <LinkButton href="/music#exit16">
+            Listen Now &nbsp;<Icon fa="angle-right"/>
+          </LinkButton>
+
           <span> &nbsp; </span>
-          <a href="/video">
-            <button>
-              Watch Now &nbsp;<Icon fa="angle-right"/>
-            </button>
-          </a>
+
+          <LinkButton href="/video">
+            Watch Now &nbsp;<Icon fa="angle-right"/>
+          </LinkButton>
         </div>
       </div>
     )
@@ -54,31 +55,29 @@ const homeSlides = [
     linkTo: '/music/bokante',
     accent: 'rgba(8, 72, 113, 1)',
     background: {
-      position: '77% 40%',
+      position: '77% 25%',
       image: '/assets/photos/bokante-group.jpg'
     },
     content: (
       <div>
         <h1>"The Dr." meets Creole.</h1>
 
-        <p style={{ maxWidth: '500px' }}>
+        <p style={{ width: '500px' }}>
           <i>File under</i>: world-music-blended polyrhythmic rocking soul.
         </p>
-        <p style={{ maxWidth: '500px' }}>
+        <p style={{ width: '500px' }}>
           Roosevelt is a founding member of <b>Bokante</b>, the world music supergroup that's breaking down musical barriers.
         </p>
 
-        <a href="http://www.bokante.com" target="_blank">
-          <button>
-            Check out Bokante &nbsp;<Icon fa="angle-right"/>
-          </button>
-        </a>
+        <LinkButton href="http://www.bokante.com">
+          Check out Bokante &nbsp;<Icon fa="angle-right"/>
+        </LinkButton>
+
         <span> &nbsp; </span>
-        <a href="http://www.bokante.com/#!/tour" target="_blank">
-          <button>
-            Tour Dates
-          </button>
-        </a>
+
+        <LinkButton href="http://www.bokante.com/#!/tour">
+          Tour Dates &nbsp;<Icon fa="calendar"/>
+        </LinkButton>
       </div>
     )
   },
@@ -88,46 +87,78 @@ const homeSlides = [
     linkTo: '/music#letthesteelplay',
     background: {
       image: '/assets/photos/with-andy-hall.jpg',
-      position: '27% 40%'
+      position: '27% 10%'
     },
     accent: 'rgba(61, 61, 61, 0.8)',
     content: (
       <div>
         <h1>Let The Steel play</h1>
-        <p style={{ maxWidth: '500px' }}>
+        <p style={{ width: '500px' }}>
           <i>Sacred Steel</i> meets bluegrass in this exploration of the Slide Guitar featuring Roosevelt & the Infamous StringDusters&apos; own <b>Andy Hall</b>.
         </p>
-        <a href="/music#letthesteelplay">
-          <button>
-            Listen now <Icon fa="angle-right"/>
-          </button>
-        </a>
-        <a href="/video#letthesteelplay">
-          <button>
-            Watch now <Icon fa="angle-right"/>
-          </button>
-        </a>
+
+        <LinkButton href="/music#letthesteelplay">
+          Listen now <Icon fa="angle-right"/>
+        </LinkButton>
+
+        <span> &nbsp; </span>
+
+        <LinkButton href="/video#letthesteelplay">
+          Watch now <Icon fa="angle-right"/>
+        </LinkButton>
       </div>
     )
   },
   {
-    id: 'on-tour',
-    title: 'On Tour',
+    id: 'live-at-montreaux',
+    title: 'Live at Montreaux',
     linkTo: '/music/bokante',
-    accent: 'rgba(147, 32, 49, 1)',
+    accent: 'rgba(211,131,60, 0.75)',
     background: {
-      image: '/assets/photos/live.jpg',
-      position: '50% center'
+      image: '/assets/photos/live-at-montreaux.jpg',
+      position: '45% 40%'
     },
     content: (
       <div>
-        <h1>On Tour</h1>
-        <big>Catch <i>The Dr.</i> when he comes to your city.</big>
-        <a href="/tour">
-          <button>
-            See Dates <Icon fa="calendar icon-right"/>
-          </button>
-        </a>
+        <h1>Live At Montreaux</h1>
+        <big>Watch the exclusive live set now!</big>
+        <p>
+          Roosevelt’s touring bands vary from three-piece to four-piece and the RCB is always on tour. The day after Roosevelt's debut at Montreaux, the Festival team asked to record a session live at the "House of Jazz" on the balcony.
+        </p>
+
+        <LinkButton href="/video?vid=liveatmontreaux">
+          Watch Now &nbsp;<Icon fa="play"/>
+        </LinkButton>
+
+        <span> &nbsp; </span>
+
+        <LinkButton href="/video?vid=liveatpastestudios">
+          Watch RCB Live at Paste Studios &nbsp;<Icon fa="play"/>
+        </LinkButton>
+      </div>
+    )
+  },
+  {
+    id: 'sacred-steel',
+    title: 'Sacred Steel',
+    linkTo: '/about',
+    accent: 'rgba(147, 32, 49, 1)',
+    background: {
+      image: '/assets/photos/live.jpg',
+      position: '50% 40%'
+    },
+    content: (
+      <div>
+        <h1>Sacred Steel</h1>
+        <big>Faith runs deep.</big>
+        <p>
+          Roosevelt came up through the church, it’s in his blood, and deeply intertwined in his family roots.
+          <br />
+          From his grandfather Rev. Robert E. Lee, uncles Alvin, Keith, and Derrick Lee and cousins Earl Walker and Alvin Cordy, all of <b>The Lee Boys</b> fame, all paths lead back to Church.
+        </p>
+        <LinkButton href="/about">
+          Learn more <Icon fa="angle-right"/>
+        </LinkButton>
       </div>
     )
   }

@@ -39,8 +39,8 @@ class HomePage extends React.Component {
             </div>
             <div className="xs-12 lg-7 text-center">
               <p className="newsletter-signup-caption">
-                <Nobr className="orange-text">Be the first to get updates </Nobr>
-                <Nobr>about Roosevelt Collier’s releases, tours, and more.</Nobr>
+                <span className="orange-text">Be the first to get updates </span>
+                <span>about Roosevelt Collier’s releases, tours, and more.</span>
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ class HomePage extends React.Component {
         <div className="grid">
           <VideoPanel videos={videos} max={3}>
             <a href={Urls.video.index}>
-              <button className="btn-center">See All &nbsp; <Icon fa="angle-right"/></button>
+              <button className="btn-center">See More &nbsp; <Icon fa="angle-right"/></button>
             </a>
           </VideoPanel>
         </div>

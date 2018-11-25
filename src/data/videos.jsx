@@ -12,6 +12,12 @@ const videos = [
     youtubeId: 'nalfI4P-bkg'
   },
   {
+    title: 'Live at Montreaux',
+    id: 'liveatmontreaux',
+    subtitle: 'with the Roosevelt Collier Band',
+    youtubeId: 'Vg7likJhXIM'
+  },
+  {
     title: 'Spike',
     subtitle: 'Official Music Video',
     youtubeId: '9_8JZL1lBmw'
@@ -21,6 +27,12 @@ const videos = [
     id: 'letthesteelplay',
     subtitle: 'Roosevelt Collier & Andy Hall',
     youtubeId: 'l57tZrFl8e0'
+  },
+  {
+    title: 'Live at Paste Studios',
+    id: 'liveatpastestudios',
+    subtitle: 'with the Roosevelt Collier Band',
+    youtubeId: 'G-2W_HO8BPg'
   },
   {
     title: 'Exit 16',

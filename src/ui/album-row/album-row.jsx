@@ -4,6 +4,7 @@ import moment from 'moment';
 import './album-row.scss';
 import Overlay from 'components/overlay';
 import TabPanel from 'components/tab-panel';
+import LinkButton from 'components/link-button';
 
 class AlbumRow extends React.Component {
   constructor (props) {
@@ -65,11 +66,9 @@ class AlbumRow extends React.Component {
 
   renderLinkButton ({ url, text }, index) {
     return !url || !text ? null : (
-      <a href={url} key={index} target="_blank" className="album-link">
-        <button className="album-link-button btn-blue">
-          {text}
-        </button>
-      </a>
+      <LinkButton href={url} key={index} className="album-link-button btn-blue" linkClassName="album-link">
+        {text}
+      </LinkButton>
     );
   }
 
