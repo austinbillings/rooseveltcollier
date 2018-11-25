@@ -13,6 +13,10 @@
   font-weight: 300;
   font-size: 1.35em;
 
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+
   .about-content-heading {
     button {
       margin-left: 10px;
