@@ -14,10 +14,24 @@ class LinkButton extends React.Component {
     const target = isExternalLink && !replace
       ? '_blank'
       : '_self';
+    const rel = isExternalLink
+      ? 'external noopener noreferrer nofollow'
+      : '';
+    const linkProps = {
+      rel,
+      target,
+      href: href || '#',
+      className: 'link-button ' + (linkClassName || '')
+    };
+    const buttonProps = {
+      className: className || '',
+      onClick: clickHandler,
+      children
+    };
 
     return (
-      <a href={href || '#'} target={target} className={'link-button ' + (linkClassName || '')}>
-        <button className={className || ''} onClick={clickHandler} children={children} />
+      <a {...linkProps}>
+        <button {...buttonProps} />
       </a>
     );
   }
