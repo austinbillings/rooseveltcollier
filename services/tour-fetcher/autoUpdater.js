@@ -11,9 +11,14 @@ module.exports = function tourDateAutoUpdater () {
         const nextRun = new Date(Date.now() + cacheExpiration);
 
         fetchAndCacheTourData()
-            .then(() => zaq.ok(`Auto-updater ran successfully.`))
-            .catch(() => zaq.err(`Auto-updater failed!`))
-            .finally(() => zaq.info(`Next run at ${nextRun}.`))
+            .then(() => {
+                zaq.ok(`Auto-updater ran successfully.`);
+                zaq.info(`Next run at ${nextRun}.`);
+            })
+            .catch(() => {
+                zaq.err(`Auto-updater failed!`);
+                zaq.info(`Next run at ${nextRun}.`);
+            });
     }
 
     runUpdater();
