@@ -1,4 +1,4 @@
-const zaq = require('zaq');
+const zaq = require('zaq').as('RVC Services');
 const path = require('path');
 const cors = require('cors');
 const express = require('express');

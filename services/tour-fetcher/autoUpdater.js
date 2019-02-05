@@ -1,6 +1,7 @@
 const zaq = require('zaq').as('tourDateAutoUpdater')
 
 const { cacheExpiration } = require('./config');
+const { formatDate } = require('../utils/date-utils');
 const fetchAndCacheTourData = require('./fetchAndCacheTourData');
 
 module.exports = function tourDateAutoUpdater () {
@@ -8,16 +9,16 @@ module.exports = function tourDateAutoUpdater () {
 
     const runUpdater = () => {
         zaq.info('Auto-updater running now.');
-        const nextRun = new Date(Date.now() + cacheExpiration);
+        const nextRun = formatDate(Date.now() + cacheExpiration);
 
         fetchAndCacheTourData()
             .then(() => {
                 zaq.ok(`Auto-updater ran successfully.`);
-                zaq.info(`Next run at ${nextRun}.`);
+                zaq.time(`Next run at ⏰ ${nextRun}.`);
             })
-            .catch(() => {
-                zaq.err(`Auto-updater failed!`);
-                zaq.info(`Next run at ${nextRun}.`);
+            .catch((err) => {
+                zaq.err(`Auto-updater failed!`, err);
+                zaq.time(`Next run at ⏰ ${nextRun}.`);
             });
     }
 
