@@ -1,4 +1,4 @@
-const Cloq = require('cloq');
+// const Cloq = require('cloq');
 const { isFunction, isNumber, isNonEmptyArray, isNonEmptyString } = require('../utils/type-utils');
 
 function runAtIntervals (callback, intervals) {
