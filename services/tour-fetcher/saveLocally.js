@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const zaq = require('zaq').as('saveLocally');
 const { isString, isFunction, isDefined } = require('../utils/type-utils');
+const { ensureParentDirExists } = require('../utils/file-utils');
 
 module.exports = function saveLocally (data, filePath, validator) {
     return new Promise((resolve, reject) => {
@@ -22,6 +23,8 @@ module.exports = function saveLocally (data, filePath, validator) {
         }
 
         const jsonData = JSON.stringify(data, null, '  ');
+
+		ensureParentDirExists(filePath);
 
         fs.writeFile(filePath, jsonData, err => {
             if (err) return reject(err)

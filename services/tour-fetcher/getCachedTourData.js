@@ -1,6 +1,7 @@
 const fs = require('fs');
 const zaq = require('zaq').as('getCachedTourData');
 
+const { fileExists } = require('../utils/file-utils');
 const { isString } = require('../utils/type-utils');
 const { cacheExpiration, tourFilePath } = require('./config');
 const fetchAndCacheTourData = require('./fetchAndCacheTourData');
@@ -24,7 +25,7 @@ module.exports = function getCachedTourData() {
             return resolve(memCache.data);
         }
 
-        if (fs.existsSync(tourFilePath)) {
+        if (fileExists(tourFilePath)) {
             zaq.info('Fetching local tour data from file...');
 
             return fs.readFile(tourFilePath, 'utf-8', (err, data) => {

@@ -8,7 +8,8 @@
     "build": "npm run clean && npm run compile",
     "wds": "webpack-dev-server --content-base . --hot --inline",
     "dev": "atom . && npm run wds",
-    "start": "node services/index.js"
+    "start": "xvfb-run -a node services/index.js",
+    "update-tour": "xvfb-run -a node services/tour-fetcher/invoke.js"
   },
   "main": "index.html",
   "license": "MIT",

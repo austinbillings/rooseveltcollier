@@ -2,6 +2,7 @@ const nightmare = require('nightmare')();
 const zaq = require('zaq').as('fetchArtistData');
 
 module.exports = function fetchArtistData (artistId) {
+zaq.info('Fetching artist data...');
     return new Promise((resolve, reject) => {
         if (!artistId) {
             throw new TypeError('scrapeArtistDates: invalid artistId given');
