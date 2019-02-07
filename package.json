@@ -8,10 +8,10 @@
     "build": "npm run clean && npm run compile",
     "wds": "webpack-dev-server --content-base . --hot --inline",
     "dev": "atom . && npm run wds",
-    "start": "xvfb-run -a node services/index.js",
-    "update-tour": "xvfb-run -a node services/tour-fetcher/invoke.js",
-    "start:dev": "node services/index.js",
-    "update-tour:dev": "node services/tour-fetcher/invoke.js"
+    "start:alt": "xvfb-run -a node services/index.js",
+    "update-tour:alt": "xvfb-run -a node services/tour-fetcher/invoke.js",
+    "start": "node services/index.js",
+    "update-tour": "node services/tour-fetcher/invoke.js"
   },
   "main": "index.html",
   "license": "MIT",
@@ -49,6 +49,7 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.6.0",
     "webpack-dev-server": "^2.4.5",
+    "xvfb": "^0.2.3",
     "xx": "https://github.com/austinbillings/xx.git",
     "zaq": "^2.1.2"
   }

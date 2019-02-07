@@ -1,8 +1,13 @@
 const nightmare = require('nightmare')();
 const zaq = require('zaq').as('fetchArtistData');
+const Xvfb = require('xvfb');
+
+const USE_XVFB = process.platform === 'linux';
+const xvfb = USE_XVFB ? new Xvfb() : null;
 
 module.exports = function fetchArtistData (artistId) {
-zaq.info('Fetching artist data...');
+    zaq.info('Fetching artist data...');
+
     return new Promise((resolve, reject) => {
         if (!artistId) {
             throw new TypeError('scrapeArtistDates: invalid artistId given');
@@ -13,6 +18,8 @@ zaq.info('Fetching artist data...');
         zaq.info(`Navigating to ${artistProfileUrl}...`);
 
         const info = text => zaq.info(text);
+
+        if (USE_XVFB) xvfb.startSync();
 
         nightmare
             .goto(artistProfileUrl)
@@ -33,7 +40,13 @@ zaq.info('Fetching artist data...');
                 return output;
             })
             .end()
-            .then(resolve)
-            .catch(reject);
+            .then(data => {
+                resolve(data);
+                if (USE_XVFB) xvfb.stopSync();
+            })
+            .catch(err => {
+                reject(err);
+                if (USE_XVFB) xvfb.stopSync();
+            });
     });
 }
