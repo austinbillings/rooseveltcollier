@@ -1,7 +1,9 @@
 const zaq = require('zaq').as('tourDateAutoUpdater')
 
+const RUN_ON_THE_HOUR = true;
 const { cacheExpiration } = require('./config');
 const { formatDate } = require('../utils/date-utils');
+const { runEveryHour, getMsUntilNextHour } = require('../utils/timing-utils');
 const fetchAndCacheTourData = require('./fetchAndCacheTourData');
 
 module.exports = function tourDateAutoUpdater () {
@@ -9,7 +11,7 @@ module.exports = function tourDateAutoUpdater () {
 
     const runUpdater = () => {
         zaq.info('Auto-updater running now.');
-        const nextRun = formatDate(Date.now() + cacheExpiration);
+        const nextRun = formatDate(Date.now() + getMsUntilNextHour());
 
         fetchAndCacheTourData()
             .then(() => {
@@ -23,5 +25,5 @@ module.exports = function tourDateAutoUpdater () {
     }
 
     runUpdater();
-    setInterval(runUpdater, cacheExpiration);
+    runEveryHour(runUpdater);
 }
