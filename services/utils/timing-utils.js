@@ -47,7 +47,7 @@ function runWithTimeoutChain (callback, timeout) {
 function getMsUntilNextHour () {
     const currentMinute = (new Date()).getMinutes();
     const currentSecond = (new Date()).getSeconds();
-    const secondsLeftInMinute = 60 - currentSecond;
+    const secondsLeftInMinute = 60 - currentSecond + 1;
     const minutesLeftInHour = 60 - currentMinute;
     return (minutesLeftInHour * 60 * 1000) - (secondsLeftInMinute * 1000);
 }
