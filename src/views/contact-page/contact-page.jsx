@@ -13,7 +13,7 @@ class ContactPage extends React.Component {
 
   renderContactItem ({ type, name, email, phone }) {
     return (
-      <box key={type} className="xs-12 md-6 row contact-item">
+      <box key={type} className="contact-item">
         <box className="contact-type">
           <h1>{type}</h1>
         </box>
@@ -31,9 +31,9 @@ class ContactPage extends React.Component {
       <div className="page contact-page">
         <grid className="contact-content items-center">
           <SectionHeading color="#0A6AA3" text="Contact" align="left" />
-          <stack className="grow-1">
+          <div className="grow-1 stack nowrap">
             {contacts.map(this.renderContactItem)}
-          </stack>
+          </div>
         </grid>
       </div>
     );

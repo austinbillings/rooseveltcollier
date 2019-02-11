@@ -7,9 +7,8 @@ const contacts = [
   },
   {
     type: 'North American Booking',
-    name: 'Barron Ruth',
-    email: 'barron@crossovertouring.com',
-    phone: '(404) 793-7023 ext. 102'
+    name: 'Roosevelt Collier',
+    email: 'rooseveltthedr@gmail.com'
   },
   {
     type: 'World Booking Agency',

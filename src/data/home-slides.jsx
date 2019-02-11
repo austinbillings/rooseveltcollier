@@ -14,7 +14,7 @@ const homeSlides = [
       position: '90% 25%'
     },
     content: (
-      <div className="stack items-start justify-end">
+      <div className="stack items-start justify-end nowrap">
         <img
           src="assets/exit-16.jpg"
           alt="Cover of EXIT 16 by Roosevelt Collier"
@@ -34,17 +34,9 @@ const homeSlides = [
         <p className="white-text">
           <i>“This record is a record about me,” says Roosevelt Collier.<br/>“It’s telling a story of who I am, where I’m from, and where I’m going.”</i>
         </p>
-        <div className="row wrap">
-          <LinkButton href="/music#exit16">
-            Listen Now &nbsp;<Icon fa="angle-right"/>
-          </LinkButton>
-
-          <span> &nbsp; </span>
-
-          <LinkButton href="/video">
-            Watch Now &nbsp;<Icon fa="angle-right"/>
-          </LinkButton>
-        </div>
+        <LinkButton href="/music#exit16">
+          Check it out &nbsp;<Icon fa="angle-right"/>
+        </LinkButton>
       </div>
     )
   },
