@@ -2,10 +2,16 @@
 
 .event-list {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
   .event-row {
     justify-content: space-between;
     align-items: center;
+    flex-basis: auto;
+    display: flex;
+    flex-direction: row;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     margin-bottom: 10px;
     border-radius: 10px;

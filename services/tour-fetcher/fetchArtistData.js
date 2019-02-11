@@ -40,10 +40,8 @@ module.exports = function fetchArtistData (artistId) {
                 return output;
             })
             .end()
-            .then(data => {
-                resolve(data);
-                if (USE_XVFB) xvfb.stopSync();
-            })
+            .then(data => (USE_XVFB ? xvfb.stopSync() : null) || data)
+            .then(resolve)
             .catch(err => {
                 reject(err);
                 if (USE_XVFB) xvfb.stopSync();
