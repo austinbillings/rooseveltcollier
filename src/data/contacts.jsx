@@ -7,7 +7,6 @@ const contacts = [
   },
   {
     type: 'North American Booking',
-    name: 'Roosevelt Collier',
     email: 'rooseveltthedr@gmail.com'
   },
   {

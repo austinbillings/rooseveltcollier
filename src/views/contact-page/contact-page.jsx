@@ -14,13 +14,13 @@ class ContactPage extends React.Component {
   renderContactItem ({ type, name, email, phone }) {
     return (
       <box key={type} className="contact-item">
-        <box className="contact-type">
+        {type && <box className="contact-type">
           <h1>{type}</h1>
-        </box>
+        </box>}
         <box className="contact-info">
-          <h4>{name}</h4>
-          <a href={`mailto:${email}`}>{email}</a>
-          <tel>{phone}</tel>
+          {name && <h4>{name}</h4>}
+          {email && <a href={`mailto:${email}`}>{name ? email : <h3>{email}</h3>}</a>}
+          {phone && <tel>{phone}</tel>}
         </box>
       </box>
     );
