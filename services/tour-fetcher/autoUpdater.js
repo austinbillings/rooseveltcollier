@@ -8,7 +8,7 @@ const fetchAndCacheTourData = require('./fetchAndCacheTourData');
 
 module.exports = function tourDateAutoUpdater () {
     zaq.info('Setting up tour date auto-updater...');
-    const offset = -45 * 60 * 1000;
+    const offset = -30 * 60 * 1000;
 
     const runUpdater = () => {
         zaq.info('Auto-updater running now.');

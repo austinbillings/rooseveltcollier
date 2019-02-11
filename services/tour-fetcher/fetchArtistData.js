@@ -1,4 +1,4 @@
-const nightmare = require('nightmare')();
+const Nightmare = require('nightmare');
 const zaq = require('zaq').as('fetchArtistData');
 const Xvfb = require('xvfb');
 
@@ -12,12 +12,15 @@ module.exports = function fetchArtistData (artistId) {
             throw new TypeError('scrapeArtistDates: invalid artistId given');
         }
 
+
+        const nightmare = Nightmare();
         const xvfb = USE_XVFB ? new Xvfb() : null;
         const artistProfileUrl = `https://www.bandsintown.com/a/${artistId}`;
 
         zaq.info(`Navigating to ${artistProfileUrl}...`);
 
         if (USE_XVFB) xvfb.startSync();
+
 
         nightmare
             .goto(artistProfileUrl)
