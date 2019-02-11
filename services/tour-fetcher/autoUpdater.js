@@ -8,10 +8,11 @@ const fetchAndCacheTourData = require('./fetchAndCacheTourData');
 
 module.exports = function tourDateAutoUpdater () {
     zaq.info('Setting up tour date auto-updater...');
+    const offset = -50 * 60 * 1000;
 
     const runUpdater = () => {
         zaq.info('Auto-updater running now.');
-        const nextRun = formatDate(Date.now() + getMsUntilNextHour());
+        const nextRun = formatDate(Date.now() + getMsUntilNextHour() + offset);
 
         fetchAndCacheTourData()
             .then(() => {
@@ -25,5 +26,5 @@ module.exports = function tourDateAutoUpdater () {
     }
 
     runUpdater();
-    runEveryHour(runUpdater, 5 * 60 * 1000);
+    runEveryHour(runUpdater, offset);
 }
