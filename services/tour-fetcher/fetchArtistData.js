@@ -3,7 +3,6 @@ const zaq = require('zaq').as('fetchArtistData');
 const Xvfb = require('xvfb');
 
 const USE_XVFB = process.platform === 'linux';
-const xvfb = USE_XVFB ? new Xvfb() : null;
 
 module.exports = function fetchArtistData (artistId) {
     zaq.info('Fetching artist data...');
@@ -13,11 +12,10 @@ module.exports = function fetchArtistData (artistId) {
             throw new TypeError('scrapeArtistDates: invalid artistId given');
         }
 
+        const xvfb = USE_XVFB ? new Xvfb() : null;
         const artistProfileUrl = `https://www.bandsintown.com/a/${artistId}`;
 
         zaq.info(`Navigating to ${artistProfileUrl}...`);
-
-        const info = text => zaq.info(text);
 
         if (USE_XVFB) xvfb.startSync();
 

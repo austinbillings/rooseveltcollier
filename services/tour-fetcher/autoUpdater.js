@@ -25,5 +25,5 @@ module.exports = function tourDateAutoUpdater () {
     }
 
     runUpdater();
-    runEveryHour(runUpdater);
+    runEveryHour(runUpdater, 5 * 60 * 1000);
 }

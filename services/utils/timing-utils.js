@@ -52,9 +52,11 @@ function getMsUntilNextHour () {
     return (minutesLeftInHour * 60 * 1000) - (secondsLeftInMinute * 1000);
 }
 
-function runEveryHour (callback) {
+function runEveryHour (callback, offset = 0) {
     if (!isFunction(callback))
         throw new TypeError(`runNowAndEveryHourAt: callback is not a function. (got ${typeof callback})`);
+    else if (!isNumber(offset))
+        throw new TypeError(`runEveryHour: offset is not a number. (got ${typeof offset})`);
 
     const msUntilNextHour = getMsUntilNextHour();
     const oneHour = 60 * 60 * 1000;
