@@ -58,7 +58,7 @@ function runEveryHour (callback, offset = 0) {
     else if (!isNumber(offset))
         throw new TypeError(`runEveryHour: offset is not a number. (got ${typeof offset})`);
 
-    const msUntilNextHour = getMsUntilNextHour();
+    const msUntilNextHour = getMsUntilNextHour() + offset;
     const oneHour = 60 * 60 * 1000;
 
     return msUntilNextHour > 1000
