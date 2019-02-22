@@ -50,6 +50,49 @@ export default [
     ]
   },
   {
+      title: 'What Heat',
+      id: 'bokante-whatheat',
+      image: '/assets/albums/what-heat.jpg',
+      subtitle: <b>Bokante</b>,
+      releaseDate: '2018-09-28',
+      content: (
+        <div>
+          <p>This heat: Bokanté and the Metropole Orkest, together. Two internationally acclaimed outfits made up of players at the top of their games. Music doesn’t get any hotter, or more accomplished, than this.</p>
+          <p>Bokanté: the fresh new super group founded by musician and composer Michael League, he of Grammy–winning, Texan–bred, New York–based instrumental jazz collective, Snarky Puppy. A super group of players from five countries and four continents, different genders, races and generations working in harmony, celebrating individuality. A band whose members are united in the belief that music should be a voice for the voiceless, a force for change against a rising tide of exclusion and indifference in a world that is, well, reaching boiling point.</p>
+          <p>The Metropole Orkest: that multiple Grammy–winning hybrid ensemble, part jazz big band, part symphony orchestra, helmed by feted English conductor, composer and musician, Jules Buckley, and based in the Netherlands. A specialist in all styles, with a deep understanding of music, the Metropole is at ease playing jazz and pop, traditional music and film scores and has collaborated with legends from Ella Fitzgerald to Gregory Porter and of course, Snarky Puppy, along with a veritable constellation of rising stars. </p>
+          <p>Joining League are Snarky guitarists Chris McQueen and Bob Lanzetti, and Miami–based pedal steel virtuoso Roosevelt Collier. The group’s three main percussionists include Keita Ogawa – Nagasaki–raised, Rio–trained, a veteran of orchestras including the London Symphony and the group backing superstar cellist, Yo–Yo Ma. There is Jamey Haddad, the percussionist’s percussionist, ex–Berkeley music professor and long time rhythm man for Sting and Paul Simon.</p>
+          <p>There is André Ferrari, a mohawked Swede whose innovative flourishes – on goat nails, grouse pipe, wooden Japanese bicycle bell – were a trademark of the Swedish folk outfit, Väsen, and whose self–penned ‘Shapons Vindaloo’ is the first track Snarky Puppy ever recorded. There is special guest Weedie Braimah, a Ghanaian djembe master whose skills stretch back for generations.</p>
+          <p>And then, of course, there is Malika Tirolien, the Montreal–based Guadeloupian vocalist with the huge honeyed voice. "Malika’s voice covers several frequency bands," says Buckley, "so the challenge on What Heat was to make sure there was enough space for all the different elements – winds, strings, brass, percussion, guitars, drums, more drums – to thrive during the recording. I think Mike’s producing achieved that task brilliantly." </p>
+        </div>
+      ),
+      links: [
+        { text: 'Buy Now (all formats)', url: 'http://smarturl.it/RW221' }
+      ],
+      tracks: [
+        { title: 'All the Way Home' },
+        { title: 'Fanm' },
+        { title: 'Lé An Gadé-w En Zyé' },
+        { title: 'Réparasyons' },
+        { title: 'Bòd Lanmé Pa Lwe' },
+        { title: 'Don’t Do It:' },
+        { title: 'Chambre à Échos' },
+        { title: 'Maison En Feu ' }
+      ],
+      credits: [
+        { name: 'Malika Tirolien', part: 'vocals' },
+        { name: 'Jamey Haddad', part: 'percussion' },
+        { name: 'André Ferrari', part: 'percussion' },
+        { name: 'Keita Ogawa', part: 'percussion' },
+        { name: 'Weedie Braimah', part: 'djembe, vocals' },
+        { name: 'Chris McQueen', part: 'guitars, vocals' },
+        { name: 'Bob Lanzetti', part: 'guitars, vocals' },
+        { name: 'Roosevelt Collier', part: 'steel pedal guitar, vocals' },
+        { name: 'Michael League', part: 'guitar, bass, percussion, vocals' },
+        { name: 'Jules Buckley', part: 'Conductor' },
+        { name: 'Metropole Orkest', part: 'Orchestra' }
+      ]
+  },
+  {
     title: 'Let The Steel Play',
     id: 'letthesteelplay',
     image: '/assets/albums/let-the-steel-play.jpg',
@@ -88,7 +131,7 @@ export default [
   {
     title: 'Strange Circles',
     id: 'strangecircles',
-    subtitle: <span>with <b>Bokanté</b></span>,
+    subtitle: <b>Bokanté</b>,
     releaseDate: '2017-06-09',
     image: '/assets/strange-circles-small.jpg',
     credits: [
