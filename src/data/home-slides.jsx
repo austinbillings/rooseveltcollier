@@ -4,6 +4,25 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
+    id: 'ukj-baoty2019',
+    linkTo: '',
+    accent: 'rgb(27,154,209)',
+    title: <span>Blues Artist of the year</span>,
+    content: (
+      <div>
+        <img src="/assets/features/jazz-fm-blues-act-of-the-year-2019-nominee.jpg" style={{ maxWidth: '100%' }} />
+        <p style={{ width: '500px' }}>Roosevelt has been nominated for the 2019 UK Jazz FM Award for <b>Blues Artist of the Year</b>, alongside fellow artists Eric Bibb and Errol Linton.</p>
+        <LinkButton href="https://www.jazzfm.com/news/music-news/jazz-fm-awards-2019-nominees-announced/">
+          See all nominees
+        </LinkButton>
+      </div>
+    ),
+    background: {
+      image: '/assets/features/jazz-fm-blues-act-of-the-year-2019-bg.jpg',
+      position: '40% 60%'
+    }
+  },
+  {
     id: 'exit-16',
     title: 'Exit 16',
     linkTo: '/exit-16',
@@ -45,6 +64,7 @@ const homeSlides = [
     title: 'Bokanté',
     slideClass: 'slide-shadowed',
     linkTo: '/music/bokante',
+    hidden: true,
     accent: 'rgba(8, 72, 113, 1)',
     background: {
       position: '77% 25%',
@@ -137,7 +157,7 @@ const homeSlides = [
     accent: 'rgba(147, 32, 49, 1)',
     background: {
       image: '/assets/photos/live.jpg',
-      position: '50% 40%'
+      position: '50% 50%'
     },
     content: (
       <div>

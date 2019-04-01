@@ -15,8 +15,8 @@
     border-bottom: 1px solid rgba(255,255,255,0.1);
     margin-bottom: 10px;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
     background-color: rgba(0, 0, 0, 0.6);
     transition: transform 0.25s;
 
@@ -57,6 +57,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: none;
       }
 
       .event-date, .event-tickets {
@@ -66,26 +67,33 @@
   }
 
   .event-date {
-    flex: 0 0 120px;
-    font-size: 24px;
+    flex: 0 0 4.5em;
+    font-size: 1.5em;
     font-weight: bold;
     font-family: $title-font;
+
+    &.event-date-short {
+      flex-basis: auto;
+    }
   }
 
   .event-date, .event-venue, .event-city {
-    padding: 10px 0;
+    padding: 0.55em 0;
   }
 
   .event-setting {
     text-transform: uppercase;
     display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: center;
     font-size: 1.3em;
     font-family: $title-font;
   }
 
   .event-venue, .event-city {
-    padding: 10px 15px;
-    flex: 1 0 auto;
+    padding: 0.55em 0.3em;
+    flex: 0 0 auto;
   }
 
   .event-venue {
@@ -100,7 +108,7 @@
   .event-tickets {
     button {
       width: 100%;
-      font-size: 13px;
+      font-size: 0.7em;
       border: 1px solid fade-out($white, 0.6);
 
       .icon {
@@ -131,6 +139,7 @@
 
   @media (min-width: 992px) and (max-width: 1200px) {
     .event-setting {
+      max-width: none;
       flex-direction: column;
       align-items: center;
     }

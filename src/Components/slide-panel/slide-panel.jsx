@@ -65,7 +65,7 @@ class SlidePanel extends React.Component {
     const { slides, className } = this.props
     return !slides || !slides.length ? null : (
       <div className={'slide-panel' + (className ? ' ' + className : '')}>
-        {slides.map((slide, index) => this.renderSlide(slide, index))}
+        {slides.map((slide, index) => slide.hidden ? null : this.renderSlide(slide, index))}
       </div>
     )
   }

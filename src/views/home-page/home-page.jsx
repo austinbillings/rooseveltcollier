@@ -10,6 +10,7 @@ import slides from 'data/home-slides';
 
 import Icon from 'components/icon';
 import Nobr from 'components/nobr';
+import LinkButton from 'components/link-button';
 import SlidePanel from 'components/slide-panel';
 
 import CardList from 'ui/card-list';
@@ -17,6 +18,7 @@ import SocialNav from 'ui/social-nav';
 import VideoPanel from 'ui/video-panel';
 import SectionHeading from 'ui/section-heading';
 import NewsletterSignup from 'ui/newsletter-signup';
+import TourPanel from 'views/tour-page/tour-panel';
 
 class HomePage extends React.Component {
   constructor (props) {
@@ -46,6 +48,17 @@ class HomePage extends React.Component {
           </div>
         </div>
 
+        <SectionHeading text="Upcoming Shows"/>
+        <div className="grid items-center">
+          <div className="xs-12 md-7 stack items-center">
+            <TourPanel shortDates={true} max={5} />
+            <LinkButton href="/tour">See All Tour Dates</LinkButton>
+          </div>
+          <div className="xs-12 md-5">
+            <img src="/assets/tours/spring-europe.jpg" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
+          </div>
+        </div>
+
 
         {/* VIDEO SECTION */}
         <SectionHeading text="Watch Now"/>
@@ -60,7 +73,7 @@ class HomePage extends React.Component {
         {/* FEATURES SECTION */}
         <SectionHeading text="Features"/>
         <div className="grid">
-          <CardList axis="x" list={features}/>
+          <CardList axis="y" max={3} list={features}/>
         </div>
       </div>
     );

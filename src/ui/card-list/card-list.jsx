@@ -16,16 +16,17 @@ class CardList extends React.Component {
   }
 
   render () {
-    const { list } = this.props;
-    const cards = list.map(this.renderCard);
+    const { list, axis, max } = this.props;
+    const cards = list.map((card, index) => !max || index < max ? this.renderCard(card) : null);
 
-    return <div className="card-list" children={cards} />
+    return <div className={`card-list card-list-layout-${axis}`} children={cards} />
   }
 };
 
 CardList.defaultProps = {
   list: [],
-  axis: 'x'
+  axis: 'x',
+  max: null
 };
 
 export default CardList;

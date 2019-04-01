@@ -26,7 +26,7 @@ class EventList extends React.Component {
   renderEventRow ({ date, venue, city, tickets, free }, index) {
     const parsedDate = moment(date);
     const hasPassed = parsedDate.isBefore();
-    const { hidePastEvents } = this.props;
+    const { hidePastEvents, shortDates } = this.props;
     const { pastEventsVisible } = this.state;
     const className = 'event-row '
       + (!hasPassed
@@ -43,7 +43,7 @@ class EventList extends React.Component {
       ? null
       : (
         <row className={className} key={index}>
-          <box className="event-date">{parsedDate.format('MMM D, Y')}</box>
+          <box className={`event-date ${shortDates ? 'event-date-short' : ''}`}>{parsedDate.format(shortDates ? 'l' : 'MMM D, Y')}</box>
           <box className="event-setting">
             <box className="event-venue">{venue}</box>
             <box className="event-city">{city}</box>
@@ -77,10 +77,11 @@ class EventList extends React.Component {
   render () {
     const { events, hidePastEvents } = this.props;
     const PastEventsToggle = this.renderPastEventsToggle;
+    const pastEventsExist = events.some(event => moment(event.date).isBefore());
 
     return (
       <stack className="event-list">
-        {hidePastEvents ? null : <PastEventsToggle/>}
+        {hidePastEvents || !pastEventsExist ? null : <PastEventsToggle/>}
         {!events || !events.length
           ? null
           : events.map(this.renderEventRow)
