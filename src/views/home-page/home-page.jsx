@@ -55,7 +55,7 @@ class HomePage extends React.Component {
             <LinkButton href="/tour">See All Tour Dates</LinkButton>
           </div>
           <div className="xs-12 md-5">
-            <img src="/assets/tours/spring-europe.jpg" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
+            <img src="/assets/tours/free-energy-tour.jpg" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
           </div>
         </div>
 
