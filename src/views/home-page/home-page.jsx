@@ -50,12 +50,15 @@ class HomePage extends React.Component {
 
         <SectionHeading text="Upcoming Shows"/>
         <div className="grid items-center">
-          <div className="xs-12 md-7 stack items-center">
+          <div className="xs-12 stack items-center">
             <TourPanel shortDates={true} max={5} />
             <LinkButton href="/tour">See All Tour Dates</LinkButton>
           </div>
           <div className="xs-12 md-5">
             <img src="/assets/tours/free-energy-tour.jpg" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
+          </div>
+          <div className="xs-12 md-7">
+            <img src="/assets/tours/immigrance-tour.png" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
           </div>
         </div>
 
