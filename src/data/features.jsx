@@ -4,6 +4,19 @@ import Icon from 'components/icon';
 
 const features = [
   {
+    title: <span>At WOMEX</span>,
+    content: (
+      <p>Roosevelt has been selected as one of 40 musicians around the world nominated to play <b>WOMEX</b>, the World Music Expo in Finland.</p>
+    ),
+    image: {
+      url: '/assets/features/womex.jpg'
+    },
+    action: {
+      text: <span>Visit Site</span>,
+      url: 'http://www.womex.com/about/womex'
+    }
+  },
+  {
     title: <span>Europe in Spring</span>,
     content: (
       <p>Planes trains and automobiles will take us from Tunisia, Germany, Sweeden, The Netherlands and all over Italy. I’ll be sending postcards. Make sure you’re following my Insta and FB.</p>

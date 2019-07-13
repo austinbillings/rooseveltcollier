@@ -4,6 +4,34 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
+    id: 'womex-announcement',
+    title: `Live at WOMEX`,
+    linkTo: 'http://www.womex.com/about/womex',
+    background: {
+      image: '/assets/features/womex.jpg',
+      position: '50% 50%'
+    },
+    accent: 'rgba(98, 21, 75, 0.81)',
+    content: (
+      <div>
+        <h1>WOMEX</h1>
+        <p style={{ width: '500px' }}>
+          Roosevelt has been selected as one of 40 musicians around the world nominated to play <b>WOMEX</b>, the World Music Expo in Finland.
+        </p>
+
+        <LinkButton href="http://www.womex.com/">
+          Learn more <Icon fa="angle-right"/>
+        </LinkButton>
+
+        <span> &nbsp; </span>
+
+        <LinkButton href="http://www.womex.com/take_part/register">
+          Get Tickets <Icon fa="angle-right"/>
+        </LinkButton>
+      </div>
+    )
+  },
+  {
     id: 'ukj-baoty2019',
     linkTo: '',
     accent: 'rgb(27,154,209)',
@@ -89,34 +117,6 @@ const homeSlides = [
 
         <LinkButton href="http://www.bokante.com/#!/tour">
           Tour Dates &nbsp;<Icon fa="calendar"/>
-        </LinkButton>
-      </div>
-    )
-  },
-  {
-    id: 'let-the-steel-play',
-    title: `Let The Steel Play`,
-    linkTo: '/music#letthesteelplay',
-    background: {
-      image: '/assets/photos/with-andy-hall.jpg',
-      position: '27% 10%'
-    },
-    accent: 'rgba(61, 61, 61, 0.8)',
-    content: (
-      <div>
-        <h1>Let The Steel play</h1>
-        <p style={{ width: '500px' }}>
-          <i>Sacred Steel</i> meets bluegrass in this exploration of the Slide Guitar featuring Roosevelt & the Infamous StringDusters&apos; own <b>Andy Hall</b>.
-        </p>
-
-        <LinkButton href="/music#letthesteelplay">
-          Listen now <Icon fa="angle-right"/>
-        </LinkButton>
-
-        <span> &nbsp; </span>
-
-        <LinkButton href="/video#letthesteelplay">
-          Watch now <Icon fa="angle-right"/>
         </LinkButton>
       </div>
     )

@@ -2,6 +2,11 @@ import React from 'react';
 
 const videos = [
   {
+    title: 'Live at Ronnie Scott\'s',
+    subtitle: 'Watch the recorded livestream of a nearly 2-hour set at the legendary Ronnie Scott\'s in London.',
+    youtubeId: '3JAZkZA1eRg'
+  },
+  {
     title: 'Welcome to Exit 16',
     subtitle: 'An inside look at the debut album',
     youtubeId: '8P3puCHiTpQ'
