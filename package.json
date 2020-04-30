@@ -31,7 +31,7 @@
     "font-awesome": "^4.7.0",
     "fontawesome": "^4.7.2",
     "hoist-non-react-statics": "^3.3.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mansion-ui": "^2.5.3",
     "moment": "^2.18.1",
     "nightmare": "^3.0.2",
