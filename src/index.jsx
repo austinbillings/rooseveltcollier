@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 import 'xx';
 import 'font-awesome';
-import Root from './views/root';
+import Root from 'views/Root';
 
 ReactDOM.render(<Root />, document.getElementById('root'));
