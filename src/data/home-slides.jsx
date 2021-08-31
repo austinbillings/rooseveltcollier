@@ -4,52 +4,73 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
-    id: 'womex-announcement',
-    title: `Live at WOMEX`,
-    linkTo: 'http://www.womex.com/about/womex',
+    id: '2021-tour',
+    title: 'LIVE in 2021',
+    linkTo: '/tour',
     background: {
-      image: '/assets/features/womex.jpg',
+      image: '/assets/2021-tour-bg.jpg',
       position: '50% 50%'
     },
-    accent: 'rgba(98, 21, 75, 0.81)',
+    accent: '#261243',
     content: (
-      <div>
-        <h1>WOMEX</h1>
+      <span>
+        <h1>On Tour 2021</h1>
         <p style={{ width: '500px' }}>
-          Roosevelt has been selected as one of 40 musicians around the world nominated to play <b>WOMEX</b>, the World Music Expo in Finland.
+          Just announced: 29 new US tour dates have been posted for Fall 2021. Get your tickets today!
         </p>
-
-        <LinkButton href="http://www.womex.com/">
-          Learn more <Icon fa="angle-right"/>
+        <LinkButton href="/tour">
+          See the dates <Icon fa="angle-right"/>
         </LinkButton>
-
-        <span> &nbsp; </span>
-
-        <LinkButton href="http://www.womex.com/take_part/register">
-          Get Tickets <Icon fa="angle-right"/>
-        </LinkButton>
-      </div>
+      </span>
     )
   },
-  {
-    id: 'ukj-baoty2019',
-    linkTo: '',
-    accent: 'rgb(27,154,209)',
-    title: <span>Blues Artist of the year</span>,
-    content: (
-      <div>
-        <img src="/assets/features/jazz-fm-blues-act-of-the-year-2019-nominee.jpg" style={{ maxWidth: '100%' }} />
-        <p style={{ width: '500px' }}>Roosevelt has been nominated for the 2019 UK Jazz FM Award for <b>Blues Artist of the Year</b>, alongside fellow artists Eric Bibb and Errol Linton.</p>
-        <LinkButton href="https://www.jazzfm.com/news/music-news/jazz-fm-awards-2019-nominees-announced/">
-          See all nominees
-        </LinkButton>
-      </div>
-    ),
-    background: {
-      image: '/assets/features/jazz-fm-blues-act-of-the-year-2019-bg.jpg',
-      position: '40% 60%'
-    }
-  },
+  // {
+  //   id: 'womex-announcement',
+  //   title: `Live at WOMEX`,
+  //   linkTo: 'http://www.womex.com/about/womex',
+  //   background: {
+  //     image: '/assets/features/womex.jpg',
+  //     position: '50% 50%'
+  //   },
+  //   accent: 'rgba(98, 21, 75, 0.81)',
+  //   content: (
+  //     <div>
+  //       <h1>WOMEX</h1>
+  //       <p style={{ width: '500px' }}>
+  //         Roosevelt was been selected as one of 40 musicians around the world nominated to play <b>WOMEX</b>, the World Music Expo in Finland for 2019.
+  //       </p>
+
+  //       <LinkButton href="http://www.womex.com/">
+  //         Learn more <Icon fa="angle-right"/>
+  //       </LinkButton>
+
+  //       <span> &nbsp; </span>
+
+  //       <LinkButton href="http://www.womex.com/take_part/register">
+  //         Get Tickets <Icon fa="angle-right"/>
+  //       </LinkButton>
+  //     </div>
+  //   )
+  // },
+  // {
+  //   id: 'ukj-baoty2019',
+  //   linkTo: '',
+  //   accent: 'rgb(27,154,209)',
+  //   title: <span>Blues Artist of the year</span>,
+  //   content: (
+  //     <div>
+  //       <img src="/assets/features/jazz-fm-blues-act-of-the-year-2019-nominee.jpg" style={{ maxWidth: '100%' }} />
+  //       <p style={{ width: '500px' }}>Roosevelt has been nominated for the 2019 UK Jazz FM Award for <b>Blues Artist of the Year</b>, alongside fellow artists Eric Bibb and Errol Linton.</p>
+  //       <LinkButton href="https://www.jazzfm.com/news/music-news/jazz-fm-awards-2019-nominees-announced/">
+  //         See all nominees
+  //       </LinkButton>
+  //     </div>
+  //   ),
+  //   background: {
+  //     image: '/assets/features/jazz-fm-blues-act-of-the-year-2019-bg.jpg',
+  //     position: '40% 60%'
+  //   }
+  // },
   {
     id: 'exit-16',
     title: 'Exit 16',
