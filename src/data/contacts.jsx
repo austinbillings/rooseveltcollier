@@ -1,13 +1,12 @@
 const contacts = [
   {
     type: 'Management',
-    name: 'Andrew Hurwitz at Studio 1200',
-    email: 'Andy@studio-1200.com',
-    phone: '(917) 744-5738'
+    email: 'rooseveltthedr@gmail.com'
   },
   {
-    type: 'North American Booking',
-    email: 'rooseveltthedr@gmail.com'
+    type: 'North American / Canada Booking',
+    name: 'Jamie Ziefert',
+    email: 'jamie@thekurlandagency.com'
   },
   {
     type: 'World Booking Agency',
