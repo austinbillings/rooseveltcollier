@@ -13,7 +13,7 @@ class TourPage extends React.Component {
     return (
       <grid className="tour-page">
         <stack>
-          <img src="/assets/tours/fall-2021.jpg" style={{ margin: '30px auto' maxWidth: '90%', width: 500 }} />
+          <img src="/assets/tours/fall-2021.jpg" style={{ margin: '30px auto', maxWidth: '90%', width: 500 }} />
           <SectionHeading align="center" text="On Tour"/>
           <TourPanel/>
         </stack>
