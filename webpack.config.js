@@ -93,9 +93,6 @@ module.exports = {
 		]
 	},
 	resolve: {
-		alias: {
-			['font-awesome']: path.resolve(__dirname, 'node_modules/font-awesome/css/font-awesome.css')
-		},
 		modules: [
 			path.resolve(__dirname, 'src'),
 			path.resolve(__dirname, 'node_modules')

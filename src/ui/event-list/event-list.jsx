@@ -31,7 +31,7 @@ class EventList extends React.Component {
     const className = 'event-row '
       + (!hasPassed
           ? ''
-          : ('event-row-passed ' + (
+          : ('XXevent-row-passed ' + (
             pastEventsVisible
               ? ''
               : 'event-row-collapsed'

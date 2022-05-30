@@ -33,16 +33,14 @@ class VideoPanel extends VideoGallery {
 
     return (
       <div className="video-panel">
-        <div className="row">
-          <div className="box xs-12 lg-9 player-box">
-            <div className="player-wrapper">
-              {videoPlayer}
-            </div>
+        <div className="box xs-12 lg-9 player-box" style={{ flexGrow: 1 }}>
+          <div className="player-wrapper">
+            {videoPlayer}
           </div>
-          <div className="box xs-12 lg-3 list-box">
-            <VideoMenu videos={videos} activeIndex={activeIndex} onChoose={this.switchToVideo} />
-            {!children ? null : children}
-          </div>
+        </div>
+        <div className="box xs-12 lg-3 list-box">
+          <VideoMenu videos={videos} activeIndex={activeIndex} onChoose={this.switchToVideo} />
+          {!children ? null : children}
         </div>
       </div>
     );

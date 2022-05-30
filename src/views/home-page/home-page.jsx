@@ -19,6 +19,8 @@ import VideoPanel from 'ui/video-panel';
 import SectionHeading from 'ui/section-heading';
 import NewsletterSignup from 'ui/newsletter-signup';
 import TourPanel from 'views/tour-page/tour-panel';
+import BandsintownWidget from 'ui/bandsintown-widget';
+
 
 class HomePage extends React.Component {
   constructor (props) {
@@ -49,15 +51,11 @@ class HomePage extends React.Component {
         </div>
 
         <SectionHeading text="Upcoming Shows"/>
-        <div className="grid items-center">
-          <div className="xs-12 stack items-center">
-            <TourPanel shortDates={true} max={5} />
-            <LinkButton href="/tour">See All Tour Dates</LinkButton>
-          </div>
+        <BandsintownWidget limit="5" />
           {/*<div className="xs-12 md-6 md-offset-3">
             <img src="/assets/tours/summer-uk-2019.jpg" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
           </div>*/}
-        </div>
+
 
 
         {/* VIDEO SECTION */}

@@ -8,18 +8,18 @@ const homeSlides = [
     title: 'LIVE in 2021',
     linkTo: '/tour',
     background: {
-      image: '/assets/2021-tour-bg.jpg',
+      image: '/assets/2022/image0-cropped.jpg',
       position: '50% 50%'
     },
     accent: '#261243',
     content: (
       <span>
-        <h1>On Tour 2021</h1>
+        <h1>Europe Summer Tour 2022</h1>
         <p style={{ width: '500px' }}>
-          Just announced: 29 new US tour dates have been posted for Fall 2021. Get your tickets today!
+          Just announced: a dozen new tour dates across Europe this July. Get your tickets now!
         </p>
         <LinkButton href="/tour">
-          See the dates <Icon fa="angle-right"/>
+          SEE DATES <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )
@@ -141,7 +141,7 @@ const homeSlides = [
         </LinkButton>
       </div>
     )
-  },
+  },/*
   {
     id: 'live-at-montreaux',
     title: 'Live at Montreaux',
@@ -170,7 +170,7 @@ const homeSlides = [
         </LinkButton>
       </div>
     )
-  },
+  }*/
   {
     id: 'sacred-steel',
     title: 'Sacred Steel',

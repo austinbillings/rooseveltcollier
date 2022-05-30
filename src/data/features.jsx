@@ -4,6 +4,45 @@ import Icon from 'components/icon';
 
 const features = [
   {
+    title: <span>SUMMER IN EUROPE</span>,
+    content: (
+      <p>Newly announced: tour dates throughout July in Europe. Get those tickets while they're hot!</p>
+    ),
+    image: {
+      url: '/assets/2022/europe-summer-cropped.jpg'
+    },
+    action: {
+      text: <span>Get Tickets</span>,
+      url: '/tour'
+    }
+  },
+  {
+    title: <span>MAY DATES IN FLORIDA!</span>,
+    content: (
+      <p>Roosevelt's playing some dates in Florda this May. Featuring Blaque Dynamite and with Brad Miller on all dates!</p>
+    ),
+    image: {
+      url: '/assets/2022/may-florida-tour.png'
+    },
+    action: {
+      text: <span>Get Tickets</span>,
+      url: '/tour'
+    }
+  },
+  {
+    title: <span>TROUBLE NO MORE</span>,
+    content: (
+      <p>The Dr. will be playing at the 50th Anniversary Celebration of The Allman Brothers Band's "Eat a Peach", as part of Trouble No More. Catch it March 26th at The Beacon in New York.</p>
+    ),
+    image: {
+      url: '/assets/2022/tnm-show.jpeg'
+    },
+    action: {
+      text: <span>Get Tickets</span>,
+      url: '/tour'
+    }
+  },
+  {
     title: <span>At WOMEX</span>,
     content: (
       <p>Roosevelt has been selected as one of 40 musicians around the world nominated to play <b>WOMEX</b>, the World Music Expo in Finland.</p>

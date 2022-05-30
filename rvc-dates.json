@@ -1,0 +1,310 @@
+[
+    {
+        "date": "2021-09-17T23:45:00Z",
+        "city": "Jacksonville, FL",
+        "venue": "Blue Jay Listening Room",
+        "tickets": "http://www.bluejayjax.com/"
+    },
+    {
+        "date": "2021-09-18T23:45:00Z",
+        "city": "Winston Salem, NC",
+        "venue": "Incendiary Brewing Company",
+        "tickets": null
+    },
+    {
+        "date": "2021-09-22T23:45:00Z",
+        "city": "San Francisco, CA",
+        "venue": "Black Cat",
+        "tickets": "https://www.blackcatsf.com/all-events/"
+    },
+    {
+        "date": "2021-09-23T23:45:00Z",
+        "city": "San Francisco, CA",
+        "venue": "Black Cat",
+        "tickets": "https://www.blackcatsf.com/all-events/"
+    },
+    {
+        "date": "2021-10-01T23:45:00Z",
+        "city": "Johnstown, PA",
+        "venue": "Flood City Music Festival 2021",
+        "tickets": "https://www.floodcitymusic.com/tickets/"
+    },
+    {
+        "date": "2021-10-02T23:45:00Z",
+        "city": "Cape May, NJ",
+        "venue": "Exit Zero Jazz Festival",
+        "tickets": "https://www.exitzerojazzfestival.com/"
+    },
+    {
+        "date": "2021-10-03T23:45:00Z",
+        "city": "Cape May, NJ",
+        "venue": "Exit Zero Jazz Festival",
+        "tickets": "https://www.exitzerojazzfestival.com/"
+    },
+    {
+        "date": "2021-10-06T23:45:00Z",
+        "city": "Roanoke, VA",
+        "venue": "Martin's Downtown",
+        "tickets": "https://www.martinsdowntown.com/"
+    },
+    {
+        "date": "2021-10-07T23:45:00Z",
+        "city": "Pittsboro, NC",
+        "venue": "Shakori Hills Grassroots Festival",
+        "tickets": "https://shakorihillsgrassroots.org/tickets-info/"
+    },
+    {
+        "date": "2021-10-08T23:45:00Z",
+        "city": "Pittsboro, NC",
+        "venue": "Shakori Hills Grassroots Festival",
+        "tickets": "https://shakorihillsgrassroots.org/tickets-info/"
+    },
+    {
+        "date": "2021-10-09T23:45:00Z",
+        "city": "Tifton, GA",
+        "venue": "Tifton Rhythm and Ribs Festival",
+        "tickets": ""
+    },
+    {
+        "date": "2021-10-10T23:45:00Z",
+        "city": "Greensboro, NC",
+        "venue": "Flat Iron",
+        "tickets": "https://www.tiftonribsfest.com/entertainment",
+        "free": true
+    },
+    {
+        "date": "2021-10-13T23:45:00Z",
+        "city": "New York, NY",
+        "venue": "Brooklyn Bowl",
+        "tickets": "https://www.ticketweb.com/event/delvon-lamarr-organ-trio-brooklyn-bowl-tickets/11134395?irgwc=1&clickid=y8u0pvSIkxyLUYsSg4xd4WrFUkBROQQBuyRCVI0&camefrom=CFC_BUYAT_219208&impradid=219208&REFERRAL_ID=tmfeedbuyat219208&wt.mc_id=aff_BUYAT_219208&utm_source=219208-Bandsintown&impradname=Bandsintown&utm_medium=affiliate"
+    },
+    {
+        "date": "2021-10-14T23:45:00Z",
+        "city": "Philadelphia, PA",
+        "venue": "World Café Live",
+        "tickets": "https://www.bandsintown.com/e/1022614843-roosevelt-collier-at-world-cafe-live?came_from=251&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2021-10-15T23:45:00Z",
+        "city": "Lancaster, PA",
+        "venue": "Lancaster Roots and Blues 2021",
+        "tickets": "https://www.brownpapertickets.com/event/4857619"
+    },
+    {
+        "date": "2021-10-16T23:45:00Z",
+        "city": "Lancaster, PA",
+        "venue": "Lancaster Roots and Blues 2021",
+        "tickets": "https://www.brownpapertickets.com/event/4857619"
+    },
+    {
+        "date": "2021-10-17T23:45:00Z",
+        "city": "Falls Church, VA",
+        "venue": "The State Theatre",
+        "tickets": "https://www.freshtix.com/events/delvontrio?utm_campaign=bit&utm_medium=referral&utm_source=bandsintown"
+    },
+    {
+        "date": "2021-10-30T23:45:00Z",
+        "city": "Live Oak, FL",
+        "venue": "Suwannee Hulaween 2021",
+        "tickets": "https://suwanneehulaween.com/passes/"
+    },
+    {
+        "date": "2021-11-03T23:45:00Z",
+        "city": "Boca Raton, FL",
+        "venue": "Crazy Uncle Mike's",
+        "tickets": "https://crazyunclemikes.com/"
+    },
+    {
+        "date": "2021-11-04T23:45:00Z",
+        "city": "Jupiter, FL",
+        "venue": "Guanabanas Restaurant",
+        "tickets": null,
+        "free": true
+    },
+    {
+        "date": "2021-11-05T23:45:00Z",
+        "city": "Ocala, FL",
+        "venue": "Marion Theatre",
+        "tickets": "https://www.reillyartscenter.com/themarion/"
+    },
+    {
+        "date": "2021-11-06T23:45:00Z",
+        "city": "Jacksonville, FL",
+        "venue": "1904 Music Hall",
+        "tickets": "https://www.eventbrite.com/e/roosevelt-collier-at-1904-music-hall-tickets-169137431611"
+    },
+    {
+        "date": "2021-11-07T23:45:00Z",
+        "city": "Orlando, FL",
+        "venue": null,
+        "tickets": null
+    },
+    {
+        "date": "2021-11-13T23:45:00Z",
+        "city": "Rio Das Ostras, Brazil",
+        "venue": null,
+        "tickets": null
+    },
+    {
+        "date": "2021-11-14T23:45:00Z",
+        "city": "Rio Das Ostras, Brazil",
+        "venue": null,
+        "tickets": null
+    },
+    {
+        "date": "2021-11-15T23:45:00Z",
+        "city": "Rio Das Ostras, Brazil",
+        "venue": null,
+        "tickets": null
+    },
+    {
+        "date": "2021-11-19T23:45:00Z",
+        "city": "Rio De Janeiro, Brazil",
+        "venue": null,
+        "tickets": null
+    },
+    {
+        "date": "2021-12-03T17:00:00Z",
+        "venue": "Orange Blossom Revue",
+        "city": "Lake Wales, FL",
+        "tickets": "https://www.tixr.com/groups/orangeblossomrevue/events/orange-blossom-revue-2021-21453?PageSpeed=noscript"
+    },
+    {
+        "date": "2021-12-04T17:00:00Z",
+        "venue": "Orange Blossom Revue",
+        "city": "Lake Wales, FL",
+        "tickets": "https://www.tixr.com/groups/orangeblossomrevue/events/orange-blossom-revue-2021-21453?PageSpeed=noscript"
+    },
+    {
+        "date": "2022-02-11",
+        "venue": "Berts Back Porch (w/ Los Lobos) @ The Twisted Fork",
+        "city": "Port Charlotte, FL",
+        "tickets": "https://www.bandsintown.com/t/103162951?came_from=257&app_id=bandsintown_web&utm_medium=web&utm_source=artist_event_page&utm_campaign=ticket"
+    },
+    {
+        "date": "2022-02-18",
+        "venue": "Boom Boom Room",
+        "city": "San Francisco, CA",
+        "tickets": "https://www.bandsintown.com/e/1024075561-roosevelt-collier-at-boom-boom-room?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-02-19",
+        "venue": "Oyster City Brewing Co.",
+        "city": "Mobile, AL",
+        "tickets": "https://www.bandsintown.com/e/103163070-roosevelt-collier-at-oyster-city-brewing-co?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-02-19",
+        "venue": "Boom Boom Room",
+        "city": "San Francisco, CA",
+        "tickets": "https://www.bandsintown.com/e/1024076659-roosevelt-collier-at-boom-boom-room?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-02-24",
+        "venue": "Tarrytown Music Hall",
+        "city": "Tarrytown, NY",
+        "tickets": "https://www.bandsintown.com/e/103162975-roosevelt-collier-at-tarrytown-music-hall?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-02-25",
+        "venue": "Music Hall",
+        "city": "Portsmouth, NH",
+        "tickets": "https://www.bandsintown.com/e/103162981-roosevelt-collier-at-music-hall?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-02-26",
+        "venue": "Sugar Loaf Performing Arts Center",
+        "city": "Chester, NY",
+        "tickets": "https://www.bandsintown.com/e/103162999-roosevelt-collier-at-sugar-loaf-performing-arts-center?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-02-27",
+        "venue": "Union County Performing Arts Center",
+        "city": "Rahway, NJ",
+        "tickets": "https://www.bandsintown.com/e/103163009-roosevelt-collier-at-union-county-performing-arts-center?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-11",
+        "venue": "Virginia Key GrassRoots Festival 2022",
+        "city": "Key Biscayne, FL",
+        "tickets": "https://www.bandsintown.com/e/103140906-roosevelt-collier-at-historic-virginia-key-beach-park?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-12",
+        "venue": "Virginia Key GrassRoots Festival 2022",
+        "city": "Key Biscayne, FL",
+        "tickets": "https://www.bandsintown.com/e/103140906-roosevelt-collier-at-historic-virginia-key-beach-park?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-13",
+        "venue": "Virginia Key GrassRoots Festival 2022",
+        "city": "Key Biscayne, FL",
+        "tickets": "https://www.bandsintown.com/e/103140906-roosevelt-collier-at-historic-virginia-key-beach-park?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-17",
+        "venue": "Idyll Hounds Brewing Company",
+        "city": "Santa Rosa Beach, FL",
+        "tickets": "https://www.bandsintown.com/e/103163036-roosevelt-collier-at-idyll-hounds-brewing-company?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-18",
+        "venue": "Paradise Inn",
+        "city": "Pensacola Beach, FL",
+        "tickets": "https://www.bandsintown.com/e/103163059-roosevelt-collier-at-paradise-inn?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-25",
+        "venue": "Beacon Theatre",
+        "city": "New York, NY",
+        "tickets": "https://www.bandsintown.com/e/1023857621-roosevelt-collier-at-beacon-theatre?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-26",
+        "venue": "Beacon Theatre",
+        "city": "New York, NY",
+        "tickets": "https://www.bandsintown.com/e/1023857621-roosevelt-collier-at-beacon-theatre?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-03-26",
+        "venue": "GroundUP Music Festival",
+        "city": "Miami Beach, FL",
+        "tickets": "https://www.groundupmusicfestival.com/tickets"
+    },
+    {
+        "date": "2022-03-26",
+        "venue": "GroundUP Music Festival",
+        "city": "Miami Beach, FL",
+        "tickets": "https://www.groundupmusicfestival.com/tickets"
+    },
+    {
+        "date": "2022-03-26",
+        "venue": "GroundUP Music Festival",
+        "city": "Miami Beach, FL",
+        "tickets": "https://www.groundupmusicfestival.com/tickets"
+    },
+    {
+        "date": "2022-05-27",
+        "venue": "Rooster Walk Music & Arts Festival",
+        "city": "Axton, VA",
+        "tickets": "https://www.bandsintown.com/e/103163081-roosevelt-collier-at-rooster-walk-music-festival?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-05-28",
+        "venue": "Rooster Walk Music & Arts Festival",
+        "city": "Axton, VA",
+        "tickets": "https://www.bandsintown.com/e/103163081-roosevelt-collier-at-rooster-walk-music-festival?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-05-29",
+        "venue": "Rooster Walk Music & Arts Festival",
+        "city": "Axton, VA",
+        "tickets": "https://www.bandsintown.com/e/103163081-roosevelt-collier-at-rooster-walk-music-festival?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    },
+    {
+        "date": "2022-06-25",
+        "venue": "Northlands Music & Arts Festival",
+        "city": "Swanzey, NH",
+        "tickets": "https://www.bandsintown.com/e/103163083-roosevelt-collier-at-northlands-live?came_from=257&utm_medium=web&utm_source=artist_page&utm_campaign=event"
+    }
+]

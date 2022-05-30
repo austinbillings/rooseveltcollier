@@ -2,6 +2,15 @@ import React from 'react';
 
 const videos = [
   {
+    title: 'at Rio das Ostras Jazz & Blues Festival 2021',
+    subtitle: 'featuring. Jimmy James',
+    youtubeId: 'mU5xBF3uwlA'
+  },
+  {
+    title: 'Summer Rose (Official Music Video)',
+    youtubeId: 'xNgT39todXc'
+  },
+  {
     title: 'Live at Ronnie Scott\'s',
     subtitle: 'Watch the recorded livestream of a nearly 2-hour set at the legendary Ronnie Scott\'s in London.',
     youtubeId: '3JAZkZA1eRg'
