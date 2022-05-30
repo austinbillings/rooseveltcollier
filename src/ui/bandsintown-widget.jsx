@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const BandsintownWidget = ({ style = {}, displayLimit = 'all' } = {}) => {
+    const scriptTag = document.createElement('script');
+    scriptTag.setAttribute('src', 'https://widgetv3.bandsintown.com/main.min.js');
+
+    document.querySelector('head').append(scriptTag);
 
     const markup = `
-      <style type="text/css">
-
+        <style type="text/css">
         .tour-section .bit-details-inner-wrapper {
           display: flex;
         }
@@ -160,7 +163,9 @@ const BandsintownWidget = ({ style = {}, displayLimit = 'all' } = {}) => {
     `;
 
     return (
-        <div className="tour-section" style={style} dangerouslySetInnerHTML={{ __html: markup }} />
+        <div>
+            <div className="tour-section" style={style} dangerouslySetInnerHTML={{ __html: markup }} />
+        </div>
     )
 }
 
