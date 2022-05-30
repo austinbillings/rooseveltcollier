@@ -4,6 +4,10 @@ const BandsintownWidget = ({ displayLimit = 'all' } = {}) => {
 
     const markup = `
       <style type="text/css">
+        .tour-section {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
         .tour-section .bit-details-inner-wrapper {
           display: flex;
         }
