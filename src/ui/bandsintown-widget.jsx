@@ -1,13 +1,10 @@
 import React from 'react';
 
-const BandsintownWidget = ({ displayLimit = 'all' } = {}) => {
+const BandsintownWidget = ({ style = {}, displayLimit = 'all' } = {}) => {
 
     const markup = `
       <style type="text/css">
-        .tour-section {
-            max-width: 1280px;
-            margin: 0 auto;
-        }
+
         .tour-section .bit-details-inner-wrapper {
           display: flex;
         }
@@ -163,7 +160,7 @@ const BandsintownWidget = ({ displayLimit = 'all' } = {}) => {
     `;
 
     return (
-        <div className="tour-section" dangerouslySetInnerHTML={{ __html: markup }} />
+        <div className="tour-section" style={style} dangerouslySetInnerHTML={{ __html: markup }} />
     )
 }
 
