@@ -4,8 +4,8 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
-    id: '2021-tour',
-    title: 'LIVE in 2021',
+    id: '2023-tour',
+    title: 'LIVE in 2023',
     linkTo: '/tour',
     background: {
       image: '/assets/2022/image0-cropped.jpg',
@@ -14,12 +14,12 @@ const homeSlides = [
     accent: '#261243',
     content: (
       <span>
-        <h1>Europe Summer Tour 2022</h1>
+        <h1>2023 Tour Dates Coming Soon</h1>
         <p style={{ width: '500px' }}>
-          Just announced: a dozen new tour dates across Europe this July. Get your tickets now!
+          Check back for updates and new tour dates to see Roosevelt in 2023
         </p>
         <LinkButton href="/tour">
-          SEE DATES <Icon fa="angle-right"/>
+          TOUR DATES <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )

@@ -10,8 +10,8 @@ const contacts = [
   },
   {
     type: 'World Booking Agency',
-    name: 'Katherine McVicker',
-    email: 'katherine@musicworksinternational.com'
+    name: 'Contact',
+    email: 'booking@musicworksinternational.com'
   }
 ];
 

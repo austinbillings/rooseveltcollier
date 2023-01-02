@@ -68,11 +68,12 @@ class HomePage extends React.Component {
           </VideoPanel>
         </div>
 
-        {/* FEATURES SECTION */}
+        {/* FEATURES SECTION
         <SectionHeading text="Features"/>
         <div className="grid">
           <CardList axis="y" max={3} list={features}/>
         </div>
+        */}
       </div>
     );
   }
