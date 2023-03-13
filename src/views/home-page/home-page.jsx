@@ -59,7 +59,7 @@ class HomePage extends React.Component {
 
 
         {/* VIDEO SECTION */}
-        <SectionHeading text="Watch Now"/>
+        <SectionHeading text="Video"/>
         <div className="grid">
           <VideoPanel videos={videos} max={3}>
             <a href={Urls.video.index}>

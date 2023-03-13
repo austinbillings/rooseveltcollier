@@ -4,8 +4,7 @@ import {
   Route,
   Switch,
   Redirect,
-  BrowserRouter as Router,
-  browserHistory as history
+  BrowserRouter as Router
 } from 'react-router-dom';
 
 import './root.scss';
@@ -30,7 +29,7 @@ class Root extends React.Component {
 
   render () {
     return (
-      <Router history={history}>
+      <Router>
         <div className="Root">
           <Route render={({ location }) => <Header location={location} />} />
           <Switch>
