@@ -4,19 +4,40 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
-    id: '2023-tour',
-    title: 'LIVE in 2023',
+    id: '2023-africa',
+    title: 'Road to Africa Tour',
     linkTo: '/tour',
     background: {
-      image: '/assets/2022/image0-cropped.jpg',
-      position: '50% 50%'
+      image: '/assets/photos/2023-seated-1500.jpg',
+      position: '65% 50%'
     },
     accent: '#261243',
     content: (
       <span>
-        <h1>2023 Tour Dates Coming Soon</h1>
+        <h1>Road To Africa Tour</h1>
         <p style={{ width: '500px' }}>
-          Check back for updates and new tour dates to see Roosevelt in 2023
+          <i>Just announced</i>, the Dr. will be covering Boston, New York, Lincoln, Bentonville, Chattanooga, Knoxville, Savannah, Greensboro, Cocoa, Dunedin, Sanford, Boca Raton, Cape Verde, Berlin, and Köln!
+        </p>
+        <LinkButton href="/tour">
+          GET TICKETS <Icon fa="angle-right"/>
+        </LinkButton>
+      </span>
+    )
+  },
+  {
+    id: '2023-tour',
+    title: 'LIVE in 2023',
+    linkTo: '/tour',
+    background: {
+      image: '/assets/photos/2023-blue.jpg',
+      position: '50% 20%'
+    },
+    accent: '#261243',
+    content: (
+      <span>
+        <h1>On tour in 2023</h1>
+        <p style={{ width: '500px' }}>
+          Tickets now available to see Roosevelt in special appearances alongside <b>Jelly Roll</b> on the Backroad Baptism tour
         </p>
         <LinkButton href="/tour">
           TOUR DATES <Icon fa="angle-right"/>
