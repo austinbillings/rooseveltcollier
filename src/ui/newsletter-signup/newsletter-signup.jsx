@@ -21,14 +21,12 @@ class NewsletterSignup extends React.Component {
   }
 
   submitEmail () {
-    if (!this.emailIsValid()) return;
+
     const { email } = this.state;
 
-    alert('submitting ' + email);
-    return;
-    // axios.post('#', { email })
-    //   .then(res => this.setState({ submitted: true }))
-    //   .then(err => this.setState({ submitted: true, message: err.data }));
+    return axios.post('/api/subscribe', { email })
+      .then(res => this.setState({ submitted: true }))
+      .then(err => this.setState({ submitted: true, message: err.data }));
   }
 
   emailIsValid () {
@@ -48,7 +46,7 @@ class NewsletterSignup extends React.Component {
       label: 'Enter your email address',
       onChange: this.onEmailChange,
       isSubmittable: this.emailIsValid(),
-      onSubmit: this.submitEmail,
+      onSubmit: () => this.submitEmail(),
       isValid: isValidEmail
     };
 
