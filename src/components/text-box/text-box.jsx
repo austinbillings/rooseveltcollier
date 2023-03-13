@@ -59,7 +59,7 @@ class TextBox extends React.Component {
           placeholder={label ? label : 'Please Enter a Value'}
         />
       {!onSubmit ? null : (
-        <Submit when={isSubmittable && touched && !isErrant}>
+        <Submit when={isSubmittable && touched && !isErrant} onClick={onSubmit}>
           <Icon fa="chevron-circle-right"/>
         </Submit>
       )}

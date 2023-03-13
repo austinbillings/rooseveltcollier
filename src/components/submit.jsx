@@ -6,11 +6,11 @@ export default class Submit extends React.Component {
   }
 
   render () {
-    let { className, when, children } = this.props;
+    let { className, when, children, onClick } = this.props;
     return when ? (
-      <button type="submit" className={className}>{children}</button>
+      <button type="submit" onClick={onClick} className={className}>{children}</button>
     ) : (
-      <button type="submit" className={className} disabled>{children}</button>
+      <button type="submit" onClick={onClick} className={className} disabled>{children}</button>
     );
   }
 }
