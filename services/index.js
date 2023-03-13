@@ -5,10 +5,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const steno = require('./steno/steno');
-const tourFetcher = require('./tour-fetcher/expressHandler');
-const tourDateAutoUpdater = require('./tour-fetcher/autoUpdater');
+// const tourFetcher = require('./tour-fetcher/expressHandler');
+// const tourDateAutoUpdater = require('./tour-fetcher/autoUpdater');
 
-tourDateAutoUpdater();
+// tourDateAutoUpdater();
 
 let app = express();
 let api = express.Router();
@@ -18,7 +18,7 @@ api.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }));
 api.use(bodyParser.json({ limit: '50mb' }));
 
 api.post('/subscribe', cors(), steno.express);
-api.get('/tour', cors(), tourFetcher);
+// api.get('/tour', cors(), tourFetcher);
 
 app.use('/api', cors(), api);
 app.use(express.static(path.join(__dirname, '/public')));
