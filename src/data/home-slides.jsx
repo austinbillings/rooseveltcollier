@@ -5,42 +5,43 @@ import LinkButton from 'components/link-button';
 const homeSlides = [
   {
     id: '2023-africa',
-    title: 'Road to Africa Tour',
+    title: 'LIVE with Electric Kif',
     linkTo: '/tour',
     background: {
-      image: '/assets/photos/2023-seated-1500.jpg',
-      position: '65% 50%'
+      image: '/assets/tours/rcb-23.png',
+      position: '65% 65%'
     },
-    accent: '#261243',
+    accent: '#987908',
     content: (
       <span>
-        <h1>Road To Africa Tour</h1>
+        <h1>with Electric Kif</h1>
         <p style={{ width: '500px' }}>
-          <i>Just announced</i>, the Dr. will be covering Boston, New York, Lincoln, Bentonville, Chattanooga, Knoxville, Savannah, Greensboro, Cocoa, Dunedin, Sanford, Boca Raton, Cape Verde, Berlin, and Köln!
+          All through the fall, catch Roosevelt Collier on tour across the US with Electric Kif. Get tickets while they're still available.
         </p>
         <LinkButton href="/tour">
-          GET TICKETS <Icon fa="angle-right"/>
+          SEE DATES <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )
   },
   {
     id: '2023-tour',
-    title: 'LIVE in 2023',
+    title: 'STEELN\' PEACHES',
     linkTo: '/tour',
     background: {
-      image: '/assets/photos/2023-blue.jpg',
+      image: '/assets/tours/jimimeetsfunk-23.jpg',
       position: '50% 20%'
     },
-    accent: '#261243',
+    accent: '#E8663D',
     content: (
       <span>
-        <h1>On tour in 2023</h1>
+        <h1>STEELN' PEACHES</h1>
+        <h3>Jimi Meets Funk - an ABB Revue</h3>
         <p style={{ width: '500px' }}>
-          Tickets now available to see Roosevelt in special appearances alongside <b>Jelly Roll</b> on the Backroad Baptism tour
+          Tickets now available to see this Musical Celebration of Jimi Hendrix and the Allman Brothers-- catch one of only four performances this December.
         </p>
         <LinkButton href="/tour">
-          TOUR DATES <Icon fa="angle-right"/>
+          GET TICKETS <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )

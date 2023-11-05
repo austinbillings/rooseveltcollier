@@ -3,9 +3,54 @@ import React from 'react';
 export default [
   {
     isFeatured: true,
+    title: 'History',
+    id: 'history',
+    subtitle: 'Available Now',
+    releaseDate: '2023-06-03',
+    image: 'https://bokante.com/assets/albums/history.jpg',
+    links: [
+      {
+        text: 'Listen and Buy Now',
+        url: 'https://lnk.to/RW244'
+      }
+    ],
+    content: (
+      <div>
+        <p>On their third album, Bokanté have plugged into the blues, tracing the genre’s roots in West Africa and the Arab world through the diaspora into the retro-modern present. These nine tracks tell — with lyrics sung mainly in Guadeloupean Creole — of outsiders and seers, memories and joy; of black history, global unity and the futility of war. Of taking time to rest, feel, love. Of the redemptive power of music — as a conduit, a change maker, a muse.</p>
+        <p>
+        History finds Bokanté exploring further, dressing folkloric instruments including the Arabic oud, West African ngoni and North African guembri, the bass lute favoured by Morocco’s Gnawa maalems, in western clothes. Interweaving layers of percussion with all the nuanced skill expected of four percussion maestros: André Ferrari of Swedish folk renegades Väsen. Ex-Berklee music professor Jamey Haddad (Sting, Paul Simon). Nagasaki-raised, New York-based Keita Ogawa (Cecile McLorin Salvant). Ghanaian-New Orleanian drum king Weedie Braimah (Christian Scott), a special guest on What Heat, a vital band member now.
+        </p>
+        <p>Band members including Snarky Puppy guitarists Chris McQueen and Bob Lanzetti and South Florida raised-lap steel player Roosevelt Collier had previously recorded remotely, absorbing and embellishing the music sent to them in files by co-writers Tirolien and League, who was often elsewhere with other projects. While History’s painterly lyrics were primarily written by the Guadalupe-born Tirolien during lockdown in Montreal, the re-opening of the world saw the entire ensemble converge on League’s home in a tiny village outside Barcelona, Spain. </p>
+      </div>
+    ),
+    tracks: [
+      { title: 'Bliss' },
+      { title: 'Adjoni' },
+      { title: 'Pa Domi' },
+      { title: 'Illiminé' },
+      { title: 'Flè a Mémwa' },
+      { title: 'Ta Voix' },
+      { title: 'Tandé' },
+      { title: 'Mikrob' },
+      { title: 'History' },
+    ],
+    credits: [
+      { name: 'Malika Tirolien', part: 'vocals' },
+      { name: 'Weedie Braimah', part: 'djembe, congas' },
+      { name: 'Keita Ogawa', part: 'congas, dohola, cymbal, chains, claps, bendir, bells, darbuka, surdo, caixa, riq, krakeb, kanjira, timbau, bomb legüero' },
+      { name: 'Jamey Haddad Kuwaiti', part: 'tar, ocean drum, finger cymbal, chains, bells, claps, kanjira, cowbell, shekere, palm brushes, vocal percussion, bendir, darbuka, metal pots, anklung' },
+      { name: 'André Ferrari', part: 'bombo legüero, frame drum, bells, grouse pipe, bass drum' },
+      { name: 'Michael League', part: 'guimbre, electric oud, electric bass, vocals, claps, ngoni, krakeb' },
+      { name: 'Chris McQueen', part: 'electric and acoustic guitars' },
+      { name: 'Bob Lanzetti', part: 'electric and acoustic guitars, nylon string guitar' },
+      { name: 'Roosevelt Collier', part: 'lap steel guitar' },
+    ]
+  },
+  {
+    isFeatured: true,
     title: 'Exit 16',
     id: 'exit16',
-    subtitle: 'Now Available',
+    subtitle: 'Available Everywhere',
     releaseDate: '2018-03-09',
     image: '/assets/exit-16.jpg',
     links: [

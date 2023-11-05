@@ -1,3 +1,32 @@
 .tour-page {
   margin-bottom: 40px;
 }
+.poster-list {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.poster-list img {
+  flex: 1;
+  max-width: 32%;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .poster-list {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .poster-list img {
+    max-width: 100%;
+    flex: 1;
+    align-self: stretch;
+  }
+
+}
