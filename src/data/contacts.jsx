@@ -5,8 +5,8 @@ const contacts = [
   },
   {
     type: 'North American / Canada Booking',
-    name: 'Jamie Ziefert',
-    email: 'jamie@thekurlandagency.com'
+    name: 'Music Works International',
+    email: 'booking@musicworksinternational.com'
   },
   {
     type: 'World Booking Agency',
