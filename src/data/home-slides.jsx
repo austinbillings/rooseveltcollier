@@ -23,7 +23,7 @@ const homeSlides = [
         </LinkButton>
       </span>
     )
-  },
+  },/*
   {
     id: '2023-tour',
     title: 'STEELN\' PEACHES',
@@ -45,7 +45,7 @@ const homeSlides = [
         </LinkButton>
       </span>
     )
-  },
+  },*/
   // {
   //   id: 'womex-announcement',
   //   title: `Live at WOMEX`,

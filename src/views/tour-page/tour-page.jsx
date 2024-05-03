@@ -17,7 +17,7 @@ class TourPage extends React.Component {
           <SectionHeading align="center" text="On Tour"/>
           <div className="poster-list">
             {[
-              '/assets/tours/jimimeetsfunk-23.jpg',
+              // '/assets/tours/jimimeetsfunk-23.jpg',
               '/assets/tours/rcb-23.png',
               '/assets/tours/rcb-ek-23-florida.png',
             ].map(imageUrl => (
