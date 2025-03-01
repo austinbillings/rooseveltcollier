@@ -45,10 +45,10 @@
     "react-scrollchor": "^3.0.0",
     "react-youtube": "^7.14.0",
     "redux": "^3.7.2",
-    "sass-loader": "^2.0.1",
+    "sass-loader": "^13.2.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^3.12.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^2.11.5",
     "xx": "^0.0.3",
     "zaq": "^2.1.5"
