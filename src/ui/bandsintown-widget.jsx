@@ -140,7 +140,7 @@ const BandsintownWidget = ({ style = {}, displayLimit = 'all' } = {}) => {
         data-follow-section-cta-border-width="0px"
         data-follow-section-cta-border-radius="4px"
 
-        data-play-my-city-position="hidden"
+        data-play-my-city-position="bottom"
         data-play-my-city-alignment="Center"
         data-play-my-city-header-text="Don’t see a show near you?"
         data-play-my-city-cta-size="medium"

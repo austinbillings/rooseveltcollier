@@ -3,6 +3,45 @@ import React from 'react';
 export default [
   {
     isFeatured: true,
+    title: 'A Tribute to LJK',
+    id: 'tribute-to-ljk',
+    subtitle: <span>with <b>Eric Gales</b></span>,
+    releaseDate: '2025-04-04',
+    image: '/assets/albums/tribute-to-ljk.jpg',
+    links: [
+      {
+        text: 'Listen Now',
+        url: 'https://orcd.co/tributetoljk'
+      }
+    ],
+    content: (
+      <div>
+        <p>Roosevelt is featured on "Somebody," the closing track of Eric Gales' tribute album honoring the late Little Jimmy King. The album also features blues legends Buddy Guy, Christone "Kingfish" Ingram, Joe Bonamassa, and Josh Smith.</p>
+      </div>
+    ),
+    tracks: [
+      { title: 'Cold Women With Warm Hearts' },
+      { title: 'Drowning on Dry Land' },
+      { title: 'Got to Find a Way' },
+      { title: 'Born Under a Bad Sign' },
+      { title: 'Wrapped Up in Love Again' },
+      { title: 'Freedom' },
+      { title: 'Shake for Me' },
+      { title: 'Little Jimmy King Medley' },
+      { title: 'Hoodoo Man Blues' },
+      { title: 'Somebody', note: 'featuring Roosevelt Collier & Buddy Guy' }
+    ],
+    credits: [
+      { name: 'Eric Gales', part: 'Guitar, Vocals' },
+      { name: 'Roosevelt Collier', part: 'Pedal Steel Guitar' },
+      { name: 'Buddy Guy', part: 'Guitar, Vocals' },
+      { name: 'Joe Bonamassa', part: 'Guitar' },
+      { name: 'Josh Smith', part: 'Guitar' },
+      { name: 'Christone "Kingfish" Ingram', part: 'Guitar' }
+    ]
+  },
+  {
+    isFeatured: true,
     title: 'History',
     id: 'history',
     subtitle: 'Available Now',

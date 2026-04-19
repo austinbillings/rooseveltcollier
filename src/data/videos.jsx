@@ -2,6 +2,16 @@ import React from 'react';
 
 const videos = [
   {
+    title: 'Jelly Roll - "Winning Streak" (Live on SNL)',
+    subtitle: 'Roosevelt Collier as Musical Director',
+    youtubeId: '7MujD0ZW_fo'
+  },
+  {
+    title: 'Jelly Roll - "Liar"',
+    subtitle: 'Official Music Video',
+    youtubeId: 'YLK6-ARJB8w'
+  },
+  {
     title: 'at Rio das Ostras Jazz & Blues Festival 2021',
     subtitle: 'featuring. Jimmy James',
     youtubeId: 'mU5xBF3uwlA'

@@ -14,8 +14,9 @@ const About = [
     body: (
       <div>
         <p>Soft spoken by nature, South Florida-bred ROOSEVELT COLLIER does his hollering on the pedal steel guitar. Brought up in the "sacred steel" tradition of the House of God Church, Roosevelt built his reputation alongside his uncles and cousins in The Lee Boys, known for their spirited, soul-shaking live performances. Seated front and center, "The Dr." leaves an indelible mark on listeners, flooring audiences with his lightning-fast slide work on the pedal steel.</p>
-        <p>At festivals, he is a regular "Artist at Large," performing alongside many of music's most prestigious acts, from the Allman Brothers, Tedeschi-Trucks, Los Lobos , the Del McCoury Band and countless others. In 2017, Roosevelt debuted his new project Bokanté - a "World Music All-Star Band" created by Snarky Puppy founder Michael League and featuring the vocals of Malika Tirolien.</p>
-        <p>As a bandleader, Roosevelt leads his world famous "get-downs" featuring a mixture of "superstars and church folk", his own "Jimi Hendrix Experiment"-style all-star trio, and in 2018 has released the long-awaited Roosevelt Collier debut record, featuring an incredible mixture of blues, gospel, rock, and funk all rolled up by producer and bandmate Michael League.</p>
+        <p>Since 2023, Roosevelt has been touring as the Musical Director for country star Jelly Roll, bringing his signature steel sound to arenas worldwide and appearing on Saturday Night Live. He's also featured on blues legend Eric Gales' latest album alongside Buddy Guy.</p>
+        <p>At festivals, he is a regular "Artist at Large," performing alongside many of music's most prestigious acts, from the Allman Brothers, Tedeschi-Trucks, Los Lobos, the Del McCoury Band and countless others. In 2017, Roosevelt debuted his new project Bokanté - a "World Music All-Star Band" created by Snarky Puppy founder Michael League and featuring the vocals of Malika Tirolien.</p>
+        <p>As a bandleader, Roosevelt leads his world famous "get-downs" featuring a mixture of "superstars and church folk", his own "Jimi Hendrix Experiment"-style all-star trio, and in 2018 released the long-awaited Roosevelt Collier debut record, featuring an incredible mixture of blues, gospel, rock, and funk all rolled up by producer and bandmate Michael League.</p>
       </div>
     )
   },

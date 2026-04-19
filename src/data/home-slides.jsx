@@ -4,22 +4,43 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
-    id: '2023-africa',
-    title: 'LIVE with Electric Kif',
-    linkTo: '/tour',
+    id: 'jelly-roll-md',
+    title: 'Musical Director for Jelly Roll',
+    linkTo: '/video',
     background: {
-      image: '/assets/tours/rcb-23.png',
-      position: '65% 65%'
+      image: '/assets/photos/jelly-roll-tour.jpg',
+      position: '50% 30%'
     },
-    accent: '#987908',
+    accent: '#C41E3A',
     content: (
       <span>
-        <h1>with Electric Kif</h1>
+        <h1>Musical Director for Jelly Roll</h1>
         <p style={{ width: '500px' }}>
-          All through the fall, catch Roosevelt Collier on tour across the US with Electric Kif. Get tickets while they're still available.
+          Roosevelt has been touring with country star Jelly Roll as his Musical Director since 2023, bringing sacred steel to arenas worldwide and performing on Saturday Night Live.
         </p>
-        <LinkButton href="/tour">
-          SEE DATES <Icon fa="angle-right"/>
+        <LinkButton href="/video">
+          WATCH CLIPS <Icon fa="angle-right"/>
+        </LinkButton>
+      </span>
+    )
+  },
+  {
+    id: 'eric-gales-ljk',
+    title: 'A Tribute to LJK',
+    linkTo: '/music#tribute-to-ljk',
+    background: {
+      image: '/assets/albums/tribute-to-ljk.jpg',
+      position: '50% 50%'
+    },
+    accent: '#D4A574',
+    content: (
+      <span>
+        <h1>Featured on Eric Gales' New Album</h1>
+        <p style={{ width: '500px' }}>
+          Roosevelt is featured on "Somebody," the closing track of Eric Gales' tribute to Little Jimmy King, alongside Buddy Guy.
+        </p>
+        <LinkButton href="/music#tribute-to-ljk">
+          LISTEN NOW <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )

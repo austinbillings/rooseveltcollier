@@ -3,3 +3,4 @@ node_modules
 raw_assets
 .DS_Store
 services/tour-fetcher/cache/*
+.nova
