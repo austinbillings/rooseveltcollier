@@ -13,7 +13,7 @@
     padding: 10px 20px;
     font-family: $title-font;
     background-color: $black;
-    border: 1px solid lighten($black, 20%);
+    border: 1px solid mix($white, $black, 20%);
     border-right-color: transparent;
     margin-left: -1px;
     position: relative;
@@ -21,9 +21,9 @@
     transition: all 0.25s;
 
     &:hover {
-      border-color: lighten($black, 40%);
+      border-color: mix($white, $black, 40%);
       z-index: 10;
-      border-right-color: lighten($black, 40%);
+      border-right-color: mix($white, $black, 40%);
     }
 
     &.tab-active {
@@ -39,10 +39,10 @@
     &:last-child {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
-      border-right-color: lighten($black, 20%);
+      border-right-color: mix($white, $black, 20%);
 
       &:hover {
-        border-right-color: lighten($black, 40%);
+        border-right-color: mix($white, $black, 40%);
       }
     }
   }

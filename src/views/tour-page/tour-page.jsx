@@ -15,15 +15,6 @@ class TourPage extends React.Component {
       <grid className="tour-page">
         <stack style={{ width: '100%', flexGrow: 1 }}>
           <SectionHeading align="center" text="On Tour"/>
-          <div className="poster-list">
-            {[
-              // '/assets/tours/jimimeetsfunk-23.jpg',
-              '/assets/tours/rcb-23.png',
-              '/assets/tours/rcb-ek-23-florida.png',
-            ].map(imageUrl => (
-              <img key={imageUrl} src={imageUrl} />
-            ))}
-          </div>
           <BandsintownWidget limit="all" />
         </stack>
       </grid>

@@ -52,11 +52,6 @@ class HomePage extends React.Component {
 
         <SectionHeading text="Upcoming Shows"/>
         <BandsintownWidget displayLimit="5" style={{ maxWidth: 1280, margin: '0 auto' }} />
-          {/*<div className="xs-12 md-6 md-offset-3">
-            <img src="/assets/tours/summer-uk-2019.jpg" style={{ maxWidth: '90%', margin: '5px auto', border: '4px solid white', boxSizing: 'border-box' }} />
-          </div>*/}
-
-
 
         {/* VIDEO SECTION */}
         <SectionHeading text="Video"/>

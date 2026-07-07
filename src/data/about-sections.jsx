@@ -8,22 +8,22 @@ const About = [
   {
     heading: <SectionHeading text="About" align="left" />,
     image: {
-      url: '/assets/photos/soul.jpg',
+      url: '/assets/2026/optimized/roosevelt-hat-bw.jpg',
       position: 'center center'
     },
     body: (
       <div>
-        <p>Soft spoken by nature, South Florida-bred ROOSEVELT COLLIER does his hollering on the pedal steel guitar. Brought up in the "sacred steel" tradition of the House of God Church, Roosevelt built his reputation alongside his uncles and cousins in The Lee Boys, known for their spirited, soul-shaking live performances. Seated front and center, "The Dr." leaves an indelible mark on listeners, flooring audiences with his lightning-fast slide work on the pedal steel.</p>
-        <p>Since 2023, Roosevelt has been touring as the Musical Director for country star Jelly Roll, bringing his signature steel sound to arenas worldwide and appearing on Saturday Night Live. He's also featured on blues legend Eric Gales' latest album alongside Buddy Guy.</p>
-        <p>At festivals, he is a regular "Artist at Large," performing alongside many of music's most prestigious acts, from the Allman Brothers, Tedeschi-Trucks, Los Lobos, the Del McCoury Band and countless others. In 2017, Roosevelt debuted his new project Bokanté - a "World Music All-Star Band" created by Snarky Puppy founder Michael League and featuring the vocals of Malika Tirolien.</p>
-        <p>As a bandleader, Roosevelt leads his world famous "get-downs" featuring a mixture of "superstars and church folk", his own "Jimi Hendrix Experiment"-style all-star trio, and in 2018 released the long-awaited Roosevelt Collier debut record, featuring an incredible mixture of blues, gospel, rock, and funk all rolled up by producer and bandmate Michael League.</p>
+        <p><b>Roosevelt "The Dr." Collier is a 4× Grammy-nominated pedal steel guitarist who cut his teeth in the church but plays like a back-road bluesman.</b> Fronting his own band since 2012, he's torn up festivals and stages in over 50 countries. His debut album <i>Exit 16</i> distills blues, gospel, and funk into pure fire.</p>
+        <p>Soft spoken by nature, South Florida-bred Roosevelt does his hollering on the pedal steel guitar. Brought up in the "sacred steel" tradition of the House of God Church, he built his reputation alongside his uncles and cousins in The Lee Boys, known for their spirited, soul-shaking live performances. Seated front and center, "The Dr." leaves an indelible mark on listeners, flooring audiences with his lightning-fast slide work.</p>
+        <p>At festivals, he is a regular "Artist at Large," performing alongside many of music's most prestigious acts — from the Allman Brothers, Tedeschi-Trucks, Los Lobos, and the Del McCoury Band to countless others. In 2017 he debuted Bokanté, the "World Music All-Star Band" created by Snarky Puppy founder Michael League and featuring the vocals of Malika Tirolien. He's also featured on blues legend Eric Gales' latest album alongside Buddy Guy.</p>
+        <p>Beyond his own project, Roosevelt has served as Music Director for country superstar Jelly Roll, bringing sacred steel to arenas worldwide and Saturday Night Live. As a bandleader, he headlines his world-famous "get-downs" — a mixture of "superstars and church folk" — and fronts his own "Jimi Hendrix Experiment"-style all-star trio.</p>
       </div>
     )
   },
   {
     image: {
-      url: '/assets/photos/wall-distant.jpg',
-      position: 'center 80%'
+      url: '/assets/2026/optimized/jelly-bangor-solo.jpg',
+      position: 'center 40%'
     },
     heading: (
       <row className="items-end">

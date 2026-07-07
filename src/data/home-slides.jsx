@@ -4,22 +4,22 @@ import LinkButton from 'components/link-button';
 
 const homeSlides = [
   {
-    id: 'jelly-roll-md',
-    title: 'Musical Director for Jelly Roll',
-    linkTo: '/video',
+    id: 'the-dr',
+    title: 'Roosevelt "The Dr." Collier',
+    linkTo: '/about',
     background: {
-      image: '/assets/photos/jelly-roll-tour.jpg',
-      position: '50% 30%'
+      image: '/assets/2026/optimized/roosevelt-warm-stage.jpg',
+      position: '50% 40%'
     },
-    accent: '#C41E3A',
+    accent: 'rgba(180, 60, 30, 1)',
     content: (
       <span>
-        <h1>Musical Director for Jelly Roll</h1>
+        <h1>Roosevelt "The Dr." Collier</h1>
         <p style={{ width: '500px' }}>
-          Roosevelt has been touring with country star Jelly Roll as his Musical Director since 2023, bringing sacred steel to arenas worldwide and performing on Saturday Night Live.
+          A 4× Grammy-nominated pedal steel guitarist who cut his teeth in the church but plays like a back-road bluesman. Fronting his own band since 2012, he's torn up festivals and stages in over 50 countries.
         </p>
-        <LinkButton href="/video">
-          WATCH CLIPS <Icon fa="angle-right"/>
+        <LinkButton href="/about">
+          LEARN MORE <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )
@@ -220,8 +220,8 @@ const homeSlides = [
     linkTo: '/about',
     accent: 'rgba(147, 32, 49, 1)',
     background: {
-      image: '/assets/photos/live.jpg',
-      position: '50% 50%'
+      image: '/assets/2026/optimized/band-stage-bw.jpg',
+      position: '50% 30%'
     },
     content: (
       <div>
@@ -234,6 +234,27 @@ const homeSlides = [
         </p>
         <LinkButton href="/about">
           Learn more <Icon fa="angle-right"/>
+        </LinkButton>
+      </div>
+    )
+  },
+  {
+    id: 'jelly-roll-md',
+    title: 'Music Director for Jelly Roll',
+    linkTo: '/video',
+    background: {
+      image: '/assets/2026/optimized/jelly-bangor-fireworks.jpg',
+      position: '50% 40%'
+    },
+    accent: 'rgba(120, 40, 30, 1)',
+    content: (
+      <div>
+        <h1>On the road with Jelly Roll</h1>
+        <p style={{ width: '500px' }}>
+          Roosevelt has served as Music Director for country superstar Jelly Roll, bringing sacred steel to arenas worldwide and Saturday Night Live.
+        </p>
+        <LinkButton href="/video">
+          Watch clips <Icon fa="angle-right"/>
         </LinkButton>
       </div>
     )

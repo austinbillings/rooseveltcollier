@@ -3,7 +3,7 @@ import React from 'react';
 const videos = [
   {
     title: 'Jelly Roll - "Winning Streak" (Live on SNL)',
-    subtitle: 'Roosevelt Collier as Musical Director',
+    subtitle: 'Roosevelt Collier as Music Director',
     youtubeId: '7MujD0ZW_fo'
   },
   {
