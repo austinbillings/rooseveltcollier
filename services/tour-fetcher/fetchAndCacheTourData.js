@@ -1,5 +1,5 @@
 const path = require('path');
-const zaq = require('zaq').as('TourFetcher');
+const zaq = require('../utils/logger').as('TourFetcher');
 
 const fetchArtistData = require('./fetchArtistData');
 const processArtistData = require('./processArtistData');

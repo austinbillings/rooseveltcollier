@@ -1,5 +1,5 @@
 const typeUtils = require('../utils/type-utils');
-const zaq = require('zaq').as('processArtistData');
+const zaq = require('../utils/logger').as('processArtistData');
 const { isObject, isArray } = typeUtils;
 
 module.exports = function processArtistData (artistDataArray) {

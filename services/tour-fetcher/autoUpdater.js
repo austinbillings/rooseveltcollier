@@ -1,4 +1,4 @@
-const zaq = require('zaq').as('tourDateAutoUpdater')
+const zaq = require('../utils/logger').as('tourDateAutoUpdater')
 
 const RUN_ON_THE_HOUR = true;
 const { cacheExpiration } = require('./config');

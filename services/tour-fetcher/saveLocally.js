@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const zaq = require('zaq').as('saveLocally');
+const zaq = require('../utils/logger').as('saveLocally');
 const { isString, isFunction, isDefined } = require('../utils/type-utils');
 const { ensureParentDirExists } = require('../utils/file-utils');
 

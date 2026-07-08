@@ -1,4 +1,4 @@
-const zaq = require('zaq').as('extractTourDates');
+const zaq = require('../utils/logger').as('extractTourDates');
 const { isObject, isArray } = require('../utils/type-utils');
 
 function simplifyTourDate ({ location, startDate: date, url: tickets }) {

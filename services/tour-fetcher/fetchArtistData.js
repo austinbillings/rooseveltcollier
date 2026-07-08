@@ -1,5 +1,5 @@
 const Nightmare = require('nightmare');
-const zaq = require('zaq').as('fetchArtistData');
+const zaq = require('../utils/logger').as('fetchArtistData');
 const Xvfb = require('xvfb');
 
 const USE_XVFB = process.platform === 'linux';

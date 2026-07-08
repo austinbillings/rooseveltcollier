@@ -1,4 +1,4 @@
-const zaq = require('zaq');
+const zaq = require('../utils/logger');
 const fs = require('fs');
 const config = require('./steno.config.js');
 

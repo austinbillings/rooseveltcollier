@@ -1,5 +1,5 @@
 const fs = require('fs');
-const zaq = require('zaq').as('getCachedTourData');
+const zaq = require('../utils/logger').as('getCachedTourData');
 
 const { fileExists } = require('../utils/file-utils');
 const { isString } = require('../utils/type-utils');
