@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './home-page.scss';
+import './home-page.css';
 import socials from 'meta/socials';
 import Urls from 'meta/urls';
 

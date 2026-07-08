@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './slide-panel.scss';
+import './slide-panel.css';
 
 import Icon from 'components/icon';
 import { keylightGradient } from 'utils/css';

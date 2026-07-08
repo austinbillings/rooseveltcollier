@@ -1,16 +1,32 @@
 import React from 'react';
-import moment from 'moment';
 
-import './event-list.scss';
+import './event-list.css';
 import Icon from 'components/icon';
+
+const longFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+const shortFormatter = new Intl.DateTimeFormat('en-US', { month: 'numeric', day: 'numeric', year: '2-digit' });
+
+const parseDate = (raw) => {
+  const d = raw instanceof Date ? raw : new Date(raw);
+  return isNaN(d.getTime()) ? null : d;
+};
+
+const formatDate = (raw, { short } = {}) => {
+  const d = parseDate(raw);
+  if (!d) return '';
+  return (short ? shortFormatter : longFormatter).format(d);
+};
+
+const isBeforeNow = (raw) => {
+  const d = parseDate(raw);
+  return d ? d.getTime() < Date.now() : false;
+};
 
 class EventList extends React.Component {
   constructor (props) {
     super(props);
 
-    this.state = {
-      pastEventsVisible: false
-    };
+    this.state = { pastEventsVisible: false };
 
     this.renderEventRow = this.renderEventRow.bind(this);
     this.togglePastEventsVisible = this.togglePastEventsVisible.bind(this);
@@ -18,48 +34,39 @@ class EventList extends React.Component {
   }
 
   togglePastEventsVisible () {
-    const { pastEventsVisible } = this.state;
-
-    this.setState({ pastEventsVisible: !pastEventsVisible });
+    this.setState({ pastEventsVisible: !this.state.pastEventsVisible });
   }
 
   renderEventRow ({ date, venue, city, tickets, free }, index) {
-    const parsedDate = moment(date);
-    const hasPassed = parsedDate.isBefore();
+    const hasPassed = isBeforeNow(date);
     const { hidePastEvents, shortDates } = this.props;
     const { pastEventsVisible } = this.state;
     const className = 'event-row '
       + (!hasPassed
           ? ''
-          : ('XXevent-row-passed ' + (
-            pastEventsVisible
-              ? ''
-              : 'event-row-collapsed'
-            )
-          )
-        );
+          : ('XXevent-row-passed ' + (pastEventsVisible ? '' : 'event-row-collapsed')));
 
-    return hasPassed && hidePastEvents
-      ? null
-      : (
-        <row className={className} key={index}>
-          <box className={`event-date ${shortDates ? 'event-date-short' : ''}`}>{parsedDate.format(shortDates ? 'l' : 'MMM D, Y')}</box>
-          <box className="event-setting">
-            <box className="event-venue">{venue}</box>
-            <box className="event-city">{city}</box>
-          </box>
-          <box className="event-tickets">
-            {free
-              ? <button>Free Show</button>
-              : !tickets
-                ? <button>Coming Soon</button>
-                : <a href={tickets} target="_blank">
-                    <button>Tickets <Icon fa="chevron-right"/></button>
-                  </a>
-            }
-          </box>
-        </row>
-      );
+    return hasPassed && hidePastEvents ? null : (
+      <row className={className} key={index}>
+        <box className={`event-date ${shortDates ? 'event-date-short' : ''}`}>
+          {formatDate(date, { short: shortDates })}
+        </box>
+        <box className="event-setting">
+          <box className="event-venue">{venue}</box>
+          <box className="event-city">{city}</box>
+        </box>
+        <box className="event-tickets">
+          {free
+            ? <button>Free Show</button>
+            : !tickets
+              ? <button>Coming Soon</button>
+              : <a href={tickets} target="_blank" rel="noreferrer">
+                  <button>Tickets <Icon fa="chevron-right"/></button>
+                </a>
+          }
+        </box>
+      </row>
+    );
   }
 
   renderPastEventsToggle () {
@@ -77,15 +84,12 @@ class EventList extends React.Component {
   render () {
     const { events, hidePastEvents } = this.props;
     const PastEventsToggle = this.renderPastEventsToggle;
-    const pastEventsExist = events.some(event => moment(event.date).isBefore());
+    const pastEventsExist = events.some(event => isBeforeNow(event.date));
 
     return (
       <stack className="event-list">
         {hidePastEvents || !pastEventsExist ? null : <PastEventsToggle/>}
-        {!events || !events.length
-          ? null
-          : events.map(this.renderEventRow)
-        }
+        {!events || !events.length ? null : events.map(this.renderEventRow)}
       </stack>
     );
   }

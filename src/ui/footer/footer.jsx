@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './footer.scss';
+import './footer.css';
 import { scrollToTop } from 'utils/dom';
 import globals from 'meta/globals';
 import Socials from 'meta/socials';

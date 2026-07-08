@@ -1,17 +1,15 @@
 {
   "name": "roosevelt-collier-site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "RooseveltCollier.com",
-  "main": "index.html",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "linux-deps": "apt-get install -y xvfb x11-xkb-utils xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic x11-apps clang libdbus-1-dev libgtk2.0-dev libnotify-dev libgnome-keyring-dev libgconf2-dev libasound2-dev libcap-dev libcups2-dev libxtst-dev libxss1 libnss3-dev gcc-multilib g++-multilib",
-    "clean": "rm -rf ./dist/*",
-    "compile": "NODE_ENV=production webpack",
-    "build": "npm run clean && npm run compile",
-    "wds": "webpack-dev-server --content-base . --hot --inline",
-    "dev": "atom . && npm run wds",
-    "start:alt": "xvfb-run -a node services/index.js",
-    "update-tour:alt": "xvfb-run -a node services/tour-fetcher/invoke.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "start": "node services/index.js",
     "update-tour": "node services/tour-fetcher/invoke.js"
   },
@@ -21,36 +19,17 @@
   },
   "author": "ajb <ajb@hey.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/austinbillings/rooseveltcollier/issues"
-  },
-  "homepage": "https://github.com/austinbillings/rooseveltcollier#readme",
   "dependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
-    "@babel/preset-react": "^7.17.12",
-    "axios": "^0.27.2",
-    "babel-loader": "^8.2.5",
-    "babel-preset-stage-0": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "file-loader": "^6.2.0",
-    "jquery": "^3.6.0",
-    "mansion-ui": "^2.6.3",
-    "moment": "^2.29.3",
-    "react": "^15.7.0",
-    "react-dom": "^15.7.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scrollchor": "^3.0.0",
-    "react-youtube": "^7.14.0",
-    "redux": "^3.7.2",
-    "sass": "^1.99.0",
-    "sass-loader": "^7.3.1",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.5",
-    "xx": "^0.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "react-youtube": "^10.1.0",
     "zaq": "^2.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
   }
 }

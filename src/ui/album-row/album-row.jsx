@@ -1,10 +1,11 @@
 import React from 'react';
-import moment from 'moment';
 
-import './album-row.scss';
+import './album-row.css';
 import Overlay from 'components/overlay';
 import TabPanel from 'components/tab-panel';
 import LinkButton from 'components/link-button';
+
+const releaseFormatter = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
 class AlbumRow extends React.Component {
   constructor (props) {
@@ -39,25 +40,20 @@ class AlbumRow extends React.Component {
   }
 
   renderInfo ({ title, subtitle, releaseDate, content }) {
-    const release = releaseDate ? moment(releaseDate) : null;
+    const release = releaseDate ? new Date(releaseDate) : null;
+    const isReleased = release && release.getTime() < Date.now();
 
     return (
       <div className="album-info">
-        {!title ? null : (
-          <h1>{title}</h1>
-        )}
-        {!subtitle ? null : (
-          <h2>{subtitle}</h2>
-        )}
-        {!releaseDate ? null : (
+        {!title ? null : <h1>{title}</h1>}
+        {!subtitle ? null : <h2>{subtitle}</h2>}
+        {!release ? null : (
           <h3>
-            {release.isBefore() ? 'Released ' : 'Coming '}
-            {release.format('MMMM D, Y')}
+            {isReleased ? 'Released ' : 'Coming '}
+            {releaseFormatter.format(release)}
           </h3>
         )}
-        {!content ? null : (
-          <div className="album-content" children={content} />
-        )}
+        {!content ? null : <div className="album-content" children={content} />}
       </div>
     );
   }

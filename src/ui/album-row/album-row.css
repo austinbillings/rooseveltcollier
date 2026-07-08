@@ -1,0 +1,172 @@
+.album-row {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-black);
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.album-row .album-cover-container {
+  flex: 0 0 250px;
+  display: block;
+}
+
+.album-row .album-cover-container .album-cover-wrapper {
+  max-width: 100%;
+  height: 100%;
+}
+
+.album-row .album-cover-container .album-cover {
+  max-width: 100%;
+  margin: 0;
+}
+
+.album-row .album-details {
+  flex: 1 1 100%;
+  padding: 30px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-row .album-details .album-info {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.album-row .album-details .album-links {
+  flex: 0 0 auto;
+  margin-bottom: -20px;
+}
+
+.album-row .album-sidebar {
+  flex: 0 0 250px;
+  margin-left: 0;
+  padding: 5px;
+  background-color: #080a0a;
+}
+
+.album-row .album-sidebar .tab-bar {
+  margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .album-row {
+    flex-wrap: wrap;
+  }
+  .album-row .album-cover-container,
+  .album-row .album-details,
+  .album-row .album-sidebar {
+    flex: 1 1 auto;
+    margin: 20px 0;
+  }
+  .album-row .album-cover-container .album-cover {
+    width: 100%;
+  }
+}
+
+.album-row .album-info h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+.album-row .album-info h2 {
+  font-size: 25px;
+  color: var(--color-light-blue);
+}
+
+.album-row .album-info h3 {
+  font-size: 22px;
+  letter-spacing: 0;
+  color: var(--color-blue);
+  font-weight: 400;
+}
+
+.album-row .album-info blockquote {
+  color: var(--color-grey);
+  border-left-color: var(--color-grey);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 150%;
+}
+
+.album-row .album-info p {
+  line-height: 150%;
+}
+
+.album-row .album-link-button {
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+
+.album-row .album-link-button:hover {
+  background-color: var(--color-orange);
+}
+
+.album-row .album-tracklist {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.album-row .album-tracklist .album-track {
+  flex: 0 0 auto;
+}
+
+.album-row .album-track {
+  padding: 10px 5px;
+  display: flex;
+  border-bottom: 1px solid rgba(129, 132, 133, 0.3);
+  align-items: center;
+}
+
+.album-row .album-track .album-track-number {
+  width: 20px;
+  margin-right: 10px;
+  text-align: right;
+  font-weight: 100;
+  color: var(--color-blue);
+  font-size: 0.8em;
+}
+
+.album-row .album-track .album-track-title {
+  margin-right: 5px;
+}
+
+.album-row .album-track .album-track-length {
+  font-size: 0.8em;
+  font-weight: 500;
+  opacity: 0.25;
+}
+
+.album-row .album-track:last-child {
+  border-bottom: none;
+}
+
+.album-row .album-credits {
+  margin-bottom: 10px;
+}
+
+.album-row .album-credit {
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(129, 132, 133, 0.3);
+  text-align: center;
+}
+
+.album-row .album-credit .album-credit-name {
+  margin-right: 5px;
+  display: block;
+}
+
+.album-row .album-credit .album-credit-part {
+  font-size: 0.8em;
+  font-weight: 500;
+  opacity: 0.25;
+}
+
+.album-row .album-credit:last-child {
+  border-bottom: none;
+}

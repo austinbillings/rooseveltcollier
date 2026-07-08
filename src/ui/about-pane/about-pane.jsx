@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './about-pane.scss';
+import './about-pane.css';
 import Overlay from 'components/overlay';
 
 class AboutPane extends React.Component {

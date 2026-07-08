@@ -2,24 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import AudioPlayer from './audio-player';
-import { scrollToTop } from 'utils/utils';
+import { scrollToTop } from 'utils/dom';
 
 class Player extends React.Component {
   constructor (props) {
     super(props);
-    this.state = { song: null, source: null };
-
-    if (this.props.song && this.props.song.url) {
-      this.setState({ song: this.props.song, source: this.props.song.url });
-    }
-
-    this.componentWillReceiveProps = this.componentWillReceiveProps.bind(this);
+    const song = props.song && props.song.url ? props.song : null;
+    this.state = { song, source: song ? song.url : null };
   }
 
-  componentWillReceiveProps (newProps) {
-    if (newProps.song && newProps.song.url) {
-      this.setState({ song: newProps.song, source: newProps.song.url });
-    };
+  componentDidUpdate (prevProps) {
+    const { song } = this.props;
+    if (song && song.url && (!prevProps.song || prevProps.song.url !== song.url)) {
+      this.setState({ song, source: song.url });
+    }
   }
 
   render () {

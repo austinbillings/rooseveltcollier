@@ -1,7 +1,6 @@
 import React from 'react';
-import axios from 'axios';
 
-import './newsletter-signup.scss';
+import './newsletter-signup.css';
 import TextBox from 'components/text-box';
 import { isValidEmail } from 'utils/validation';
 
@@ -20,13 +19,19 @@ class NewsletterSignup extends React.Component {
     this.emailIsValid = this.emailIsValid.bind(this);
   }
 
-  submitEmail () {
-
+  async submitEmail () {
     const { email } = this.state;
-
-    return axios.post('/api/subscribe', { email })
-      .then(res => this.setState({ submitted: true }))
-      .then(err => this.setState({ submitted: true, message: err.data }));
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      const data = await res.json().catch(() => null);
+      this.setState({ submitted: true, message: data });
+    } catch (err) {
+      this.setState({ submitted: true, message: err.message });
+    }
   }
 
   emailIsValid () {

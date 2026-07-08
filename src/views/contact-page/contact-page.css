@@ -1,0 +1,61 @@
+.contact-page .section-heading {
+  flex: 0 0 auto;
+}
+
+.contact-page .contact-content {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+  min-height: calc(100vh - 110px);
+}
+
+.contact-page .contact-item {
+  flex-direction: column;
+  margin-bottom: 10vh;
+  max-width: 100%;
+}
+
+.contact-page .contact-item box {
+  padding: 20px;
+}
+
+.contact-page .contact-item .contact-type {
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+
+.contact-page .contact-item .contact-info {
+  margin: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.contact-page .contact-item .contact-info tel,
+.contact-page .contact-item .contact-info a {
+  display: block;
+}
+
+.contact-page .contact-item .contact-info a {
+  text-transform: uppercase;
+  font-weight: bold;
+  word-wrap: break-word;
+  margin: 10px 0;
+}
+
+@media (max-width: 650px) {
+  .contact-page .contact-item .contact-type {
+    font-size: 15px;
+  }
+  .contact-page .contact-item h1,
+  .contact-page .contact-item h2,
+  .contact-page .contact-item h3,
+  .contact-page .contact-item h4,
+  .contact-page .contact-item h5,
+  .contact-page .contact-item h6,
+  .contact-page .contact-item big,
+  .contact-page .contact-item p,
+  .contact-page .contact-item a {
+    max-width: calc(90vw - 20px);
+  }
+}

@@ -1,0 +1,67 @@
+.card {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card.card-axis-y {
+  flex-direction: column;
+}
+
+.card.card-axis-x {
+  flex-direction: row;
+}
+
+.card.card-axis-x .card-image {
+  flex: 0 0 40%;
+}
+
+@media (max-width: 1199px) {
+  .card.card-axis-x {
+    flex-wrap: wrap;
+  }
+  .card.card-axis-x .card-image {
+    flex-basis: 100%;
+  }
+}
+
+.card .card-image {
+  min-height: 350px;
+  background-size: cover;
+  display: block;
+  width: 100%;
+}
+
+.card .card-title {
+  padding: 10px 25px;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  box-shadow: inset 0 -10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-content {
+  display: block;
+  padding: 5px 25px;
+  font-size: 17px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.card .card-action {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card .card-action button {
+  margin: 0 auto;
+  background-color: black;
+}
+
+.card .card-action button:hover {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+}

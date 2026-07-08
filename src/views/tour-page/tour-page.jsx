@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './tour-page.scss';
+import './tour-page.css';
 import TourPanel from './tour-panel.jsx';
 import BandsintownWidget from 'ui/bandsintown-widget';
 import SectionHeading from 'ui/section-heading';

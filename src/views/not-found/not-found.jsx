@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './not-found.scss';
+import './not-found.css';
 import Icon from 'components/icon';
 
 class NotFound extends React.Component {

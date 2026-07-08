@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './section-heading.scss';
+import './section-heading.css';
 import Icon from 'components/icon';
 
 class SectionHeading extends React.Component {

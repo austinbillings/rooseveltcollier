@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-import './header.scss';
+import './header.css';
 import Urls from 'meta/urls';
 import Socials from 'meta/socials';
 import NavMenu from 'ui/nav-menu';

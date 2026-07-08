@@ -9,13 +9,19 @@ class NavMenu extends React.Component {
     this.makeNavList = this.makeNavList.bind(this);
   }
 
-  makeNavList (list, { pathname }) {
+  makeNavList (list) {
     return list
       .filter(page => !page.hidden)
       .map(({ name, url, id }) => {
-        const className = 'item ' + id + '-page-link';
+        const base = 'item ' + id + '-page-link';
         return (
-          <NavLink key={id} to={url} activeClassName="active" title={name} className={className}>
+          <NavLink
+            key={id}
+            to={url}
+            end
+            title={name}
+            className={({ isActive }) => base + (isActive ? ' active' : '')}
+          >
             {name}
           </NavLink>
         );
@@ -23,8 +29,8 @@ class NavMenu extends React.Component {
   }
 
   render () {
-    const { location, className } = this.props;
-    const list = this.makeNavList(Pages, location);
+    const { className } = this.props;
+    const list = this.makeNavList(Pages);
 
     return (
       <nav className={'NavMenu ' + className}>{list}</nav>

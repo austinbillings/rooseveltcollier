@@ -1,10 +1,7 @@
-import React, { Fragment } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 import EventList from 'ui/event-list';
-import { SERVER_URL } from 'data/config';
-
-import tourDates from 'data/tour-dates'
+import tourDates from 'data/tour-dates';
 
 class TourPanel extends React.Component {
   constructor (props) {
@@ -15,19 +12,6 @@ class TourPanel extends React.Component {
       tourDates: tourDates,
       error: null
     };
-
-    this.componentDidMount = this.componentDidMount.bind(this);
-  }
-
-  componentDidMount () {
-    return;
-    axios.get(SERVER_URL + '/api/tour')
-      .then(({ data }) => {
-        this.setState({ tourDates: data, loading: false });
-      })
-      .catch(err => {
-        this.setState({ loading: false, error: true });
-      });
   }
 
   render () {

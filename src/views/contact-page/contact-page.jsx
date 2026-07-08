@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './contact-page.scss';
+import './contact-page.css';
 import contacts from 'data/contacts';
 import SectionHeading from 'ui/section-heading';
 

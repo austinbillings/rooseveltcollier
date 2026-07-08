@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './social-nav.scss';
+import './social-nav.css';
 import IconMenu from 'components/icon-menu';
 import SocialUtils from 'utils/social-utils';
 

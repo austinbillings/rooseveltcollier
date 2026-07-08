@@ -12,11 +12,12 @@ class Validator extends React.Component {
     this.reopen = this.reopen.bind(this);
     this.getMessage = this.getMessage.bind(this);
     this.renderCloser = this.renderCloser.bind(this);
-    this.componentWillReceiveProps = this.componentWillReceiveProps.bind(this);
   }
 
-  componentWillReceiveProps (newProps) {
-    this.reopen();
+  componentDidUpdate (prevProps) {
+    if (prevProps.check !== this.props.check || prevProps.type !== this.props.type) {
+      this.reopen();
+    }
   }
 
   close () {

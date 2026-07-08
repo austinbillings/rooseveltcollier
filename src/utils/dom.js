@@ -1,16 +1,17 @@
-import jQuery from 'jquery';
+export function scrollToTop () {
+  return scrollTo(0);
+}
 
-export function scrollToTop (target = 'html, body') {
-  return scrollTo(target, 0);
-};
-
-export function scrollTo (target, scrollTop = 0, duration = 400) {
-  return setTimeout(() => {
-    jQuery(target).scroll();
-    jQuery(target).animate({ scrollTop }, duration, 'swing');
-  }, 250);
-};
+export function scrollTo (top = 0) {
+  return window.scrollTo({ top, behavior: 'smooth' });
+}
 
 export function getOffset (target) {
-  return jQuery(target).offset();
-};
+  const el = typeof target === 'string' ? document.querySelector(target) : target;
+  if (!el) return { top: 0, left: 0 };
+  const rect = el.getBoundingClientRect();
+  return {
+    top: rect.top + window.scrollY,
+    left: rect.left + window.scrollX,
+  };
+}

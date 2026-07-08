@@ -1,0 +1,8 @@
+.music-page {
+  display: block;
+  padding: 20vh 0 30px;
+  background-image: url('/assets/photos/2023-teal-wide.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 20% 15%;
+}

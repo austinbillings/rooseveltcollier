@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './video-page.scss';
+import './video-page.css';
 import videos from 'data/videos';
 import Icon from 'components/icon';
 import VideoShowcase from 'ui/video-showcase';

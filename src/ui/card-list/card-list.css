@@ -1,0 +1,27 @@
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.card-list .card {
+  margin: 15px;
+}
+
+.card-list .card.card-axis-y {
+  flex: 1 0 calc(33% - 30px);
+}
+
+.card-list .card.card-axis-x {
+  flex: 1 0 calc(50% - 30px);
+}
+
+@media (max-width: 768px) {
+  .card-list .card,
+  .card-list .card.card-axis-x,
+  .card-list .card.card-axis-y {
+    flex-basis: 100%;
+  }
+}

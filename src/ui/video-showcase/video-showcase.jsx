@@ -16,14 +16,11 @@ class VideoShowcase extends VideoGallery {
     this.onChoose = this.onChoose.bind(this);
   }
 
-  componentWillReceiveProps (newProps) {
-    if (!newProps || newProps.targetVideo === this.props.targetVideo)
-      return;
+  componentDidUpdate (prevProps) {
+    if (prevProps.targetVideo === this.props.targetVideo) return;
 
-    const { videos } = this.props;
-    const matchesTargetId = vid => vid.id && vid.id === newProps.targetVideo;
-    const foundIndex = videos.findIndex(matchesTargetId);
-
+    const { videos, targetVideo } = this.props;
+    const foundIndex = videos.findIndex(vid => vid.id && vid.id === targetVideo);
     this.setState({ activeIndex: foundIndex });
   }
 

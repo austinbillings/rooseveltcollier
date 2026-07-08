@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './video-panel.scss';
+import './video-panel.css';
 import Icon from 'components/icon';
 import ShadowBox from 'components/shadow-box';
 

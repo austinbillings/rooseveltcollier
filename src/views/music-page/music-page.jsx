@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './music-page.scss';
+import './music-page.css';
 import music from 'data/music';
 
 import SectionHeading from 'ui/section-heading';

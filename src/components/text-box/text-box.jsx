@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './text-box.scss';
+import './text-box.css';
 import Icon from 'components/icon';
 import Submit from 'components/submit';
 
