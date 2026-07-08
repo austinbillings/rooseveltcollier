@@ -40,8 +40,8 @@ const homeSlides = [
     linkTo: 'https://www.emmonsguitar.co/sacredsteel',
     accent: 'rgba(140, 30, 30, 1)',
     background: {
-      image: '/assets/2026/optimized/roosevelt-hat-bw.jpg',
-      position: '50% 30%'
+      image: '/assets/2026/optimized/roosevelt-warm-stage.jpg',
+      position: '50% 40%'
     },
     content: (
       <div>
@@ -52,43 +52,6 @@ const homeSlides = [
         </p>
         <LinkButton href="https://www.emmonsguitar.co/sacredsteel">
           See the Signature <Icon fa="angle-right"/>
-        </LinkButton>
-      </div>
-    )
-  },
-  {
-    id: 'exit-16',
-    title: 'Exit 16',
-    linkTo: '/exit-16',
-    accent: 'rgba(219,66,25,1)',
-    slideClass: 'slide-light',
-    background: {
-      image: '/assets/photos/wall-tq-altered.jpg',
-      position: '90% 25%'
-    },
-    content: (
-      <div className="stack items-start justify-end nowrap">
-        <img
-          src="assets/exit-16.jpg"
-          alt="Cover of EXIT 16 by Roosevelt Collier"
-          className="image-bordered"
-          style={{ width: '200px' }}
-        />
-        <h1>Exit 16</h1>
-        <big>
-          Debut Album <b>Available Now</b>
-          <br />
-          on GroundUP Music!
-          <div className="logo-gu-small" />
-        </big>
-        <p>
-          Produced by Snarky Puppy's Michael League.
-        </p>
-        <p className="white-text">
-          <i>"This record is a record about me," says Roosevelt Collier.<br/>"It's telling a story of who I am, where I'm from, and where I'm going."</i>
-        </p>
-        <LinkButton href="/music#exit16">
-          Check it out &nbsp;<Icon fa="angle-right"/>
         </LinkButton>
       </div>
     )
@@ -110,27 +73,6 @@ const homeSlides = [
         </p>
         <LinkButton href="/music#tribute-to-ljk">
           LISTEN NOW <Icon fa="angle-right"/>
-        </LinkButton>
-      </span>
-    )
-  },
-  {
-    id: 'the-dr',
-    title: 'Roosevelt "The Dr." Collier',
-    linkTo: '/about',
-    background: {
-      image: '/assets/2026/optimized/roosevelt-warm-stage.jpg',
-      position: '50% 40%'
-    },
-    accent: 'rgba(180, 60, 30, 1)',
-    content: (
-      <span>
-        <h1>Roosevelt "The Dr." Collier</h1>
-        <p style={{ width: '500px' }}>
-          A 4× Grammy-nominated pedal steel guitarist who cut his teeth in the church but plays like a back-road bluesman. Fronting his own band since 2012, he's torn up festivals and stages in over 50 countries.
-        </p>
-        <LinkButton href="/about">
-          LEARN MORE <Icon fa="angle-right"/>
         </LinkButton>
       </span>
     )
