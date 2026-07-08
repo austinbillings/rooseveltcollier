@@ -14,6 +14,13 @@ class TourPage extends React.Component {
     return (
       <grid className="tour-page">
         <stack style={{ width: '100%', flexGrow: 1 }}>
+          <div className="tour-hero">
+            <img
+              src="/assets/2026/optimized/roosevelt-warm-stage.jpg"
+              alt="Roosevelt Collier on stage"
+              className="tour-hero-image"
+            />
+          </div>
           <SectionHeading align="center" text="On Tour"/>
           <BandsintownWidget limit="all" />
         </stack>

@@ -2,6 +2,109 @@
   line-height: 1em;
 }
 
+/* ---- Hero collage slide ---- */
+.hero-collage-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 32px;
+  width: 100%;
+}
+
+.hero-collage-grid {
+  flex: 0 1 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  min-height: 55vh;
+  max-height: 65vh;
+}
+
+.hero-collage-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.hero-collage-grid img:nth-child(1) { transform: rotate(-1.5deg); }
+.hero-collage-grid img:nth-child(2) { transform: rotate(1.5deg); }
+.hero-collage-grid img:nth-child(3) { transform: rotate(1deg); }
+.hero-collage-grid img:nth-child(4) { transform: rotate(-1deg); }
+
+.hero-collage-panel {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 260px;
+}
+
+.hero-collage-panel h1 {
+  font-size: 80px;
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+
+.hero-collage-panel big {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hero-collage-panel p {
+  max-width: 480px;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 992px) {
+  .hero-collage-slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-collage-panel {
+    order: -1;          /* text first, collage below, on narrow screens */
+    min-width: 0;
+    flex-basis: auto;
+  }
+  .hero-collage-grid {
+    flex-basis: auto;
+    min-height: 32vh;
+    max-height: 42vh;
+  }
+  .hero-collage-panel h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 599px) {
+  .home-page .slide-panel .slide--active .slide-content {
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .hero-collage-slide {
+    gap: 14px;
+  }
+  .hero-collage-grid {
+    min-height: 26vh;
+    max-height: 34vh;
+    gap: 6px;
+  }
+  .hero-collage-panel h1 {
+    font-size: 42px;
+  }
+  .hero-collage-panel big {
+    font-size: 1.15em;
+  }
+  .hero-collage-panel p {
+    margin-bottom: 12px;
+  }
+}
+
+
 .home-page .slide-panel .icon-menu a {
   color: var(--color-white);
 }

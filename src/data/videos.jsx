@@ -2,6 +2,11 @@ import React from 'react';
 
 const videos = [
   {
+    title: 'CMA Awards – Surprise Performance',
+    subtitle: 'Roosevelt with Jelly Roll',
+    youtubeId: 'GmKnX99eyNs'
+  },
+  {
     title: 'Jelly Roll - "Winning Streak" (Live on SNL)',
     subtitle: 'Roosevelt Collier as Music Director',
     youtubeId: '7MujD0ZW_fo'
